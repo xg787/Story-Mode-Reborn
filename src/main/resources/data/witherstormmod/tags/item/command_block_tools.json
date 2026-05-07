@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "xgsmi:enchanted_diamond_sword",
+    "xgsmi:enchanted_diamond_pickaxe",
+    "xgsmi:enchanted_diamond_axe",
+    "xgsmi:enchanted_diamond_shovel",
+    "xgsmi:enchanted_diamond_hoe"
+  ]
+}
