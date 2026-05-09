@@ -1,0 +1,10 @@
+// 1.21.1	2026-05-09T10:01:08.2678525	Tags for minecraft:item mod id xgsmi
+01ac1566976d07a3311d8c1e06a9db7b36d052ce data/minecraft/tags/item/arrows.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/axes.json
+72ec4e44b1ff5d9218c34ff9710e9e39de97c05a data/minecraft/tags/item/enchantable/equippable.json
+72ec4e44b1ff5d9218c34ff9710e9e39de97c05a data/minecraft/tags/item/enchantable/vanishing.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/hoes.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/pickaxes.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/shovels.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/item/swords.json
+082a05efa4c17f9e5e9caebed83bb1324ad6135c data/xgsmi/tags/item/prismarine_tool_material.json

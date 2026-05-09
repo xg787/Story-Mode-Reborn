@@ -1,2 +1,10 @@
-// 1.21.1	2026-05-07T11:14:43.843676	Loot Tables
-d0fe43486571cc454d137ebd3e419c6c84421e5d data/xgsmi/loot_table/blocks/test.json
+// 1.21.1	2026-05-07T21:59:15.0553433	Loot Tables
+d8aab60f65aeb55acc9bd20cbedaeecb08973ded data/xgsmi/loot_table/blocks/attached_white_pumpkin_stem.json
+31d8f3175446b3fa41d88cfcff7171d35a2e2a39 data/xgsmi/loot_table/blocks/carved_white_pumpkin.json
+27da05d14c83577fc277c481cb51e899929ed63a data/xgsmi/loot_table/blocks/romeum_block.json
+b1ec7e17f952793f3b9db6344ccb205e960664cc data/xgsmi/loot_table/blocks/romeum_ore.json
+45dd3cc52275315e745f3f65293c68b84e9eac7f data/xgsmi/loot_table/blocks/titanium_block.json
+25ec9d08d71612c884081dbfd6e8d9ec6f7f17a9 data/xgsmi/loot_table/blocks/titanium_ore.json
+8e413d366d3f3d7a693da34679cdf82c9741be03 data/xgsmi/loot_table/blocks/white_jack_o_lantern.json
+60b3459c4347ede79d614c8440b0eb0977fe65ff data/xgsmi/loot_table/blocks/white_pumpkin.json
+3565edcad7d07d112f018f99918c245dd7c2a094 data/xgsmi/loot_table/blocks/white_pumpkin_stem.json

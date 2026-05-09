@@ -1,0 +1,6 @@
+{
+    "parent": "xgsmi:item/prismarine_bow",
+    "textures": {
+        "layer0": "xgsmi:item/prismarine_bow_pulling_2"
+    }
+}

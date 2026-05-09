@@ -3,6 +3,7 @@ package net.xg787.xgsmi.item;
 import net.minecraft.ChatFormatting;
 import net.minecraft.Util;
 import net.minecraft.core.component.DataComponentMap;
+import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlag;
@@ -47,6 +48,7 @@ public class XgsmiSmithingTemplateItem extends SmithingTemplateItem {
                     Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.titanium_upgrade.ingredients"))
             )
             .withStyle(DESCRIPTION_FORMAT);
+    
 
     private static final Component TITANIUM_UPGRADE = Component.translatable(
                     Util.makeDescriptionId("upgrade", ResourceLocation.fromNamespaceAndPath(MOD_ID, "titanium_upgrade"))
@@ -59,6 +61,20 @@ public class XgsmiSmithingTemplateItem extends SmithingTemplateItem {
     
     private static final Component TITANIUM_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(
             Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.titanium_upgrade.additions_slot_description"))
+    );
+
+    private static final Component TITANIUM_ENCHANT_APPLIES_TO = Component.translatable(
+                    Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.titanium_enchant.applies_to"))
+            )
+            .withStyle(DESCRIPTION_FORMAT);
+
+    private static final Component TITANIUM_ENCHANT = Component.translatable(
+                    Util.makeDescriptionId("upgrade", ResourceLocation.fromNamespaceAndPath(MOD_ID, "titanium_enchant"))
+            )
+            .withStyle(TITLE_FORMAT);
+
+    private static final Component TITANIUM_ENCHANT_BASE_SLOT_DESCRIPTION = Component.translatable(
+            Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.titanium_enchant.base_slot_description"))
     );
 
     private static final Component ROMEUM_UPGRADE_APPLIES_TO = Component.translatable(
@@ -83,10 +99,24 @@ public class XgsmiSmithingTemplateItem extends SmithingTemplateItem {
     private static final Component ROMEUM_UPGRADE_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(
             Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.romeum_upgrade.additions_slot_description"))
     );
+
+    private static final Component ROMEUM_ENCHANT_APPLIES_TO = Component.translatable(
+                    Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.romeum_enchant.applies_to"))
+            )
+            .withStyle(DESCRIPTION_FORMAT);
+
+    private static final Component ROMEUM_ENCHANT = Component.translatable(
+                    Util.makeDescriptionId("upgrade", ResourceLocation.fromNamespaceAndPath(MOD_ID, "romeum_enchant"))
+            )
+            .withStyle(TITLE_FORMAT);
+
+    private static final Component ROMEUM_ENCHANT_BASE_SLOT_DESCRIPTION = Component.translatable(
+            Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.romeum_enchant.base_slot_description"))
+    );
     
     public static XgsmiSmithingTemplateItem createTitaniumUpgradeTemplate() {
         return new XgsmiSmithingTemplateItem(
-                new Item.Properties().fireResistant(),
+                new Item.Properties().fireResistant().rarity(Rarity.RARE),
                 TITANIUM_UPGRADE_APPLIES_TO,
                 TITANIUM_UPGRADE_INGREDIENTS,
                 TITANIUM_UPGRADE,
@@ -97,13 +127,39 @@ public class XgsmiSmithingTemplateItem extends SmithingTemplateItem {
         );
     }
 
+    public static XgsmiSmithingTemplateItem createTitaniumEnchantTemplate() {
+        return new XgsmiSmithingTemplateItem(
+                new Item.Properties().fireResistant().rarity(Rarity.RARE).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true),
+                TITANIUM_ENCHANT_APPLIES_TO,
+                TITANIUM_UPGRADE_INGREDIENTS,
+                TITANIUM_ENCHANT,
+                TITANIUM_ENCHANT_BASE_SLOT_DESCRIPTION,
+                TITANIUM_UPGRADE_ADDITIONS_SLOT_DESCRIPTION,
+                createXgsmiUpgradeIconList(),
+                createXgsmiUpgradeMaterialList()
+        );
+    }
+
     public static XgsmiSmithingTemplateItem createRomeumUpgradeTemplate() {
         return new XgsmiSmithingTemplateItem(
-                new Item.Properties().fireResistant(),
+                new Item.Properties().fireResistant().rarity(Rarity.EPIC),
                 ROMEUM_UPGRADE_APPLIES_TO,
                 ROMEUM_UPGRADE_INGREDIENTS,
                 ROMEUM_UPGRADE,
                 ROMEUM_UPGRADE_BASE_SLOT_DESCRIPTION,
+                ROMEUM_UPGRADE_ADDITIONS_SLOT_DESCRIPTION,
+                createXgsmiUpgradeIconList(),
+                createXgsmiUpgradeMaterialList()
+        );
+    }
+
+    public static XgsmiSmithingTemplateItem createRomeumEnchantTemplate() {
+        return new XgsmiSmithingTemplateItem(
+                new Item.Properties().fireResistant().rarity(Rarity.EPIC).component(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, true),
+                ROMEUM_ENCHANT_APPLIES_TO,
+                ROMEUM_UPGRADE_INGREDIENTS,
+                ROMEUM_ENCHANT,
+                ROMEUM_ENCHANT_BASE_SLOT_DESCRIPTION,
                 ROMEUM_UPGRADE_ADDITIONS_SLOT_DESCRIPTION,
                 createXgsmiUpgradeIconList(),
                 createXgsmiUpgradeMaterialList()

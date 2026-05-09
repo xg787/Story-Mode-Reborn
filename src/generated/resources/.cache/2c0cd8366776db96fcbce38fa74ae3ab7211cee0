@@ -1,4 +1,13 @@
-// 1.21.1	2026-05-07T11:14:43.8431761	Block States: xgsmi
-75cf96a93cc7f2e5ef98ee258b339a2f526f404f assets/xgsmi/blockstates/test.json
-6b5ab1845aae087272783d1adc90afa414e2abc8 assets/xgsmi/models/block/test.json
-79ba88979e0f08f1e9612ca383ee18eba261dabd assets/xgsmi/models/item/test.json
+// 1.21.1	2026-05-07T20:56:27.2231023	Block States: xgsmi
+017f33aeba639bf32b1f690bbe3ec4e610d02ec3 assets/xgsmi/blockstates/romeum_block.json
+f17f32b6985b36beb8fd9babedfe1fde21d3fe5e assets/xgsmi/blockstates/romeum_ore.json
+115adbce694c3a66ae469856c56af22ef138bccc assets/xgsmi/blockstates/titanium_block.json
+d69612e7e17af06a2f3051663e6372196b288bd0 assets/xgsmi/blockstates/titanium_ore.json
+62f17edc14df63be75172aca6f3b7e497855953e assets/xgsmi/models/block/romeum_block.json
+42abeb29075e18e8e6d22589dbf408f07b1f19bb assets/xgsmi/models/block/romeum_ore.json
+4340107eaa74bf500d74a484974509515513ae19 assets/xgsmi/models/block/titanium_block.json
+e67ef0e22ef4c62100f88fd1a048dece24f65c27 assets/xgsmi/models/block/titanium_ore.json
+b38b72962348f5c60f9f412970f9545a96211684 assets/xgsmi/models/item/romeum_block.json
+a6ab2ca415bbfe9b296513b3d40cf6a03ca49084 assets/xgsmi/models/item/romeum_ore.json
+2abd7c8316ebdf7b59b88f1e6b9bb2a2e8a9e72b assets/xgsmi/models/item/titanium_block.json
+6c0b14826b4cfa92396aeffd6dbf8c04219327f7 assets/xgsmi/models/item/titanium_ore.json

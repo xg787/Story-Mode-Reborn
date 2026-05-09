@@ -15,7 +15,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        blockWithItem(TEST);
+        blockWithItem(TITANIUM_ORE);
+        blockWithItem(TITANIUM_BLOCK);
+        blockWithItem(ROMEUM_ORE);
+        blockWithItem(ROMEUM_BLOCK);
     }
 
     private void blockWithItem(DeferredBlock<?> deferredBlock) {

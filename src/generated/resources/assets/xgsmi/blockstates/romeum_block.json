@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "xgsmi:block/romeum_block"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "xgsmi:item/tipped_prismarine_arrow_head",
+        "layer1": "xgsmi:item/tipped_prismarine_arrow_base"
+    }
+}
