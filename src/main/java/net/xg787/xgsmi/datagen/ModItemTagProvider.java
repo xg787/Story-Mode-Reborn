@@ -15,8 +15,7 @@ import java.util.concurrent.CompletableFuture;
 
 import static net.xg787.xgsmi.Xgsmi.MOD_ID;
 import static net.xg787.xgsmi.registry.XgsmiBlocks.CARVED_WHITE_PUMPKIN;
-import static net.xg787.xgsmi.registry.XgsmiItems.PRISMARINE_ARROW;
-import static net.xg787.xgsmi.registry.XgsmiItems.TIPPED_PRISMARINE_ARROW;
+import static net.xg787.xgsmi.registry.XgsmiItems.*;
 
 public class ModItemTagProvider extends ItemTagsProvider {
     public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
@@ -42,6 +41,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.EQUIPPABLE_ENCHANTABLE).add(CARVED_WHITE_PUMPKIN.asItem());
         tag(ItemTags.VANISHING_ENCHANTABLE).add(CARVED_WHITE_PUMPKIN.asItem());
 
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(TITANIUM_HELMET.get())
+                .add(TITANIUM_CHESTPLATE.get())
+                .add(TITANIUM_LEGGINGS.get())
+                .add(TITANIUM_BOOTS.get());
         //tag(Tags.Items.).add(CARVED_WHITE_PUMPKIN.asItem());
 
 

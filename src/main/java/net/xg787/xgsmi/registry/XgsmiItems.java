@@ -3,10 +3,7 @@ package net.xg787.xgsmi.registry;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import net.xg787.xgsmi.item.PrismarineArrowItem;
-import net.xg787.xgsmi.item.TippedPrismarineArrowItem;
-import net.xg787.xgsmi.item.XgsmiSmithingTemplateItem;
-import net.xg787.xgsmi.item.XgsmiToolTiers;
+import net.xg787.xgsmi.item.*;
 
 import static net.xg787.xgsmi.Xgsmi.MOD_ID;
 import static net.xg787.xgsmi.registry.XgsmiBlocks.WHITE_PUMPKIN_STEM;
@@ -26,6 +23,7 @@ public class XgsmiItems {
     public static final DeferredItem<Item> PRISMARINE_SHOVEL = ITEMS.register("prismarine_shovel", () -> new ShovelItem(XgsmiToolTiers.PRISMARINE, new Item.Properties().attributes(ShovelItem.createAttributes(XgsmiToolTiers.PRISMARINE, 1.5F, -3.0F))));
     public static final DeferredItem<Item> PRISMARINE_HOE = ITEMS.register("prismarine_hoe", () ->  new HoeItem(XgsmiToolTiers.PRISMARINE, new Item.Properties().attributes(HoeItem.createAttributes(XgsmiToolTiers.PRISMARINE, -2.0F, -1.0F))));
     public static final DeferredItem<Item> PRISMARINE_BOW = ITEMS.register("prismarine_bow", () -> new BowItem(new Item.Properties().durability(768)));
+    public static final DeferredItem<Item> PRISMARINE_CROSSBOW = ITEMS.register("prismarine_crossbow", () -> new CrossbowItem(new Item.Properties().durability(930)));
     public static final DeferredItem<Item> PRISMARINE_ARROW = ITEMS.register("prismarine_arrow", () -> new PrismarineArrowItem(new Item.Properties()));
     public static final DeferredItem<Item> TIPPED_PRISMARINE_ARROW = ITEMS.register("tipped_prismarine_arrow", () -> new TippedPrismarineArrowItem(new Item.Properties()));
 
@@ -48,12 +46,20 @@ public class XgsmiItems {
     public static final DeferredItem<Item> TITANIUM_AXE = ITEMS.register("titanium_axe", () -> new AxeItem(XgsmiToolTiers.TITANIUM, new Item.Properties().fireResistant().attributes(AxeItem.createAttributes(XgsmiToolTiers.TITANIUM, 5.0F, -3.0F))));
     public static final DeferredItem<Item> TITANIUM_SHOVEL = ITEMS.register("titanium_shovel", () -> new ShovelItem(XgsmiToolTiers.TITANIUM, new Item.Properties().fireResistant().attributes(ShovelItem.createAttributes(XgsmiToolTiers.TITANIUM, 1.5F, -3.0F))));
     public static final DeferredItem<Item> TITANIUM_HOE = ITEMS.register("titanium_hoe", () -> new HoeItem(XgsmiToolTiers.TITANIUM, new Item.Properties().fireResistant().attributes(HoeItem.createAttributes(XgsmiToolTiers.TITANIUM, -4.0F, 0.0F))));
+    public static final DeferredItem<ArmorItem> TITANIUM_HELMET = ITEMS.register("titanium_helmet", () -> new ArmorItem(XgsmiArmorMaterials.TITANIUM, ArmorItem.Type.HELMET, new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(40))));
+    public static final DeferredItem<ArmorItem> TITANIUM_CHESTPLATE = ITEMS.register("titanium_chestplate", () -> new ArmorItem(XgsmiArmorMaterials.TITANIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(40))));
+    public static final DeferredItem<ArmorItem> TITANIUM_LEGGINGS = ITEMS.register("titanium_leggings", () -> new ArmorItem(XgsmiArmorMaterials.TITANIUM, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(40))));
+    public static final DeferredItem<ArmorItem> TITANIUM_BOOTS = ITEMS.register("titanium_boots", () -> new ArmorItem(XgsmiArmorMaterials.TITANIUM, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(40))));
 
     public static final DeferredItem<Item> ENCHANTED_TITANIUM_SWORD = ITEMS.register("enchanted_titanium_sword", () -> new SwordItem(XgsmiToolTiers.ENCHANTED_TITANIUM, new Item.Properties().fireResistant().attributes(SwordItem.createAttributes(XgsmiToolTiers.ENCHANTED_TITANIUM, 3, -2.4F))));
     public static final DeferredItem<Item> ENCHANTED_TITANIUM_PICKAXE = ITEMS.register("enchanted_titanium_pickaxe", () -> new PickaxeItem(XgsmiToolTiers.ENCHANTED_TITANIUM, new Item.Properties().fireResistant().attributes(PickaxeItem.createAttributes(XgsmiToolTiers.ENCHANTED_TITANIUM, 1.0F, -2.8F))));
     public static final DeferredItem<Item> ENCHANTED_TITANIUM_AXE = ITEMS.register("enchanted_titanium_axe", () -> new AxeItem(XgsmiToolTiers.ENCHANTED_TITANIUM, new Item.Properties().fireResistant().attributes(AxeItem.createAttributes(XgsmiToolTiers.ENCHANTED_TITANIUM, 5.0F, -3.0F))));
     public static final DeferredItem<Item> ENCHANTED_TITANIUM_SHOVEL = ITEMS.register("enchanted_titanium_shovel", () -> new ShovelItem(XgsmiToolTiers.ENCHANTED_TITANIUM, new Item.Properties().fireResistant().attributes(ShovelItem.createAttributes(XgsmiToolTiers.ENCHANTED_TITANIUM, 1.5F, -3.0F))));
     public static final DeferredItem<Item> ENCHANTED_TITANIUM_HOE = ITEMS.register("enchanted_titanium_hoe", () -> new HoeItem(XgsmiToolTiers.ENCHANTED_TITANIUM, new Item.Properties().fireResistant().attributes(HoeItem.createAttributes(XgsmiToolTiers.ENCHANTED_TITANIUM, -4.0F, 0.0F))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_TITANIUM_HELMET = ITEMS.register("enchanted_titanium_helmet", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_TITANIUM, ArmorItem.Type.HELMET, new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_TITANIUM_CHESTPLATE = ITEMS.register("enchanted_titanium_chestplate", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_TITANIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_TITANIUM_LEGGINGS = ITEMS.register("enchanted_titanium_leggings", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_TITANIUM, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_TITANIUM_BOOTS = ITEMS.register("enchanted_titanium_boots", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_TITANIUM, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(40))));
 
     public static final DeferredItem<Item> RAW_ROMEUM = ITEMS.registerSimpleItem("raw_romeum", new Item.Properties().fireResistant());
     public static final DeferredItem<Item> ROMEUM_INGOT = ITEMS.registerSimpleItem("romeum_ingot", new Item.Properties().fireResistant());
@@ -63,12 +69,20 @@ public class XgsmiItems {
     public static final DeferredItem<Item> ROMEUM_AXE = ITEMS.register("romeum_axe", () -> new AxeItem(XgsmiToolTiers.ROMEUM, new Item.Properties().fireResistant().attributes(AxeItem.createAttributes(XgsmiToolTiers.ROMEUM, 5.0F, -3.0F))));
     public static final DeferredItem<Item> ROMEUM_SHOVEL = ITEMS.register("romeum_shovel", () -> new ShovelItem(XgsmiToolTiers.ROMEUM, new Item.Properties().fireResistant().attributes(ShovelItem.createAttributes(XgsmiToolTiers.ROMEUM, 1.5F, -3.0F))));
     public static final DeferredItem<Item> ROMEUM_HOE = ITEMS.register("romeum_hoe", () -> new HoeItem(XgsmiToolTiers.ROMEUM, new Item.Properties().fireResistant().attributes(HoeItem.createAttributes(XgsmiToolTiers.ROMEUM, -4.0F, 0.0F))));
+    public static final DeferredItem<ArmorItem> ROMEUM_HELMET = ITEMS.register("romeum_helmet", () -> new ArmorItem(XgsmiArmorMaterials.ROMEUM, ArmorItem.Type.HELMET, new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ROMEUM_CHESTPLATE = ITEMS.register("romeum_chestplate", () -> new ArmorItem(XgsmiArmorMaterials.ROMEUM, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ROMEUM_LEGGINGS = ITEMS.register("romeum_leggings", () -> new ArmorItem(XgsmiArmorMaterials.ROMEUM, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ROMEUM_BOOTS = ITEMS.register("romeum_boots", () -> new ArmorItem(XgsmiArmorMaterials.ROMEUM, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(40))));
 
     public static final DeferredItem<Item> ENCHANTED_ROMEUM_SWORD = ITEMS.register("enchanted_romeum_sword", () -> new SwordItem(XgsmiToolTiers.ENCHANTED_ROMEUM, new Item.Properties().fireResistant().attributes(SwordItem.createAttributes(XgsmiToolTiers.ENCHANTED_ROMEUM, 3, -2.4F))));
     public static final DeferredItem<Item> ENCHANTED_ROMEUM_PICKAXE = ITEMS.register("enchanted_romeum_pickaxe", () -> new PickaxeItem(XgsmiToolTiers.ENCHANTED_ROMEUM, new Item.Properties().fireResistant().attributes(PickaxeItem.createAttributes(XgsmiToolTiers.ENCHANTED_ROMEUM, 1.0F, -2.8F))));
     public static final DeferredItem<Item> ENCHANTED_ROMEUM_AXE = ITEMS.register("enchanted_romeum_axe", () -> new AxeItem(XgsmiToolTiers.ENCHANTED_ROMEUM, new Item.Properties().fireResistant().attributes(AxeItem.createAttributes(XgsmiToolTiers.ENCHANTED_ROMEUM, 5.0F, -3.0F))));
     public static final DeferredItem<Item> ENCHANTED_ROMEUM_SHOVEL = ITEMS.register("enchanted_romeum_shovel", () -> new ShovelItem(XgsmiToolTiers.ENCHANTED_ROMEUM, new Item.Properties().fireResistant().attributes(ShovelItem.createAttributes(XgsmiToolTiers.ENCHANTED_ROMEUM, 1.5F, -3.0F))));
     public static final DeferredItem<Item> ENCHANTED_ROMEUM_HOE = ITEMS.register("enchanted_romeum_hoe", () -> new HoeItem(XgsmiToolTiers.ENCHANTED_ROMEUM, new Item.Properties().fireResistant().attributes(HoeItem.createAttributes(XgsmiToolTiers.ENCHANTED_ROMEUM, -4.0F, 0.0F))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_ROMEUM_HELMET = ITEMS.register("enchanted_romeum_helmet", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_ROMEUM, ArmorItem.Type.HELMET, new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_ROMEUM_CHESTPLATE = ITEMS.register("enchanted_romeum_chestplate", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_ROMEUM, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_ROMEUM_LEGGINGS = ITEMS.register("enchanted_romeum_leggings", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_ROMEUM, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(40))));
+    public static final DeferredItem<ArmorItem> ENCHANTED_ROMEUM_BOOTS = ITEMS.register("enchanted_romeum_boots", () -> new ArmorItem(XgsmiArmorMaterials.ENCHANTED_ROMEUM, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(40))));
 
     public static final DeferredItem<Item> BLANK_BASIC_ARMOR_TEMPLATE = ITEMS.registerSimpleItem("blank_basic_armor_template");
     public static final DeferredItem<Item> BASIC_ARMOR_TEMPLATE = ITEMS.registerSimpleItem("basic_armor_template");
@@ -89,7 +103,7 @@ public class XgsmiItems {
     public static final DeferredItem<Item> ROMEUM_ENCHANT_SMITHING_TEMPLATE = ITEMS.register("romeum_enchant_smithing_template", XgsmiSmithingTemplateItem::createRomeumEnchantTemplate);
 
     public static final DeferredItem<Item> BLANK_ARMOR_TEMPLATE = ITEMS.registerSimpleItem("blank_armor_template", new Item.Properties().fireResistant());
-    public static final DeferredItem<Item> ARMOR_TEMPLATE_1 = ITEMS.registerSimpleItem("armor_template_1", new Item.Properties().fireResistant());
+    public static final DeferredItem<Item> ARMOR_TEMPLATE_1 = ITEMS.register("armor_template_1", XgsmiSmithingTemplateItem::createGabrielArmorTemplate);
     public static final DeferredItem<Item> ARMOR_TEMPLATE_2 = ITEMS.registerSimpleItem("armor_template_2", new Item.Properties().fireResistant());
     public static final DeferredItem<Item> ARMOR_TEMPLATE_3 = ITEMS.registerSimpleItem("armor_template_3", new Item.Properties().fireResistant());
     public static final DeferredItem<Item> ARMOR_TEMPLATE_4 = ITEMS.registerSimpleItem("armor_template_4", new Item.Properties().fireResistant());
@@ -115,4 +129,9 @@ public class XgsmiItems {
     public static final DeferredItem<Item> ARMOR_TEMPLATE_24 = ITEMS.registerSimpleItem("armor_template_24", new Item.Properties().fireResistant());
     public static final DeferredItem<Item> ARMOR_TEMPLATE_25 = ITEMS.registerSimpleItem("armor_template_25", new Item.Properties().fireResistant());
     public static final DeferredItem<Item> ARMOR_TEMPLATE_26 = ITEMS.registerSimpleItem("armor_template_26", new Item.Properties().fireResistant());
+
+    public static final DeferredItem<ArmorItem> GABRIEL_HELMET = ITEMS.register("gabriel_helmet", () -> new GabrielArmorItem(ArmorItem.Type.HELMET, new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(50))));
+    public static final DeferredItem<ArmorItem> GABRIEL_CHESTPLATE = ITEMS.register("gabriel_chestplate", () -> new GabrielArmorItem(ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(50))));
+    public static final DeferredItem<ArmorItem> GABRIEL_LEGGINGS = ITEMS.register("gabriel_leggings", () -> new GabrielArmorItem(ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(50))));
+    public static final DeferredItem<ArmorItem> GABRIEL_BOOTS = ITEMS.register("gabriel_boots", () -> new GabrielArmorItem(ArmorItem.Type.BOOTS, new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(50))));
 }

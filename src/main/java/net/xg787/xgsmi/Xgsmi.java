@@ -31,7 +31,6 @@ public class Xgsmi {
         NeoForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(XgsmiCreativeModeTab::addCreative);
-        modEventBus.addListener(XgsmiCreativeModeTab::addCreativeSections);
     }
 
     @SubscribeEvent

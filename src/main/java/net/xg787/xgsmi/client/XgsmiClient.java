@@ -9,19 +9,20 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
 import net.xg787.xgsmi.Xgsmi;
 import net.xg787.xgsmi.client.event.XgsmiClientEvents;
-import net.xg787.xgsmi.client.model.ItemModelProperties;
+import net.xg787.xgsmi.client.model.ModelProperties;
 import net.xg787.xgsmi.client.registry.XgsmiBlockRenderLayerMap;
+import net.xg787.xgsmi.client.registry.XgsmiCreativeModeTabSections;
 
 import static net.xg787.xgsmi.registry.XgsmiItems.TIPPED_PRISMARINE_ARROW;
 
 @Mod(value = Xgsmi.MOD_ID, dist = Dist.CLIENT)
 public class XgsmiClient {
     public XgsmiClient(IEventBus modEventBus) {
+        modEventBus.addListener(XgsmiCreativeModeTabSections::addCreativeSections);
         modEventBus.addListener(XgsmiBlockRenderLayerMap::onClientSetup);
-        modEventBus.addListener(XgsmiClientEvents::registerEntityRenderers);
-        modEventBus.addListener(XgsmiBlockRenderLayerMap::onClientSetup);
-        modEventBus.addListener(ItemModelProperties::onClientSetup);
+        modEventBus.addListener(ModelProperties::onClientSetup);
         modEventBus.addListener(this::registerItemColors);
+        XgsmiClientEvents.ClientSetupEvent(modEventBus);
     }
 
     public void registerItemColors(RegisterColorHandlersEvent.Item event){

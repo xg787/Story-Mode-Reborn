@@ -21,10 +21,7 @@ import javax.annotation.Nullable;
 import static net.xg787.xgsmi.registry.XgsmiItems.PRISMARINE_ARROW;
 
 public class PrismarineArrow extends AbstractArrow {
-    private static final int EXPOSED_POTION_DECAY_TIME = 600;
-    private static final int NO_EFFECT_COLOR = -1;
     private static final EntityDataAccessor<Integer> ID_EFFECT_COLOR = SynchedEntityData.defineId(PrismarineArrow.class, EntityDataSerializers.INT);
-    private static final byte EVENT_POTION_PUFF = 0;
 
     public PrismarineArrow(EntityType<? extends PrismarineArrow> entityType, Level level) {
         super(entityType, level);
@@ -144,9 +141,6 @@ public class PrismarineArrow extends AbstractArrow {
         return 1F;
     }
 
-    /**
-     * Handles an entity event received from a {@link net.minecraft.network.protocol.game.ClientboundEntityEventPacket}.
-     */
     @Override
     public void handleEntityEvent(byte id) {
         if (id == 0) {
