@@ -64,8 +64,7 @@ configurations {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
 
-    implementation "net.xg787.sectioned_creative_tab_lib:sectioned_creative_tab_lib-1.0.0"
-    jarJar "net.xg787.sectioned_creative_tab_lib:sectioned_creative_tab_lib-1.0.0"
+    implementation jarJar("net.xg787.sectioned_creative_tab_lib:sectioned_creative_tab_lib:1.0.0")
 
     runtimeOnly "curse.maven:jade-324717:7545219"
     runtimeOnly "curse.maven:jei-238222:7420587"

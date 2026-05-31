@@ -31,3 +31,10 @@ description='''A Mod that adds  Story Mode Items, Armor and More'''
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="sectioned_creative_tab_lib"
+    type="required"
+    versionRange="[1.0.0,)"
+    ordering="NONE"
+    side="BOTH"
