@@ -1,6 +1,0 @@
-{
-    "parent": "xgsmi:item/prismarine_fishing_rod",
-    "textures": {
-        "layer0": "xgsmi:item/prismarine_fishing_rod_cast"
-    }
-}

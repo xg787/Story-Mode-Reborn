@@ -1,0 +1,5 @@
+// 1.21.1	2026-06-24T10:32:57.7008916	Tags for minecraft:block mod id story_mode_reborn
+6e915ba26944d37d6e79c7ca920f8d0cd1da99c3 data/minecraft/tags/block/mineable/axe.json
+922b30a7aae61f9a1c45c51defcf0ef7ac4e8849 data/minecraft/tags/block/mineable/pickaxe.json
+fed2db6415925311b9a5bb121e7906299f2cf533 data/minecraft/tags/block/needs_diamond_tool.json
+dda37a033a8aaa13c56a350373e0e84df1c3108a data/minecraft/tags/block/needs_iron_tool.json

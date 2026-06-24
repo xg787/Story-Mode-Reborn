@@ -1,0 +1,7 @@
+
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "story_mode_reborn:item/basic_armor_template"
+  }
+}

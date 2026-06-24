@@ -6,16 +6,14 @@ import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
-import net.xg787.xgsmi.util.XgsmiTags;
+import net.xg787.xgsmi.util.StoryModeRebornTags;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.xg787.xgsmi.Xgsmi.MOD_ID;
-import static net.xg787.xgsmi.registry.XgsmiBlocks.CARVED_WHITE_PUMPKIN;
-import static net.xg787.xgsmi.registry.XgsmiItems.*;
+import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
+import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
 
 public class ModItemTagProvider extends ItemTagsProvider {
     public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
@@ -33,7 +31,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.ARROWS)
                 .add(PRISMARINE_ARROW.get())
                 .add(TIPPED_PRISMARINE_ARROW.get());
-        tag(XgsmiTags.Items.PRISMARINE_TOOL_MATERIAL)
+        tag(StoryModeRebornTags.Items.PRISMARINE_TOOL_MATERIAL)
                 .add(Items.PRISMARINE)
                 .add(Items.PRISMARINE_BRICKS)
                 .add(Items.DARK_PRISMARINE);

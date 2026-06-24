@@ -19,7 +19,7 @@ import net.xg787.xgsmi.entity.projectile.PrismarineArrow;
 import javax.annotation.Nullable;
 import java.util.List;
 
-import static net.xg787.xgsmi.Xgsmi.MOD_ID;
+import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
 public class PrismarineArrowItem extends ArrowItem {
     public PrismarineArrowItem(Properties properties) {

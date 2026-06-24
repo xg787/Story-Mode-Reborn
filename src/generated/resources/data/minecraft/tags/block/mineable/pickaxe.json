@@ -1,8 +1,8 @@
 {
   "values": [
-    "xgsmi:titanium_ore",
-    "xgsmi:titanium_block",
-    "xgsmi:romeum_ore",
-    "xgsmi:romeum_block"
+    "story_mode_reborn:titanium_ore",
+    "story_mode_reborn:titanium_block",
+    "story_mode_reborn:romeum_ore",
+    "story_mode_reborn:romeum_block"
   ]
 }

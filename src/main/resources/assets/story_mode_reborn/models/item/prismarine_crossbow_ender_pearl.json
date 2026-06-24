@@ -1,0 +1,6 @@
+{
+    "parent": "story_mode_reborn:item/prismarine_crossbow",
+    "textures": {
+        "layer0": "story_mode_reborn:item/prismarine_crossbow_ender_pearl"
+    }
+}

@@ -22,8 +22,8 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.BlockHitResult;
 
-import static net.xg787.xgsmi.registry.XgsmiBlocks.CARVED_WHITE_PUMPKIN;
-import static net.xg787.xgsmi.registry.XgsmiItems.WHITE_PUMPKIN_SEEDS;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
+import static net.xg787.xgsmi.registry.StoryModeRebornItems.WHITE_PUMPKIN_SEEDS;
 
 public class WhitePumpkinBlock extends Block {
     public static final MapCodec<PumpkinBlock> CODEC = simpleCodec(PumpkinBlock::new);

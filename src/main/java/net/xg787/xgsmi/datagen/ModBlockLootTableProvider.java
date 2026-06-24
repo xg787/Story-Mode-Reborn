@@ -5,12 +5,12 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
-import net.xg787.xgsmi.registry.XgsmiBlocks;
+import net.xg787.xgsmi.registry.StoryModeRebornBlocks;
 
 import java.util.Set;
 
-import static net.xg787.xgsmi.registry.XgsmiBlocks.*;
-import static net.xg787.xgsmi.registry.XgsmiItems.*;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
+import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
 
 public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected ModBlockLootTableProvider(HolderLookup.Provider registries) {
@@ -32,6 +32,6 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return XgsmiBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
+        return StoryModeRebornBlocks.BLOCKS.getEntries().stream().map(Holder::value)::iterator;
     }
 }

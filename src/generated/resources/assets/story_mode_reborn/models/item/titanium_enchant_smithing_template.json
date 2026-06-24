@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "story_mode_reborn:item/titanium_enchant_smithing_template"
+  }
+}

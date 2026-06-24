@@ -1,0 +1,7 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "story_mode_reborn:item/tipped_prismarine_arrow_head",
+        "layer1": "story_mode_reborn:item/tipped_prismarine_arrow_base"
+    }
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "xgsmi:item/titanium_enchant_smithing_template"
-  }
-}

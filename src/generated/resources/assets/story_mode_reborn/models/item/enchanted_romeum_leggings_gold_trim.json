@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "story_mode_reborn:item/enchanted_romeum_leggings",
+    "layer1": "minecraft:trims/items/leggings_trim_gold"
+  }
+}

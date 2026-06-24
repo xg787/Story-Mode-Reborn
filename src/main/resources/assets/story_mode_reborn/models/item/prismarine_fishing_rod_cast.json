@@ -1,0 +1,6 @@
+{
+    "parent": "story_mode_reborn:item/prismarine_fishing_rod",
+    "textures": {
+        "layer0": "story_mode_reborn:item/prismarine_fishing_rod_cast"
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "title_key": "tooltip.story_mode_reborn.creative_tab_section.blocks",
+  "banner": "sectioned_creative_tab_lib:textures/gui/banner_frame.png",
+  "text_color": "#ffffeb8c",
+  "secondary_text_color": "#ffcea05a",
+  "label_color": "#aa2f2d26",
+  "shadow": true,
+  "sprite_animation": {
+    "frame_time": 1,
+    "frames": 1,
+    "animate_on_hover": false
+  }
+}

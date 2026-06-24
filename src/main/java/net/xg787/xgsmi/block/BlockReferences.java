@@ -5,7 +5,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 
-import static net.xg787.xgsmi.Xgsmi.MOD_ID;
+import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
 public class BlockReferences {
     public static final ResourceKey<Block> WHITE_PUMPKIN_REF = createKey("white_pumpkin");

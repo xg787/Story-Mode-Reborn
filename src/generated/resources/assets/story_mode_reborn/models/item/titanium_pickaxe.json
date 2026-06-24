@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "story_mode_reborn:item/titanium_pickaxe"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "story_mode_reborn:item/romeum_chestplate",
+    "layer1": "minecraft:trims/items/chestplate_trim_netherite"
+  }
+}

@@ -1,6 +1,0 @@
-{
-    "parent": "item/crossbow",
-    "textures": {
-        "layer0": "xgsmi:item/crossbow_prismarine_arrow"
-    }
-}

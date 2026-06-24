@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/handheld",
-  "textures": {
-    "layer0": "xgsmi:item/prismarine_sword"
-  }
-}

@@ -14,7 +14,7 @@ import net.minecraft.world.item.alchemy.Potions;
 
 import java.util.List;
 
-import static net.xg787.xgsmi.Xgsmi.MOD_ID;
+import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
 public class TippedPrismarineArrowItem extends PrismarineArrowItem {
     public TippedPrismarineArrowItem(Properties properties) {

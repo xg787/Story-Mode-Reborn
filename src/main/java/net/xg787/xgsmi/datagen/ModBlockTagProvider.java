@@ -3,16 +3,14 @@ package net.xg787.xgsmi.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
-import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.concurrent.CompletableFuture;
 
-import static net.minecraft.tags.TagEntry.tag;
-import static net.xg787.xgsmi.Xgsmi.MOD_ID;
-import static net.xg787.xgsmi.registry.XgsmiBlocks.*;
-import static net.xg787.xgsmi.registry.XgsmiBlocks.ROMEUM_BLOCK;
+import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.ROMEUM_BLOCK;
 
 public class ModBlockTagProvider extends BlockTagsProvider {
     public ModBlockTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, ExistingFileHelper existingFileHelper) {

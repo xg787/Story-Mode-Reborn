@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "story_mode_reborn:block/carved_white_pumpkin",
+    "side": "story_mode_reborn:block/white_pumpkin_side",
+    "top": "story_mode_reborn:block/white_pumpkin_top"
+  }
+}

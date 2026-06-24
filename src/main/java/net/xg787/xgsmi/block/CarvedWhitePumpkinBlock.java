@@ -19,8 +19,8 @@ import net.minecraft.world.level.block.state.predicate.BlockStatePredicate;
 import javax.annotation.Nullable;
 import java.util.function.Predicate;
 
-import static net.xg787.xgsmi.registry.XgsmiBlocks.CARVED_WHITE_PUMPKIN;
-import static net.xg787.xgsmi.registry.XgsmiBlocks.WHITE_JACK_O_LANTERN;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.WHITE_JACK_O_LANTERN;
 
 public class CarvedWhitePumpkinBlock extends CarvedPumpkinBlock {
     public CarvedWhitePumpkinBlock(Properties properties) {

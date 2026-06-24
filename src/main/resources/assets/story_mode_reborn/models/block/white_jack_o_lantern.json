@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "front": "story_mode_reborn:block/white_jack_o_lantern",
+    "side": "story_mode_reborn:block/white_jack_o_lantern_side",
+    "top": "story_mode_reborn:block/white_jack_o_lantern_top"
+  }
+}

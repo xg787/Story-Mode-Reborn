@@ -10,8 +10,8 @@ import net.neoforged.fml.ModList;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 
 
-import static net.xg787.xgsmi.Xgsmi.MOD_ID;
-import static net.xg787.xgsmi.registry.XgsmiItems.*;
+import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
+import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
 
 public class ModelProperties {
     public static void onClientSetup(FMLClientSetupEvent event) {

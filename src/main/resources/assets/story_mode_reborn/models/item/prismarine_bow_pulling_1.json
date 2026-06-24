@@ -1,0 +1,6 @@
+{
+    "parent": "story_mode_reborn:item/prismarine_bow",
+    "textures": {
+        "layer0": "story_mode_reborn:item/prismarine_bow_pulling_1"
+    }
+}

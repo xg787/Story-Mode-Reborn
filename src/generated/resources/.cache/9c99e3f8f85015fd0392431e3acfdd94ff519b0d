@@ -1,5 +1,0 @@
-// 1.21.1	2026-05-08T16:38:51.510861	Tags for minecraft:block mod id xgsmi
-7784b9558b890a59e8278065082a0b0e1f980d14 data/minecraft/tags/block/mineable/axe.json
-1d397ffdb8dad740ef71982167b30de4ab0c2081 data/minecraft/tags/block/mineable/pickaxe.json
-557fd4e0d78f696b9b33655704c8c09a0a27b5b4 data/minecraft/tags/block/needs_diamond_tool.json
-10ca2a6e17e4b451fc2ba7b17d2687f8022ee447 data/minecraft/tags/block/needs_iron_tool.json

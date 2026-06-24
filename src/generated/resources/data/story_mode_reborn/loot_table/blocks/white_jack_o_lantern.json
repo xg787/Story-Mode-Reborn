@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "story_mode_reborn:white_jack_o_lantern"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "story_mode_reborn:blocks/white_jack_o_lantern"
+}

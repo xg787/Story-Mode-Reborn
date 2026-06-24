@@ -1,10 +1,10 @@
 {
   "replace": false,
   "values": [
-    "xgsmi:enchanted_diamond_sword",
-    "xgsmi:enchanted_diamond_pickaxe",
-    "xgsmi:enchanted_diamond_axe",
-    "xgsmi:enchanted_diamond_shovel",
-    "xgsmi:enchanted_diamond_hoe"
+    "story_mode_reborn:enchanted_diamond_sword",
+    "story_mode_reborn:enchanted_diamond_pickaxe",
+    "story_mode_reborn:enchanted_diamond_axe",
+    "story_mode_reborn:enchanted_diamond_shovel",
+    "story_mode_reborn:enchanted_diamond_hoe"
   ]
 }

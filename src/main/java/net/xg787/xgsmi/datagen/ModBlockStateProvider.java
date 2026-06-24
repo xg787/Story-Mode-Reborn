@@ -5,8 +5,8 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
-import static net.xg787.xgsmi.Xgsmi.MOD_ID;
-import static net.xg787.xgsmi.registry.XgsmiBlocks.*;
+import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {

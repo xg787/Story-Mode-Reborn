@@ -14,11 +14,11 @@ import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.level.Level;
-import net.xg787.xgsmi.registry.XgsmiEntities;
+import net.xg787.xgsmi.registry.StoryModeRebornEntities;
 
 import javax.annotation.Nullable;
 
-import static net.xg787.xgsmi.registry.XgsmiItems.PRISMARINE_ARROW;
+import static net.xg787.xgsmi.registry.StoryModeRebornItems.PRISMARINE_ARROW;
 
 public class PrismarineArrow extends AbstractArrow {
     private static final EntityDataAccessor<Integer> ID_EFFECT_COLOR = SynchedEntityData.defineId(PrismarineArrow.class, EntityDataSerializers.INT);
@@ -28,12 +28,12 @@ public class PrismarineArrow extends AbstractArrow {
     }
 
     public PrismarineArrow(Level level, double x, double y, double z, ItemStack pickupItemStack, @Nullable ItemStack firedFromWeapon) {
-        super(XgsmiEntities.PRISMARINE_ARROW.get(), x, y, z, level, pickupItemStack, firedFromWeapon);
+        super(StoryModeRebornEntities.PRISMARINE_ARROW.get(), x, y, z, level, pickupItemStack, firedFromWeapon);
         this.updateColor();
     }
 
     public PrismarineArrow(Level level, LivingEntity owner, ItemStack pickupItemStack, @Nullable ItemStack firedFromWeapon) {
-        super(XgsmiEntities.PRISMARINE_ARROW.get(), owner, level, pickupItemStack, firedFromWeapon);
+        super(StoryModeRebornEntities.PRISMARINE_ARROW.get(), owner, level, pickupItemStack, firedFromWeapon);
         this.updateColor();
     }
 
