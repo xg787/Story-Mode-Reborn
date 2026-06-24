@@ -22,23 +22,16 @@ import static net.xg787.xgsmi.registry.XgsmiBlocks.CARVED_WHITE_PUMPKIN;
 public abstract class GuiMixin {
     @Shadow @Final private Minecraft minecraft;
 
-    @Shadow private float scopeScale;
-
     @Shadow protected abstract void renderTextureOverlay(GuiGraphics guiGraphics, ResourceLocation shaderLocation, float alpha);
 
     @Shadow @Final private static ResourceLocation PUMPKIN_BLUR_LOCATION;
 
     @Inject(method = "renderCameraOverlays", at = @At("TAIL"))
     private void renderCameraOverlays(GuiGraphics guiGraphics, DeltaTracker deltaTracker, CallbackInfo ci) {
+        ItemStack itemstack = this.minecraft.player.getInventory().getArmor(3);
         if (this.minecraft.options.getCameraType().isFirstPerson()) {
-            if (!this.minecraft.player.isScoping())  {
-                this.scopeScale = 0.5F;
-                ItemStack itemstack = this.minecraft.player.getInventory().getArmor(3);
-                if (itemstack.is(CARVED_WHITE_PUMPKIN.asItem())) {
-                    this.renderTextureOverlay(guiGraphics, PUMPKIN_BLUR_LOCATION, 1.0F);
-                } else {
-                    net.neoforged.neoforge.client.extensions.common.IClientItemExtensions.of(itemstack).renderHelmetOverlay(itemstack, this.minecraft.player, guiGraphics, deltaTracker);
-                }
+            if (itemstack.is(CARVED_WHITE_PUMPKIN.asItem())) {
+                this.renderTextureOverlay(guiGraphics, PUMPKIN_BLUR_LOCATION, 1.0F);
             }
         }
     }
