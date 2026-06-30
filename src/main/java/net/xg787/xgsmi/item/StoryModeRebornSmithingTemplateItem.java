@@ -47,7 +47,30 @@ public class StoryModeRebornSmithingTemplateItem extends SmithingTemplateItem {
     private static final ResourceLocation EMPTY_SLOT_LEATHER = ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/empty_slot_leather");
     private static final ResourceLocation EMPTY_SLOT_BALL = ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/empty_slot_ball");
     private static final ResourceLocation EMPTY_SLOT_BLOCK = ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/empty_slot_block");
-    
+
+    private static final Component MCSM_LEATHER_APPLIES_TO = Component.translatable(
+                    Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.mcsm_leather.applies_to"))
+            )
+            .withStyle(DESCRIPTION_FORMAT);
+
+    private static final Component MCSM_LEATHER_INGREDIENTS = Component.translatable(
+                    Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.mcsm_leather.ingredients"))
+            )
+            .withStyle(DESCRIPTION_FORMAT);
+
+    private static final Component MCSM_LEATHER_BASE_SLOT_DESCRIPTION = Component.translatable(
+            Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.mcsm_leather.base_slot_description"))
+    );
+
+    private static final Component MCSM_LEATHER_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(
+            Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.mcsm_leather.additions_slot_description"))
+    );
+
+    private static final Component ARMOR_NUMBER_7_UPGRADE = Component.translatable(
+                    Util.makeDescriptionId("upgrade", ResourceLocation.fromNamespaceAndPath(MOD_ID, "armor_number_7"))
+            )
+            .withStyle(TITLE_FORMAT);
+
     private static final Component TITANIUM_UPGRADE_APPLIES_TO = Component.translatable(
                     Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.titanium_upgrade.applies_to"))
             )
@@ -145,6 +168,19 @@ public class StoryModeRebornSmithingTemplateItem extends SmithingTemplateItem {
     private static final Component GABRIEL_ARMOR_ADDITIONS_SLOT_DESCRIPTION = Component.translatable(
             Util.makeDescriptionId("item", ResourceLocation.fromNamespaceAndPath(MOD_ID, "smithing_template.gabriel_armor_upgrade.additions_slot_description"))
     );
+
+    public static StoryModeRebornSmithingTemplateItem createArmorNumber7Template() {
+        return new StoryModeRebornSmithingTemplateItem(
+                new Item.Properties().rarity(Rarity.UNCOMMON),
+                MCSM_LEATHER_APPLIES_TO,
+                MCSM_LEATHER_INGREDIENTS,
+                ARMOR_NUMBER_7_UPGRADE,
+                MCSM_LEATHER_BASE_SLOT_DESCRIPTION,
+                MCSM_LEATHER_ADDITIONS_SLOT_DESCRIPTION,
+                createXgsmiArmorIconList(),
+                createXgsmiUpgradeLeatherMaterial()
+        );
+    }
     
     public static StoryModeRebornSmithingTemplateItem createTitaniumUpgradeTemplate() {
         return new StoryModeRebornSmithingTemplateItem(
@@ -229,6 +265,14 @@ public class StoryModeRebornSmithingTemplateItem extends SmithingTemplateItem {
     private static List<ResourceLocation> createXgsmiArmorFullIconList() {
         return List.of(
                 EMPTY_SLOT_HELMET,
+                EMPTY_SLOT_CHESTPLATE,
+                EMPTY_SLOT_LEGGINGS,
+                EMPTY_SLOT_BOOTS
+        );
+    }
+
+    private static List<ResourceLocation> createXgsmiArmorIconList() {
+        return List.of(
                 EMPTY_SLOT_CHESTPLATE,
                 EMPTY_SLOT_LEGGINGS,
                 EMPTY_SLOT_BOOTS

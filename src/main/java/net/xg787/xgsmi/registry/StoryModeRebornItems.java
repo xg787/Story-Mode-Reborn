@@ -92,7 +92,7 @@ public class StoryModeRebornItems {
     public static final DeferredItem<Item> BASIC_ARMOR_TEMPLATE_4 = ITEMS.registerSimpleItem("basic_armor_template_4");
     public static final DeferredItem<Item> BASIC_ARMOR_TEMPLATE_5 = ITEMS.registerSimpleItem("basic_armor_template_5");
     public static final DeferredItem<Item> BASIC_ARMOR_TEMPLATE_6 = ITEMS.registerSimpleItem("basic_armor_template_6");
-    public static final DeferredItem<Item> BASIC_ARMOR_TEMPLATE_7 = ITEMS.registerSimpleItem("basic_armor_template_7");
+    public static final DeferredItem<Item> BASIC_ARMOR_TEMPLATE_7 = ITEMS.register("basic_armor_template_7", StoryModeRebornSmithingTemplateItem::createArmorNumber7Template);
     public static final DeferredItem<Item> BASIC_ARMOR_TEMPLATE_8 = ITEMS.registerSimpleItem("basic_armor_template_8");
 
     public static final DeferredItem<Item> BLANK_UPGRADE_SMITHING_TEMPLATE = ITEMS.registerSimpleItem("blank_upgrade_smithing_template", new Item.Properties().fireResistant());

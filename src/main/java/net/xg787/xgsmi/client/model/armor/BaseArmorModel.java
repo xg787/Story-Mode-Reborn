@@ -13,17 +13,17 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Function;
 
-public class ArmorModel extends HumanoidModel<LivingEntity> {
+public class BaseArmorModel extends HumanoidModel<LivingEntity> {
     public final ModelPart leftBoot;
     public final ModelPart rightBoot;
 
-    public ArmorModel(ModelPart pRoot) {
+    public BaseArmorModel(ModelPart pRoot) {
         super(pRoot);
         this.leftBoot = pRoot.getChild("left_boot");
         this.rightBoot = pRoot.getChild("right_boot");
     }
 
-    public ArmorModel(ModelPart pRoot, Function<ResourceLocation, RenderType> pRenderType) {
+    public BaseArmorModel(ModelPart pRoot, Function<ResourceLocation, RenderType> pRenderType) {
         super(pRoot, pRenderType);
         this.leftBoot = pRoot.getChild("left_boot");
         this.rightBoot = pRoot.getChild("right_boot");

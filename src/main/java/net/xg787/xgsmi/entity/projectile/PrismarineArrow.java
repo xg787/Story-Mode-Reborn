@@ -41,11 +41,6 @@ public class PrismarineArrow extends AbstractArrow {
         return this.getPickupItemStackOrigin().getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY);
     }
 
-    private void setPotionContents(PotionContents potionContents) {
-        this.getPickupItemStackOrigin().set(DataComponents.POTION_CONTENTS, potionContents);
-        this.updateColor();
-    }
-
     @Override
     protected void setPickupItemStack(ItemStack pickupItemStack) {
         super.setPickupItemStack(pickupItemStack);
@@ -55,10 +50,6 @@ public class PrismarineArrow extends AbstractArrow {
     private void updateColor() {
         PotionContents potioncontents = this.getPotionContents();
         this.entityData.set(ID_EFFECT_COLOR, potioncontents.equals(PotionContents.EMPTY) ? -1 : potioncontents.getColor());
-    }
-
-    public void addEffect(MobEffectInstance effectInstance) {
-        this.setPotionContents(this.getPotionContents().withEffectAdded(effectInstance));
     }
 
     @Override

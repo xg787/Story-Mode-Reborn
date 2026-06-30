@@ -11,10 +11,7 @@ import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 
 public class StoryModeRebornBlockRenderLayerMap {
     public static void onClientSetup(FMLClientSetupEvent event) {
-        for (var blockSupplier : List.of(
-                ATTACHED_WHITE_PUMPKIN_STEM,
-                WHITE_PUMPKIN_STEM
-        )) {
+        for (var blockSupplier : List.of(ATTACHED_WHITE_PUMPKIN_STEM, WHITE_PUMPKIN_STEM)) {
             ItemBlockRenderTypes.setRenderLayer(blockSupplier.get(), RenderType.cutout());
         }
     }

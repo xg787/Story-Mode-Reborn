@@ -4,7 +4,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 
-public class GabrielArmorModel extends ArmorModel {
+public class GabrielArmorModel extends BaseArmorModel {
 	public GabrielArmorModel(ModelPart root) {
         super(root);
 	}

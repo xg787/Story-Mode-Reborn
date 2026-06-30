@@ -35,12 +35,12 @@ public class ModelProperties {
             if (entity == null) {
                 return 0.0F;
             } else {
-                boolean isMainhand = entity.getMainHandItem() == stack;
+                boolean isMainHand = entity.getMainHandItem() == stack;
                 boolean isOffHand = entity.getOffhandItem() == stack;
                 if (entity.getMainHandItem().getItem() instanceof FishingRodItem) {
                     isOffHand = false;
                 }
-                return (isMainhand || isOffHand) && entity instanceof Player && ((Player) entity).fishing != null ? 1.0F : 0.0F;
+                return (isMainHand || isOffHand) && entity instanceof Player && ((Player) entity).fishing != null ? 1.0F : 0.0F;
             }
         });
     }
@@ -87,10 +87,6 @@ public class ModelProperties {
                 (stack, level, entity, i) -> CrossbowItem.isCharged(stack) ? 1.0F : 0.0F
         );
         ItemProperties.register(crossBow, ResourceLocation.withDefaultNamespace("firework"), (stack, level, entity, i) -> {
-            ChargedProjectiles chargedprojectiles = stack.get(DataComponents.CHARGED_PROJECTILES);
-            return chargedprojectiles != null && chargedprojectiles.contains(Items.FIREWORK_ROCKET) ? 1.0F : 0.0F;
-        });
-        ItemProperties.register(crossBow, ResourceLocation.fromNamespaceAndPath(MOD_ID, "firework"), (stack, level, entity, i) -> {
             ChargedProjectiles chargedprojectiles = stack.get(DataComponents.CHARGED_PROJECTILES);
             return chargedprojectiles != null && chargedprojectiles.contains(Items.FIREWORK_ROCKET) ? 1.0F : 0.0F;
         });

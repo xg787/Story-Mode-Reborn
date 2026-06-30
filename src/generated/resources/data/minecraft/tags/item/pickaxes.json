@@ -1,3 +1,10 @@
 {
-  "values": []
+  "values": [
+    "story_mode_reborn:prismarine_pickaxe",
+    "story_mode_reborn:royal_pickaxe",
+    "story_mode_reborn:titanium_pickaxe",
+    "story_mode_reborn:enchanted_titanium_pickaxe",
+    "story_mode_reborn:romeum_pickaxe",
+    "story_mode_reborn:enchanted_romeum_pickaxe"
+  ]
 }

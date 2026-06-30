@@ -4,6 +4,7 @@ import net.minecraft.client.renderer.entity.ArrowRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
 import net.xg787.xgsmi.entity.projectile.PrismarineArrow;
+import org.jetbrains.annotations.NotNull;
 
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
@@ -17,7 +18,7 @@ public class TippablePrismarineArrowRenderer extends ArrowRenderer<PrismarineArr
     }
 
     @Override
-    public ResourceLocation getTextureLocation(PrismarineArrow entity) {
+    public @NotNull ResourceLocation getTextureLocation(PrismarineArrow entity) {
         return entity.getColor() > 0 ? TIPPED_ARROW_LOCATION : NORMAL_ARROW_LOCATION;
     }
 }

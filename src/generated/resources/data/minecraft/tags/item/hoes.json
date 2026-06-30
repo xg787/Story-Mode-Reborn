@@ -1,3 +1,10 @@
 {
-  "values": []
+  "values": [
+    "story_mode_reborn:prismarine_hoe",
+    "story_mode_reborn:royal_hoe",
+    "story_mode_reborn:titanium_hoe",
+    "story_mode_reborn:enchanted_titanium_hoe",
+    "story_mode_reborn:romeum_hoe",
+    "story_mode_reborn:enchanted_romeum_hoe"
+  ]
 }

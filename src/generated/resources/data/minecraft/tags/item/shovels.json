@@ -1,3 +1,10 @@
 {
-  "values": []
+  "values": [
+    "story_mode_reborn:prismarine_shovel",
+    "story_mode_reborn:royal_shovel",
+    "story_mode_reborn:titanium_shovel",
+    "story_mode_reborn:enchanted_titanium_shovel",
+    "story_mode_reborn:romeum_shovel",
+    "story_mode_reborn:enchanted_romeum_shovel"
+  ]
 }

@@ -12,6 +12,7 @@ public class EquipableCarvedWhitePumpkinBlock extends CarvedWhitePumpkinBlock  i
     public MapCodec<EquipableCarvedPumpkinBlock> codec() {
         return CODEC;
     }
+
     public EquipableCarvedWhitePumpkinBlock(Properties properties) {
         super(properties);
     }

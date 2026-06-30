@@ -11,9 +11,7 @@ import net.xg787.xgsmi.registry.StoryModeRebornItems;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
-import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
-import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
 import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
 
@@ -22,7 +20,6 @@ public class StoryModeReborn {
     public static final String MOD_ID = "story_mode_reborn";
 
     public StoryModeReborn(IEventBus modEventBus) {
-        modEventBus.addListener(this::commonSetup);
         StoryModeRebornBlocks.BLOCKS.register(modEventBus);
         StoryModeRebornItems.ITEMS.register(modEventBus);
         StoryModeRebornEntities.ENTITY_TYPES.register(modEventBus);
@@ -40,12 +37,5 @@ public class StoryModeReborn {
                 event.setCanceled(true);
             }
         }
-    }
-
-    private void commonSetup(FMLCommonSetupEvent event) {
-    }
-
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event) {
     }
 }

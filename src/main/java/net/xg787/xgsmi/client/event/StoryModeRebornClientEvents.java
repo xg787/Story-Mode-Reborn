@@ -16,6 +16,7 @@ public class StoryModeRebornClientEvents {
         modEventBus.addListener(StoryModeRebornClientEvents::registerEntityRenderers);
         modEventBus.addListener(StoryModeRebornClientEvents::registerClientExtensions);
     }
+
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(StoryModeRebornEntities.PRISMARINE_ARROW.get(), TippablePrismarineArrowRenderer::new);
     }

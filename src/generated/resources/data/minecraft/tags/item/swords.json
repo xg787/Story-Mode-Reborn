@@ -1,3 +1,10 @@
 {
-  "values": []
+  "values": [
+    "story_mode_reborn:prismarine_sword",
+    "story_mode_reborn:royal_sword",
+    "story_mode_reborn:titanium_sword",
+    "story_mode_reborn:enchanted_titanium_sword",
+    "story_mode_reborn:romeum_sword",
+    "story_mode_reborn:enchanted_romeum_sword"
+  ]
 }

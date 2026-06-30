@@ -18,9 +18,16 @@ public class StoryModeRebornTags {
 
     public static class Items {
         public static final TagKey<Item> PRISMARINE_TOOL_MATERIAL = createTag("prismarine_tool_material");
+        public static final TagKey<Item> STORY_MODE_ARMOR = createTag("story_mode_armor");
+        public static final TagKey<Item> BASIC_ARMOR_TEMPLATES = createTag("basic_armor_templates");
+        public static final TagKey<Item> ARMOR_TEMPLATES = createTag("armor_templates");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
+        }
+
+        private static TagKey<Item> createCommonTag(String name) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
         }
     }
 }

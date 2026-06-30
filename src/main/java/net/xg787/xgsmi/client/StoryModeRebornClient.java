@@ -26,11 +26,6 @@ public class StoryModeRebornClient {
     }
 
     public void registerItemColors(RegisterColorHandlersEvent.Item event){
-        event.getItemColors().register(
-                (stack, color) -> color > 0
-                        ? -1
-                        : FastColor.ARGB32.opaque(stack.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).getColor()),
-                TIPPED_PRISMARINE_ARROW
-        );
+        event.getItemColors().register((stack, color) -> color > 0 ? -1 : FastColor.ARGB32.opaque(stack.getOrDefault(DataComponents.POTION_CONTENTS, PotionContents.EMPTY).getColor()), TIPPED_PRISMARINE_ARROW);
     }
 }

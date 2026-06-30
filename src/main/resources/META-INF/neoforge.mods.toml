@@ -10,7 +10,7 @@ displayName="${mod_name}"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/xgs-storymode-items-and-more"
 logoFile="icon.png"
 authors="Xg787"
-description='''A Mod that adds  Story Mode Items, Armor and More'''
+description='''A Mod that adds Story Mode Items, Armor and More'''
 
 [[mixins]]
     config="${mod_id}.mixins.json"

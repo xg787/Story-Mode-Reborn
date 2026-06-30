@@ -26,13 +26,14 @@ public class CarvedWhitePumpkinBlock extends CarvedPumpkinBlock {
     public CarvedWhitePumpkinBlock(Properties properties) {
         super(properties);
     }
+
     @Nullable
     private BlockPattern snowGolemFull;
+
     @Nullable
     private BlockPattern ironGolemFull;
 
-    private static final Predicate<BlockState> PUMPKINS_PREDICATE = p_51396_ -> p_51396_ != null
-            && (p_51396_.is(CARVED_WHITE_PUMPKIN) || p_51396_.is(WHITE_JACK_O_LANTERN));
+    private static final Predicate<BlockState> PUMPKINS_PREDICATE = p_51396_ -> p_51396_ != null && (p_51396_.is(CARVED_WHITE_PUMPKIN) || p_51396_.is(WHITE_JACK_O_LANTERN));
 
     @Override
     protected void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
@@ -90,7 +91,7 @@ public class CarvedWhitePumpkinBlock extends CarvedPumpkinBlock {
                     .aisle("~^~", "###", "~#~")
                     .where('^', BlockInWorld.hasState(PUMPKINS_PREDICATE))
                     .where('#', BlockInWorld.hasState(BlockStatePredicate.forBlock(Blocks.IRON_BLOCK)))
-                    .where('~', p_284868_ -> p_284868_.getState().isAir())
+                    .where('~', block -> block.getState().isAir())
                     .build();
         }
 

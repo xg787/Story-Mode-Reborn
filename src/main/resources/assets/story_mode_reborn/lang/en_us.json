@@ -248,6 +248,11 @@
   "item.story_mode_reborn.armor_template_25": "Armor Template",
   "item.story_mode_reborn.armor_template_26": "Armor Template",
 
+  "item.story_mode_reborn.smithing_template.mcsm_leather.applies_to": "Leather Armor",
+  "item.story_mode_reborn.smithing_template.mcsm_leather.ingredients": "Leather",
+  "item.story_mode_reborn.smithing_template.mcsm_leather.base_slot_description": "Add Leather armor",
+  "item.story_mode_reborn.smithing_template.mcsm_leather.additions_slot_description": "Add Leather",
+
   "item.story_mode_reborn.smithing_template.titanium_upgrade.applies_to": "Netherite Equipment",
   "item.story_mode_reborn.smithing_template.titanium_upgrade.ingredients": "Titanium Ingot",
   "item.story_mode_reborn.smithing_template.titanium_upgrade.base_slot_description": "Add Netherite armor, weapon, or tool",
@@ -268,6 +273,7 @@
   "item.story_mode_reborn.smithing_template.romeum_enchant.applies_to": "Romeum Equipment",
   "item.story_mode_reborn.smithing_template.romeum_enchant.base_slot_description": "Add Romeum armor, weapon, or tool",
 
+  "upgrade.story_mode_reborn.armor_number_7": "Armor Number 7",
 
   "upgrade.story_mode_reborn.titanium_upgrade": "Titanium Upgrade",
   "upgrade.story_mode_reborn.titanium_enchant": "Titanium Enchant",

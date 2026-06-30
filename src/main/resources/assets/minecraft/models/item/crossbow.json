@@ -69,9 +69,9 @@
         {
             "predicate": {
                 "charged": 1,
-                "xgsmi:prismarine_arrow": 1
+                "story_mode_reborn:prismarine_arrow": 1
             },
-            "model": "xgsmi:item/crossbow_prismarine_arrow"
+            "model": "story_mode_reborn:item/crossbow_prismarine_arrow"
         }
     ]
 }
