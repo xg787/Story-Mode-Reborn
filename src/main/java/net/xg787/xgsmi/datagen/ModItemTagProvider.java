@@ -80,6 +80,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.CROSSBOW_ENCHANTABLE)
                 .add(PRISMARINE_CROSSBOW.get());
 
+        tag(Tags.Items.RANGED_WEAPON_TOOLS)
+                .add(PRISMARINE_BOW.get())
+                .add(PRISMARINE_CROSSBOW.get());
+
         tag(ItemTags.FISHING_ENCHANTABLE)
                 .add(PRISMARINE_FISHING_ROD.get());
 
@@ -106,15 +110,16 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.EQUIPPABLE_ENCHANTABLE)
                 .add(CARVED_WHITE_PUMPKIN.asItem());
 
+        tag(ItemTags.DURABILITY_ENCHANTABLE)
+                .add(PRISMARINE_BOW.get())
+                .add(PRISMARINE_CROSSBOW.get())
+                .add(PRISMARINE_FISHING_ROD.get());
+
         tag(ItemTags.VANISHING_ENCHANTABLE)
                 .add(CARVED_WHITE_PUMPKIN.asItem())
                 .add(PRISMARINE_BOW.get())
                 .add(PRISMARINE_CROSSBOW.get())
-                .add(PRISMARINE_FISHING_ROD.get())
-                .add(ENCHANTED_FLINT_AND_STEEL_DIAMOND.get())
-                .add(ENCHANTED_FLINT_AND_STEEL_EMERALD.get())
-                .add(ENCHANTED_FLINT_AND_STEEL_GOLD.get())
-                .add(ENCHANTED_FLINT_AND_STEEL_REDSTONE.get());
+                .add(PRISMARINE_FISHING_ROD.get());
 
         tag(ItemTags.HEAD_ARMOR)
                 .add(TITANIUM_HELMET.get())

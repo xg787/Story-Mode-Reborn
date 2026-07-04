@@ -142,6 +142,7 @@
   "item.story_mode_reborn.tipped_prismarine_arrow.effect.wind_charged": "Prismarine Arrow of Wind Charging",
 
   "item.story_mode_reborn.white_pumpkin_seeds": "White Pumpkin Seeds",
+  "item.story_mode_reborn.white_pumpkin_pie": "White Pumpkin Pie",
   "block.story_mode_reborn.white_pumpkin": "White Pumpkin",
   "block.story_mode_reborn.carved_white_pumpkin": "Carved White Pumpkin",
   "block.story_mode_reborn.white_jack_o_lantern": "White Jack o'Lantern",
@@ -260,8 +261,8 @@
   "item.story_mode_reborn.smithing_template.titanium_enchant.applies_to": "Titanium Equipment",
   "item.story_mode_reborn.smithing_template.titanium_enchant.base_slot_description": "Add Titanium armor, weapon, or tool",
 
-  "item.story_mode_reborn.smithing_template.mcsm_titanium_armor_upgrade.applies_to": "Enchanted Titanium Equipment",
-  "item.story_mode_reborn.smithing_template.mcsm_titanium_armor_upgrade.base_slot_description": "Add Enchanted Titanium armor, weapon, or tool",
+  "item.story_mode_reborn.smithing_template.mcsm_titanium_armor_upgrade.applies_to": "Enchanted Titanium armor",
+  "item.story_mode_reborn.smithing_template.mcsm_titanium_armor_upgrade.base_slot_description": "Add Enchanted Titanium armor",
 
   "item.story_mode_reborn.smithing_template.gabriel_upgrade.ingredients": "Diamond",
   "item.story_mode_reborn.smithing_template.gabriel_upgrade.additions_slot_description": "Add Diamond",

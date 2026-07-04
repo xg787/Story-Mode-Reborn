@@ -40,6 +40,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ICON.get());
 
         basicItem(WHITE_PUMPKIN_SEEDS.get());
+        basicItem(WHITE_PUMPKIN_PIE.get());
         handheldItem(PRISMARINE_ROD.get());
         handheldItem(PRISMARINE_SWORD.get());
         handheldItem(PRISMARINE_PICKAXE.get());

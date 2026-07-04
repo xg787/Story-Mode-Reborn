@@ -38,8 +38,12 @@ public class StoryModeRebornBlocks {
     public static final DeferredBlock<Block> ATTACHED_WHITE_PUMPKIN_STEM = BLOCKS.register("attached_white_pumpkin_stem", () -> new AttachedStemBlock(WHITE_PUMPKIN_STEM_REF, WHITE_PUMPKIN_REF, WHITE_PUMPKIN_SEEDS.getKey(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).noCollission().instabreak().sound(SoundType.WOOD).pushReaction(PushReaction.DESTROY)));
     public static final DeferredBlock<Block> WHITE_PUMPKIN_STEM = BLOCKS.register("white_pumpkin_stem", () -> new StemBlock(WHITE_PUMPKIN_REF, ATTACHED_WHITE_PUMPKIN_STEM_REF, WHITE_PUMPKIN_SEEDS.getKey(), BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_LIGHT_GRAY).noCollission().randomTicks().instabreak().sound(SoundType.HARD_CROP).pushReaction(PushReaction.DESTROY)));
 
-    private static DeferredBlock<StairBlock> registerStairs(String string, Supplier<Block> block) {
-        return register(string, () -> new StairBlock(block.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(block.get())));
+    private static DeferredBlock<StairBlock> registerStairs(String name, Supplier<Block> block) {
+        return register(name, () -> new StairBlock(block.get().defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(block.get())));
+    }
+
+    private static DeferredBlock<SlabBlock> registerSlab(String name, Supplier<Block> block) {
+        return register(name, () -> new SlabBlock(BlockBehaviour.Properties.ofFullCopy(block.get())));
     }
 
     public static <T extends Block> DeferredBlock<T> register(String name, Supplier<T> block){

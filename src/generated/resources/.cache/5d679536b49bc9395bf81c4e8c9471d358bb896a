@@ -1,17 +1,19 @@
-// 1.21.1	2026-06-30T19:25:33.6075694	Tags for minecraft:item mod id story_mode_reborn
+// 1.21.1	2026-07-01T15:30:14.4871496	Tags for minecraft:item mod id story_mode_reborn
 411ab3c3c3f4edb743d906cfa0c6c4ac9b65d6b0 data/c/tags/item/tools/bow.json
 e47c3dce7948f3c1373b91a34a43e7af090ff3b7 data/c/tags/item/tools/crossbow.json
 beb98eca797a4d369684450c6973a20fba8b5dbe data/c/tags/item/tools/fishing_rod.json
 e8e469b7006f06065bf9af2ef498d990263f4782 data/c/tags/item/tools/igniter.json
+3a52517a498f207a4ad58310d071742e2d817efe data/c/tags/item/tools/ranged_weapon.json
 61ecf60ff4cacd5a6921ee70173d91b585b8b031 data/minecraft/tags/item/arrows.json
 1d212c8ae85cc41b364c2ed71a642beb3356d437 data/minecraft/tags/item/axes.json
 aae146095536916a75643ee082b1a1926b494ec6 data/minecraft/tags/item/chest_armor.json
 e8e469b7006f06065bf9af2ef498d990263f4782 data/minecraft/tags/item/creeper_igniters.json
 411ab3c3c3f4edb743d906cfa0c6c4ac9b65d6b0 data/minecraft/tags/item/enchantable/bow.json
 e47c3dce7948f3c1373b91a34a43e7af090ff3b7 data/minecraft/tags/item/enchantable/crossbow.json
+33792b74817291e1b44096c1b49f898f5bea1e6e data/minecraft/tags/item/enchantable/durability.json
 71691369fa47c65fb1f91e1bdf76b21c84e75c5f data/minecraft/tags/item/enchantable/equippable.json
 beb98eca797a4d369684450c6973a20fba8b5dbe data/minecraft/tags/item/enchantable/fishing.json
-71691369fa47c65fb1f91e1bdf76b21c84e75c5f data/minecraft/tags/item/enchantable/vanishing.json
+332140ca948c8fee6e39c663133ccb80b8b04a8a data/minecraft/tags/item/enchantable/vanishing.json
 f6b82eed0c241bf51f73e0a040f5156232eda501 data/minecraft/tags/item/foot_armor.json
 c88bd34fc519cab69ed707449432a02bec06865c data/minecraft/tags/item/head_armor.json
 f00bbce48d52d5d2856125332b1e5efa54fb37f5 data/minecraft/tags/item/hoes.json

@@ -1,4 +1,4 @@
-// 1.21.1	2026-06-24T10:32:57.7018848	Item Models: story_mode_reborn
+// 1.21.1	2026-07-01T15:11:38.1421813	Item Models: story_mode_reborn
 a7d1866f4090926385b4780869364093cd0b2845 assets/story_mode_reborn/models/item/basic_armor_template.json
 53ff6502e7a979e7527b0ff6c1ed34e6efaf7c3d assets/story_mode_reborn/models/item/blank_armor_template.json
 770184e054dbaa5a636457a28e24ae187032ebde assets/story_mode_reborn/models/item/blank_basic_armor_template.json
@@ -228,4 +228,5 @@ f79efe1aef2a6cd6f94d6112eceac57bcab5acae assets/story_mode_reborn/models/item/ti
 68a0edd1012155c3498d390ea58456b4d319fcc9 assets/story_mode_reborn/models/item/titanium_shovel.json
 cfbfea26a1e4be0a45ac481e674d3ec33f738e42 assets/story_mode_reborn/models/item/titanium_sword.json
 0a5da39a365c8dd5bc35afb4194354b9aab0f20e assets/story_mode_reborn/models/item/titanium_upgrade_smithing_template.json
+8a58153c454e33befd5ab8190b9911092c46c40a assets/story_mode_reborn/models/item/white_pumpkin_pie.json
 620fd7a619730a8af89799d7d96daa2f83f238ce assets/story_mode_reborn/models/item/white_pumpkin_seeds.json

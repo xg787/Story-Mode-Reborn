@@ -14,6 +14,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import static net.minecraft.world.item.CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS;
 import static net.minecraft.world.item.Items.*;
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
 
 public class StoryModeRebornCreativeModeTab {
@@ -26,6 +27,13 @@ public class StoryModeRebornCreativeModeTab {
             .build());
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.insertAfter(PUMPKIN_SEEDS.getDefaultInstance(), WHITE_PUMPKIN_SEEDS.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(JACK_O_LANTERN.getDefaultInstance(), WHITE_PUMPKIN.get().asItem().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(WHITE_PUMPKIN.get().asItem().getDefaultInstance(), CARVED_WHITE_PUMPKIN.get().asItem().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(CARVED_WHITE_PUMPKIN.get().asItem().getDefaultInstance(), WHITE_JACK_O_LANTERN.get().asItem().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+        }
+
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.insertAfter(STONE_HOE.getDefaultInstance(), PRISMARINE_SHOVEL.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(PRISMARINE_SHOVEL.get().getDefaultInstance(), PRISMARINE_PICKAXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
@@ -100,6 +108,18 @@ public class StoryModeRebornCreativeModeTab {
                                     event.getParameters().enabledFeatures()
                             )
                     );
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.insertAfter(PUMPKIN_PIE.getDefaultInstance(), WHITE_PUMPKIN_PIE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.insertAfter(ANCIENT_DEBRIS.getDefaultInstance(), RAW_TITANIUM.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(RAW_TITANIUM.get().getDefaultInstance(), RAW_ROMEUM.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(NETHERITE_INGOT.getDefaultInstance(), TITANIUM_INGOT.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(TITANIUM_INGOT.get().getDefaultInstance(), ROMEUM_INGOT.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(STICK.getDefaultInstance(), PRISMARINE_ROD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
         }
     }
 

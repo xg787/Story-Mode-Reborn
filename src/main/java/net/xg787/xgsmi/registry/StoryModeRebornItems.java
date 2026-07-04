@@ -1,5 +1,6 @@
 package net.xg787.xgsmi.registry;
 
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -14,6 +15,7 @@ public class StoryModeRebornItems {
     public static final DeferredItem<Item> ICON = ITEMS.registerSimpleItem("icon");
 
     public static final DeferredItem<Item> WHITE_PUMPKIN_SEEDS = ITEMS.register("white_pumpkin_seeds", () -> new ItemNameBlockItem(WHITE_PUMPKIN_STEM.get(), new Item.Properties()));
+    public static final DeferredItem<Item> WHITE_PUMPKIN_PIE = ITEMS.registerSimpleItem("white_pumpkin_pie", new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.3F).build()));
 
     public static final DeferredItem<Item> PRISMARINE_ROD = ITEMS.registerSimpleItem("prismarine_rod");
     public static final DeferredItem<Item> PRISMARINE_FISHING_ROD = ITEMS.register("prismarine_fishing_rod", () -> new FishingRodItem(new Item.Properties().durability(128)));

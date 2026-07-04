@@ -15,6 +15,7 @@ public class StoryModeRebornCreativeModeTabSections {
     public static void addCreativeSections(FMLClientSetupEvent event) {
         ITEMS.add(
                 () -> WHITE_PUMPKIN_SEEDS,
+                () -> WHITE_PUMPKIN_PIE,
                 () -> PRISMARINE_ROD,
                 () -> PRISMARINE_FISHING_ROD,
                 () -> PRISMARINE_SWORD,
