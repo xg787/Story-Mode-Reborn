@@ -65,9 +65,9 @@ public class StoryModeRebornCreativeModeTabSections {
                 () -> WHITE_PUMPKIN,
                 () -> CARVED_WHITE_PUMPKIN,
                 () -> WHITE_JACK_O_LANTERN,
-                () -> TITANIUM_ORE,
+                () -> DEEPSLATE_TITANIUM_ORE,
                 () -> TITANIUM_BLOCK,
-                () -> ROMEUM_ORE,
+                () -> NETHER_ROMEUM_ORE,
                 () -> ROMEUM_BLOCK
         );
 

@@ -7,7 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.xg787.xgsmi.item.*;
 
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
-import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.WHITE_PUMPKIN_STEM;
+import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 
 public class StoryModeRebornItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
@@ -35,10 +35,10 @@ public class StoryModeRebornItems {
     public static final DeferredItem<Item> ROYAL_SHOVEL = ITEMS.register("royal_shovel", () -> new ShovelItem(StoryModeRebornToolTiers.ROYAL, new Item.Properties().attributes(ShovelItem.createAttributes(StoryModeRebornToolTiers.ROYAL, 1.5F, -3.0F))));
     public static final DeferredItem<Item> ROYAL_HOE = ITEMS.register("royal_hoe", () ->  new HoeItem(StoryModeRebornToolTiers.ROYAL, new Item.Properties().attributes(HoeItem.createAttributes(StoryModeRebornToolTiers.ROYAL, -2.0F, 0.0F))));
 
-    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_DIAMOND = ITEMS.register("enchanted_flint_and_steel_diamond", () -> new FlintAndSteelItem(new Item.Properties().fireResistant()));
-    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_EMERALD = ITEMS.register("enchanted_flint_and_steel_emerald", () -> new FlintAndSteelItem(new Item.Properties().fireResistant()));
-    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_GOLD = ITEMS.register("enchanted_flint_and_steel_gold", () -> new FlintAndSteelItem(new Item.Properties().fireResistant()));
-    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_REDSTONE = ITEMS.register("enchanted_flint_and_steel_redstone", () -> new FlintAndSteelItem(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_DIAMOND = ITEMS.register("enchanted_flint_and_steel_diamond", () -> new EnchantedFlintAndSteelDiamondItem(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_EMERALD = ITEMS.register("enchanted_flint_and_steel_emerald", () -> new EnchantedFlintAndSteelEmeraldItem(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_GOLD = ITEMS.register("enchanted_flint_and_steel_gold", () -> new EnchantedFlintAndSteelGoldItem(new Item.Properties().fireResistant()));
+    public static final DeferredItem<Item> ENCHANTED_FLINT_AND_STEEL_REDSTONE = ITEMS.register("enchanted_flint_and_steel_redstone", () -> new EnchantedFlintAndSteelRedstoneItem(new Item.Properties().fireResistant()));
 
     public static final DeferredItem<Item> RAW_TITANIUM = ITEMS.registerSimpleItem("raw_titanium");
     public static final DeferredItem<Item> TITANIUM_INGOT = ITEMS.registerSimpleItem("titanium_ingot");

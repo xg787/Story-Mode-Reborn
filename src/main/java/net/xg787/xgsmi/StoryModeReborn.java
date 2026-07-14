@@ -3,10 +3,7 @@ package net.xg787.xgsmi;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.event.entity.living.EnderManAngerEvent;
-import net.xg787.xgsmi.registry.StoryModeRebornBlocks;
-import net.xg787.xgsmi.registry.StoryModeRebornCreativeModeTab;
-import net.xg787.xgsmi.registry.StoryModeRebornEntities;
-import net.xg787.xgsmi.registry.StoryModeRebornItems;
+import net.xg787.xgsmi.registry.*;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -22,6 +19,7 @@ public class StoryModeReborn {
     public StoryModeReborn(IEventBus modEventBus) {
         StoryModeRebornBlocks.BLOCKS.register(modEventBus);
         StoryModeRebornItems.ITEMS.register(modEventBus);
+        StoryModeRebornSounds.SOUND_EVENTS.register(modEventBus);
         StoryModeRebornEntities.ENTITY_TYPES.register(modEventBus);
         StoryModeRebornCreativeModeTab.CREATIVE_MODE_TABS.register(modEventBus);
 

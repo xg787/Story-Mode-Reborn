@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "story_mode_reborn:block/romeum_ore"
-  }
-}

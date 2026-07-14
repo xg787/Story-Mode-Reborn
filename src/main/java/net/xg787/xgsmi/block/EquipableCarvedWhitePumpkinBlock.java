@@ -6,12 +6,7 @@ import net.minecraft.world.item.Equipable;
 import net.minecraft.world.level.block.EquipableCarvedPumpkinBlock;
 
 public class EquipableCarvedWhitePumpkinBlock extends CarvedWhitePumpkinBlock  implements Equipable {
-    public static final MapCodec<EquipableCarvedPumpkinBlock> CODEC = simpleCodec(EquipableCarvedPumpkinBlock::new);
-
-    @Override
-    public MapCodec<EquipableCarvedPumpkinBlock> codec() {
-        return CODEC;
-    }
+    public static final MapCodec<EquipableCarvedWhitePumpkinBlock> CODEC = simpleCodec(EquipableCarvedWhitePumpkinBlock::new);
 
     public EquipableCarvedWhitePumpkinBlock(Properties properties) {
         super(properties);
@@ -20,5 +15,10 @@ public class EquipableCarvedWhitePumpkinBlock extends CarvedWhitePumpkinBlock  i
     @Override
     public EquipmentSlot getEquipmentSlot() {
         return EquipmentSlot.HEAD;
+    }
+
+    @Override
+    public MapCodec<EquipableCarvedWhitePumpkinBlock> codec() {
+        return CODEC;
     }
 }

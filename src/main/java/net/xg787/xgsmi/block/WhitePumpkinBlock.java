@@ -27,12 +27,7 @@ import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKI
 import static net.xg787.xgsmi.registry.StoryModeRebornItems.WHITE_PUMPKIN_SEEDS;
 
 public class WhitePumpkinBlock extends Block {
-    public static final MapCodec<PumpkinBlock> CODEC = simpleCodec(PumpkinBlock::new);
-
-    @Override
-    public MapCodec<PumpkinBlock> codec() {
-        return CODEC;
-    }
+    public static final MapCodec<WhitePumpkinBlock> CODEC = simpleCodec(WhitePumpkinBlock::new);
 
     public WhitePumpkinBlock(BlockBehaviour.Properties properties) {
         super(properties);
@@ -67,5 +62,10 @@ public class WhitePumpkinBlock extends Block {
             player.awardStat(Stats.ITEM_USED.get(Items.SHEARS));
             return ItemInteractionResult.sidedSuccess(level.isClientSide);
         }
+    }
+
+    @Override
+    public MapCodec<WhitePumpkinBlock> codec() {
+        return CODEC;
     }
 }

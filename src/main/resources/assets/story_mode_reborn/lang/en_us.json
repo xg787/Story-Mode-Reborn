@@ -1,8 +1,9 @@
 {
-  "block.story_mode_reborn.romeum_ore": "Romeum Ore",
+  "block.story_mode_reborn.nether_romeum_ore": "Romeum Ore",
   "block.story_mode_reborn.romeum_block": "Block of Romeum",
-  "block.story_mode_reborn.titanium_ore": "Titanium Ore",
+  "block.story_mode_reborn.deepslate_titanium_ore": "Titanium Ore",
   "block.story_mode_reborn.titanium_block": "Block of Titanium",
+
   "item.story_mode_reborn.ivor_armor_leggings": "Ivor Leggings",
   "item.story_mode_reborn.armor_number_7_boots": "Armor number 7 Boots",
   "item.story_mode_reborn.star_shield_armor_leggings": "Star Shield Leggings",
@@ -51,7 +52,6 @@
   "item.story_mode_reborn.ivor_armor_chestplate": "Ivor Chestplate",
   "item.story_mode_reborn.enderman_armor_chestplate": "Enderman Chestplate",
   "item.story_mode_reborn.axel_armor_boots": "Axel Boots",
-
   "item.story_mode_reborn.enchanted_diamond_axe": "Enchanted Diamond Axe",
   "item.story_mode_reborn.lukasarmor_leggings": "Lukas Leggings",
   "item.story_mode_reborn.champion_of_the_nether_helmet": "Champion of the Nether Helmet",
@@ -101,6 +101,7 @@
   "item.story_mode_reborn.champion_of_the_end_boots": "Champion of the End Boots",
   "item.story_mode_reborn.sword_breaker_armor_chestplate": "Sword Breaker Chestplate",
   "item.story_mode_reborn.golden_apple_armor_leggings": "Golden Apple Leggings",
+
   "tooltip.story_mode_reborn.prismarine_arrow": "Ignores Water",
   "entity.story_mode_reborn.prismarine_arrow": "Prismarine Arrow",
   "item.story_mode_reborn.prismarine_rod": "Prismarine Rod",
@@ -159,6 +160,14 @@
   "item.story_mode_reborn.enchanted_flint_and_steel_emerald": "Enchanted Flint and Steel",
   "item.story_mode_reborn.enchanted_flint_and_steel_gold": "Enchanted Flint and Steel",
   "item.story_mode_reborn.enchanted_flint_and_steel_redstone": "Enchanted Flint and Steel",
+  "block.story_mode_reborn.enchanted_fire_diamond": "Enchanted Fire",
+  "block.story_mode_reborn.enchanted_fire_diamond_extension": "Enchanted Fire",
+  "block.story_mode_reborn.enchanted_fire_emerald": "Enchanted Fire",
+  "block.story_mode_reborn.enchanted_fire_emerald_extension": "Enchanted Fire",
+  "block.story_mode_reborn.enchanted_fire_gold": "Enchanted Fire",
+  "block.story_mode_reborn.enchanted_fire_gold_extension": "Enchanted Fire",
+  "block.story_mode_reborn.enchanted_fire_redstone": "Enchanted Fire",
+  "block.story_mode_reborn.enchanted_fire_redstone_extension": "Enchanted Fire",
 
   "item.story_mode_reborn.titanium_sword": "Titanium Sword",
   "item.story_mode_reborn.titanium_pickaxe": "Titanium Pickaxe",

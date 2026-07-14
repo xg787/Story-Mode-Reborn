@@ -1,0 +1,6 @@
+{
+  "parent": "story_mode_reborn:block/template_fire_0",
+  "textures": {
+    "fire": "story_mode_reborn:block/enchanted_fire_emerald_0"
+  }
+}

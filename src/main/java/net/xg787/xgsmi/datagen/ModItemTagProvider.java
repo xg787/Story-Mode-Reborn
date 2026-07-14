@@ -17,8 +17,7 @@ import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
 
 public class ModItemTagProvider extends ItemTagsProvider {
-    public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider,
-                              CompletableFuture<TagLookup<Block>> blockTags, ExistingFileHelper existingFileHelper) {
+    public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags, ExistingFileHelper existingFileHelper) {
         super(output, lookupProvider, blockTags, MOD_ID, existingFileHelper);
     }
 
@@ -102,6 +101,12 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ENCHANTED_FLINT_AND_STEEL_GOLD.get())
                 .add(ENCHANTED_FLINT_AND_STEEL_REDSTONE.get());
 
+        tag(StoryModeRebornTags.Items.ENCHANTED_IGNITER)
+                .add(ENCHANTED_FLINT_AND_STEEL_DIAMOND.get())
+                .add(ENCHANTED_FLINT_AND_STEEL_EMERALD.get())
+                .add(ENCHANTED_FLINT_AND_STEEL_GOLD.get())
+                .add(ENCHANTED_FLINT_AND_STEEL_REDSTONE.get());
+
         tag(StoryModeRebornTags.Items.PRISMARINE_TOOL_MATERIAL)
                 .add(Items.PRISMARINE)
                 .add(Items.PRISMARINE_BRICKS)
@@ -155,9 +160,107 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(GABRIEL_LEGGINGS.get())
                 .add(GABRIEL_BOOTS.get());
 
+        tag(Tags.Items.HIDDEN_FROM_RECIPE_VIEWERS)
+                .add(ICON.get());
+
+        tag(Tags.Items.SEEDS)
+                .add(WHITE_PUMPKIN_SEEDS.get());
+
+        tag(StoryModeRebornTags.Items.SEEDS_WHITE_PUMPKIN)
+                .add(WHITE_PUMPKIN_SEEDS.get());
+
+        tag(ItemTags.CHICKEN_FOOD)
+                .add(WHITE_PUMPKIN_SEEDS.get());
+
+        tag(ItemTags.PARROT_FOOD)
+                .add(WHITE_PUMPKIN_SEEDS.get());
+
+        tag(Tags.Items.ANIMAL_FOODS)
+                .add(WHITE_PUMPKIN_SEEDS.get());
+
+        tag(StoryModeRebornTags.Items.SEEDS_WHITE_PUMPKIN)
+                .add(WHITE_PUMPKIN_SEEDS.get());
+
+        tag(Tags.Items.FOODS_PIE)
+                .add(WHITE_PUMPKIN_PIE.get());
+
+        tag(Tags.Items.CROPS)
+                .add(WHITE_PUMPKIN.asItem());
+
+        tag(StoryModeRebornTags.Items.WHITE_PUMPKINS)
+                .add(WHITE_PUMPKIN.asItem())
+                .add(CARVED_WHITE_PUMPKIN.asItem())
+                .add(WHITE_JACK_O_LANTERN.asItem());
+
+        tag(StoryModeRebornTags.Items.WHITE_PUMPKINS_NORMAL)
+                .add(WHITE_PUMPKIN.asItem());
+
+        tag(StoryModeRebornTags.Items.WHITE_PUMPKINS_CARVED)
+                .add(CARVED_WHITE_PUMPKIN.asItem());
+
+        tag(StoryModeRebornTags.Items.WHITE_PUMPKINS_JACK_O_LANTERNS)
+                .add(WHITE_JACK_O_LANTERN.asItem());
+
+        tag(StoryModeRebornTags.Items.CROPS_WHITE_PUMPKIN)
+                .add(WHITE_PUMPKIN.asItem());
+
+        tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE)
+                .add(DEEPSLATE_TITANIUM_ORE.asItem());
+
+        tag(Tags.Items.ORES_IN_GROUND_NETHERRACK)
+                .add(NETHER_ROMEUM_ORE.asItem());
+
+        tag(Tags.Items.ORES)
+                .add(DEEPSLATE_TITANIUM_ORE.asItem())
+                .add(NETHER_ROMEUM_ORE.asItem());
+
+        tag(Tags.Items.RAW_MATERIALS)
+                .add(RAW_TITANIUM.asItem())
+                .add(RAW_ROMEUM.asItem());
+
+        tag(Tags.Items.INGOTS)
+                .add(TITANIUM_INGOT.asItem())
+                .add(ROMEUM_INGOT.asItem());
+
+        tag(Tags.Items.STORAGE_BLOCKS)
+                .add(TITANIUM_BLOCK.asItem())
+                .add(ROMEUM_BLOCK.asItem());
+
+        tag(StoryModeRebornTags.Items.ORES_TITANIUM)
+                .add(DEEPSLATE_TITANIUM_ORE.asItem());
+
+        tag(StoryModeRebornTags.Items.RAW_MATERIALS_TITANIUM)
+                .add(RAW_TITANIUM.asItem());
+
+        tag(StoryModeRebornTags.Items.INGOTS_TITANIUM)
+                .add(TITANIUM_INGOT.asItem());
+
+        tag(StoryModeRebornTags.Items.STORAGE_BLOCKS_TITANIUM)
+                .add(TITANIUM_BLOCK.asItem());
+
+        tag(StoryModeRebornTags.Items.ORES_ROMEUM)
+                .add(NETHER_ROMEUM_ORE.asItem());
+
+        tag(StoryModeRebornTags.Items.RAW_MATERIALS_ROMEUM)
+                .add(RAW_ROMEUM.asItem());
+
+        tag(StoryModeRebornTags.Items.INGOTS_ROMEUM)
+                .add(ROMEUM_INGOT.asItem());
+
+        tag(StoryModeRebornTags.Items.STORAGE_BLOCKS_ROMEUM)
+                .add(ROMEUM_BLOCK.asItem());
+
+        tag(ItemTags.BEACON_PAYMENT_ITEMS)
+                .addTag(StoryModeRebornTags.Items.INGOTS_TITANIUM)
+                .addTag(StoryModeRebornTags.Items.INGOTS_ROMEUM);
+
+        tag(StoryModeRebornTags.Items.TNT_IGNITER)
+                .addTag(StoryModeRebornTags.Items.ENCHANTED_IGNITER)
+                .add(Items.FLINT_AND_STEEL)
+                .add(Items.FIRE_CHARGE);
+
+        tag(StoryModeRebornTags.Items.CHARGED_IGNITER).addTag(StoryModeRebornTags.Items.ENCHANTED_IGNITER);
+
         tag(ItemTags.TRIMMABLE_ARMOR).remove(StoryModeRebornTags.Items.STORY_MODE_ARMOR);
-        //tag(Tags.Items.).add(CARVED_WHITE_PUMPKIN.asItem());
-
-
     }
 }

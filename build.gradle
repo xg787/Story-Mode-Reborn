@@ -66,6 +66,7 @@ dependencies {
 
     implementation jarJar("net.xg787.sectioned_creative_tab_lib:sectioned_creative_tab_lib:1.0.0")
 
+    runtimeOnly "curse.maven:advanced-loot-info-1205426:8168901"
     runtimeOnly "curse.maven:jade-324717:7545219"
     runtimeOnly "curse.maven:jei-238222:7420587"
 }

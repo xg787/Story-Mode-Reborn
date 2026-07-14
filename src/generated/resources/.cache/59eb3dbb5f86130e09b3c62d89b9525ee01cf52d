@@ -1,10 +1,10 @@
-// 1.21.1	2026-06-24T10:32:57.7038714	Loot Tables
+// 1.21.1	2026-07-08T04:15:33.0514107	Loot Tables
 1cd75d5f3e0fee0f7439f4302d2d398a7b4b78eb data/story_mode_reborn/loot_table/blocks/attached_white_pumpkin_stem.json
 0b94d2d43de1b7d6aace688abe63e429da33a48a data/story_mode_reborn/loot_table/blocks/carved_white_pumpkin.json
+98ff88fc4165c1f45204eb9be443a7860fd802ab data/story_mode_reborn/loot_table/blocks/deepslate_titanium_ore.json
+e2018bfe3f44e75aa9891f49ef72ef511a531156 data/story_mode_reborn/loot_table/blocks/nether_romeum_ore.json
 20a0ae54946d3dda9f41b9d896e571431f16f507 data/story_mode_reborn/loot_table/blocks/romeum_block.json
-e505eba67274b30a1baa4f30c42ab5dad315b188 data/story_mode_reborn/loot_table/blocks/romeum_ore.json
 2e625a6e502376d196a41c3b3b53a4fdf0fa2bdf data/story_mode_reborn/loot_table/blocks/titanium_block.json
-f33654983d2785dca43f0f35c419b1320a88f70f data/story_mode_reborn/loot_table/blocks/titanium_ore.json
 5b31703192d16b8a1db691fd1189c2ce13aedcbc data/story_mode_reborn/loot_table/blocks/white_jack_o_lantern.json
 1a37510cfa819a45e3ec709eb22d64bf44648ece data/story_mode_reborn/loot_table/blocks/white_pumpkin.json
 273cf854ea46edd302aa64dcfb9d43a0a3618c34 data/story_mode_reborn/loot_table/blocks/white_pumpkin_stem.json

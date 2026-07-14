@@ -25,8 +25,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ATTACHED_WHITE_PUMPKIN_STEM.get(), block -> createAttachedStemDrops(ATTACHED_WHITE_PUMPKIN_STEM.get(), WHITE_PUMPKIN_SEEDS.get()));
         add(WHITE_PUMPKIN_STEM.get(), block -> createStemDrops(WHITE_PUMPKIN_STEM.get(), WHITE_PUMPKIN_SEEDS.get()));
         dropSelf(TITANIUM_BLOCK.get());
-        add(TITANIUM_ORE.get(), block -> createOreDrop(TITANIUM_ORE.get(), RAW_TITANIUM.get()));
-        add(ROMEUM_ORE.get(), block -> createOreDrop(ROMEUM_ORE.get(), RAW_ROMEUM.get()));
+        add(DEEPSLATE_TITANIUM_ORE.get(), block -> createOreDrop(DEEPSLATE_TITANIUM_ORE.get(), RAW_TITANIUM.get()));
+        add(NETHER_ROMEUM_ORE.get(), block -> createOreDrop(NETHER_ROMEUM_ORE.get(), RAW_ROMEUM.get()));
         dropSelf(ROMEUM_BLOCK.get());
     }
 

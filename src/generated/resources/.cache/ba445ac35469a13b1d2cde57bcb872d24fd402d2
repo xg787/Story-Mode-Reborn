@@ -1,5 +1,26 @@
-// 1.21.1	2026-06-24T10:32:57.7008916	Tags for minecraft:block mod id story_mode_reborn
-6e915ba26944d37d6e79c7ca920f8d0cd1da99c3 data/minecraft/tags/block/mineable/axe.json
-922b30a7aae61f9a1c45c51defcf0ef7ac4e8849 data/minecraft/tags/block/mineable/pickaxe.json
-fed2db6415925311b9a5bb121e7906299f2cf533 data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21.1	2026-07-13T21:32:52.8981965	Tags for minecraft:block mod id story_mode_reborn
+e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/block/crops/white_pumpkin.json
+33f1c9ad8f128def9910d17fd0cba90fb77a2bd2 data/c/tags/block/ores.json
+5107377a18e158aa13514f9a558eacc98b3ae3b9 data/c/tags/block/ores/romeum.json
+67a1a286ed0dfc044291924db08fa45e6e9efbb7 data/c/tags/block/ores/titanium.json
+67a1a286ed0dfc044291924db08fa45e6e9efbb7 data/c/tags/block/ores_in_ground/deepslate.json
+5107377a18e158aa13514f9a558eacc98b3ae3b9 data/c/tags/block/ores_in_ground/netherrack.json
+dda37a033a8aaa13c56a350373e0e84df1c3108a data/c/tags/block/storage_blocks.json
+d11b6e3132bfac3ddf0c189928f2f9f1ba6626f0 data/c/tags/block/storage_blocks/romeum.json
+e32114304264ebe3e0bdb0cb61799528b3ee6a5a data/c/tags/block/storage_blocks/titanium.json
+6e915ba26944d37d6e79c7ca920f8d0cd1da99c3 data/c/tags/block/white_pumpkins.json
+71691369fa47c65fb1f91e1bdf76b21c84e75c5f data/c/tags/block/white_pumpkins/carved.json
+618ae5a348f7673bf8d9ba4075cfa41ad3c748ab data/c/tags/block/white_pumpkins/jack_o_lanterns.json
+e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/block/white_pumpkins/normal.json
+72a2edf03f36b4327763011233a5cd7f3630d837 data/minecraft/tags/block/bee_growables.json
+72a2edf03f36b4327763011233a5cd7f3630d837 data/minecraft/tags/block/crops.json
+22dd3b3c489b4f4d73b31f7487489bd0827c5b4a data/minecraft/tags/block/enderman_holdable.json
+c9ab53a35423ad51f5b91be53ba6f8bd27a13d28 data/minecraft/tags/block/fire.json
+f62d8f8a40c43e1075e2815fbe450dfe8c989b74 data/minecraft/tags/block/maintains_farmland.json
+39ca11ea4316b8cdde9b61e0ee5c02fecaf55384 data/minecraft/tags/block/mineable/axe.json
+9dd0a14752c53cdec4f2e63298d0d6bdf14bc72c data/minecraft/tags/block/mineable/pickaxe.json
+33f1c9ad8f128def9910d17fd0cba90fb77a2bd2 data/minecraft/tags/block/needs_diamond_tool.json
 dda37a033a8aaa13c56a350373e0e84df1c3108a data/minecraft/tags/block/needs_iron_tool.json
+306891a35b414fb5aa4454441af37513a02f106c data/minecraft/tags/block/replaceable.json
+39ca11ea4316b8cdde9b61e0ee5c02fecaf55384 data/minecraft/tags/block/sword_efficient.json
+0fa482f9ef0270321b3e0a1e835e4c87153875a0 data/story_mode_reborn/tags/block/enchanted_fire.json

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "": {
+      "model": "story_mode_reborn:block/enchanted_fire_gold0"
+    },
+    "": {
+      "model": "story_mode_reborn:block/enchanted_fire_gold1"
+    }
+  }
+}
