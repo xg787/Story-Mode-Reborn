@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.util.RandomSource;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.*;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -29,9 +30,9 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
         return level.getBlockState(pos.below()).isFaceSturdy(level, pos.below(), Direction.UP) || this.isValidFireLocation(level, pos) && !level.getBlockState(pos.below()).is(ENCHANTED_FIRE);
     }
 
-    public static boolean canBePlacedAt(Level level, BlockPos pos, Direction direction) {
+    public static boolean canBePlacedAt(Level level, BlockPos pos, Direction direction, ItemStack itemStack) {
         BlockState blockstate = level.getBlockState(pos);
-        return !level.getBlockState(pos.below()).isAir() && getState(level, pos).canSurvive(level, pos) && !level.getBlockState(pos.below()).is(ENCHANTED_FIRE) || isPortal(level, pos, direction) || isEnchantedPortal(level, pos, direction);
+        return !level.getBlockState(pos.below()).isAir() && getState(level, pos).canSurvive(level, pos) && !level.getBlockState(pos.below()).is(ENCHANTED_FIRE) && level.getBlockState(pos).canBeReplaced() || isPortal(level, pos, direction) && level.getBlockState(pos).canBeReplaced() || isEnchantedPortal(level, pos, direction, itemStack) && level.getBlockState(pos).canBeReplaced();
     }
 
     @Override
@@ -178,8 +179,33 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
         return this.defaultBlockState();
     }
 
+    private static boolean inEnchantedPortalDimension(Level level) {
+        return level.dimension() == Level.OVERWORLD || level.dimension() == Level.NETHER;
+    }
 
-    private static boolean isEnchantedPortal(Level level, BlockPos pos, Direction p_direction) {
-        return false;
+
+    public static boolean isEnchantedPortal(Level level, BlockPos pos, Direction p_direction, ItemStack itemStack) {
+//        if (inEnchantedPortalDimension(level))  {
+//            BlockPos.MutableBlockPos blockpos$mutableblockpos = pos.mutable();
+//            boolean flag = false;
+//
+//            for (Direction direction : Direction.values()) {
+//                if (level.getBlockState(blockpos$mutableblockpos.set(pos).move(direction)).isPortalFrame(level, blockpos$mutableblockpos)) {
+//                    flag = true;
+//                    break;
+//                }
+//            }
+//
+//            if (!flag) {
+//                return false;
+//            } else {
+//                Direction.Axis direction$axis = p_direction.getAxis().isHorizontal()
+//                        ? p_direction.getCounterClockWise().getAxis()
+//                        : Direction.Plane.HORIZONTAL.getRandomAxis(level.random);
+//                return PortalShape.findEmptyPortalShape(level, pos, direction$axis).isPresent();
+//            }
+//        } else {
+            return false;
+//        }
     }
 }

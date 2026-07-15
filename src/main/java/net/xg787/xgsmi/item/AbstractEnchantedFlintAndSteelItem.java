@@ -34,12 +34,19 @@ public abstract class AbstractEnchantedFlintAndSteelItem extends Item {
         BlockState blockstate2 = blockstate.getToolModifiedState(context, net.neoforged.neoforge.common.ItemAbilities.FIRESTARTER_LIGHT, false);
         if (blockstate2 == null) {
             BlockPos blockpos1 = blockpos.relative(context.getClickedFace());
-            if (AbstractEnchantedFireBlock.canBePlacedAt(level, blockpos1, context.getHorizontalDirection())) {
+            ItemStack itemstack = context.getItemInHand();
+
+            if (AbstractEnchantedFireBlock.canBePlacedAt(level, blockpos1, context.getHorizontalDirection(), itemstack)) {
                 level.playSound(player, blockpos1, StoryModeRebornSounds.ENCHANTED_FLINT_AND_STEEL_USE.get(), SoundSource.BLOCKS, 1.0F, 1);
-                level.playSound(player, blockpos1, StoryModeRebornSounds.ENCHANTED_FLINT_AND_STEEL_PLACE_FIRE.get(), SoundSource.BLOCKS, 0.5F, 1);
+
+                if (!AbstractEnchantedFireBlock.isPortal(level, blockpos1, context.getHorizontalDirection()) && !AbstractEnchantedFireBlock.isEnchantedPortal(level, blockpos1, context.getHorizontalDirection(), itemstack)) {
+                    level.playSound(player, blockpos1, StoryModeRebornSounds.ENCHANTED_FLINT_AND_STEEL_PLACE_FIRE.get(), SoundSource.BLOCKS, 0.5F, 1);
+                }
+
                 level.setBlock(blockpos1, getFireBlock().defaultBlockState(), 11);
                 level.gameEvent(player, GameEvent.BLOCK_PLACE, blockpos);
-                ItemStack itemstack = context.getItemInHand();
+
+
                 if (player instanceof ServerPlayer) {
                     CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)player, blockpos1, itemstack);
                 }
