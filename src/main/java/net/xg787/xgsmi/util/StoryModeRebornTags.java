@@ -40,6 +40,7 @@ public class StoryModeRebornTags {
 
     public static class Items {
         public static final TagKey<Item> TNT_IGNITER = createTag("tnt_igniter");
+        public static final TagKey<Item> FIRE_CHARGES = createTag("fire_charges");
         public static final TagKey<Item> CHARGED_IGNITER = createTag("charged_igniter");
         public static final TagKey<Item> ENCHANTED_IGNITER = createTag("enchanted_igniter");
         public static final TagKey<Item> PRISMARINE_TOOL_MATERIAL = createTag("prismarine_tool_material");

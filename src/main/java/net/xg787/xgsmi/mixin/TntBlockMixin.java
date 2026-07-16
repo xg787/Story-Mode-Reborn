@@ -1,6 +1,8 @@
 package net.xg787.xgsmi.mixin;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -8,15 +10,12 @@ import net.minecraft.stats.Stats;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.ItemInteractionResult;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoulFireBlock;
 import net.minecraft.world.level.block.TntBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
@@ -39,8 +38,12 @@ public class TntBlockMixin extends Block {
         if (stack.is(StoryModeRebornTags.Items.TNT_IGNITER)) {
             SoundEvent soundevent = SoundEvents.FLINTANDSTEEL_USE;
 
-            if (stack.is(Items.FIRE_CHARGE)) {
+            if (stack.is(StoryModeRebornTags.Items.FIRE_CHARGES)) {
                 soundevent = SoundEvents.FIRECHARGE_USE;
+            }
+
+            if (BuiltInRegistries.ITEM.getKey(stack.getItem()).toString().equals("dungeonsdelight:rot_and_steel")) {
+                soundevent = BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.fromNamespaceAndPath("dungeonsdelight","item.rot_and_steel.use"));
             }
 
             if (stack.is(StoryModeRebornTags.Items.ENCHANTED_IGNITER)) {

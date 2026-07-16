@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-13T21:32:52.8991899	Tags for minecraft:item mod id story_mode_reborn
+// 1.21.1	2026-07-16T03:56:31.7009752	Tags for minecraft:item mod id story_mode_reborn
 d55194e880634bd2fe53849b15b7a2c879ffba8c data/c/tags/item/animal_foods.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops/white_pumpkin.json
@@ -52,6 +52,7 @@ fd0de107470390580efee0a2560aca2e15513fed data/minecraft/tags/item/swords.json
 3b0971fcfacb065778019e1cd8f2726868ae8dc4 data/minecraft/tags/item/trimmable_armor.json
 b10e08514b89b635d2ade52719b23b562ffecb23 data/story_mode_reborn/tags/item/charged_igniter.json
 e8e469b7006f06065bf9af2ef498d990263f4782 data/story_mode_reborn/tags/item/enchanted_igniter.json
+e904050b40752a339764927d4843b46bf63fc9ec data/story_mode_reborn/tags/item/fire_charges.json
 082a05efa4c17f9e5e9caebed83bb1324ad6135c data/story_mode_reborn/tags/item/prismarine_tool_material.json
 6e948ef455579456d577666d61b0018ddd7d76c6 data/story_mode_reborn/tags/item/story_mode_armor.json
-e7ed346d28298a15ffa91280f9d15422ff54029a data/story_mode_reborn/tags/item/tnt_igniter.json
+788f82245600362ea5e082c149c64cdbb684ecef data/story_mode_reborn/tags/item/tnt_igniter.json

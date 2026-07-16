@@ -1,8 +1,10 @@
 package net.xg787.xgsmi.datagen;
 
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
@@ -256,8 +258,15 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(StoryModeRebornTags.Items.TNT_IGNITER)
                 .addTag(StoryModeRebornTags.Items.ENCHANTED_IGNITER)
+                .addTag(StoryModeRebornTags.Items.FIRE_CHARGES)
                 .add(Items.FLINT_AND_STEEL)
-                .add(Items.FIRE_CHARGE);
+                .addOptional(ResourceLocation.fromNamespaceAndPath("dungeonsdelight","rot_and_steel"));
+
+        tag(StoryModeRebornTags.Items.FIRE_CHARGES)
+                .add(Items.FIRE_CHARGE)
+                .addOptional(ResourceLocation.fromNamespaceAndPath("minecraft","soul_fire_charge"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("netherdescent","soul_fire_charge"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("netherdescent","pendorite_fire_charge"));
 
         tag(StoryModeRebornTags.Items.CHARGED_IGNITER).addTag(StoryModeRebornTags.Items.ENCHANTED_IGNITER);
 
