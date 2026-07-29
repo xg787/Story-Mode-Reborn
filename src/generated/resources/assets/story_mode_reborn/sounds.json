@@ -1,14 +1,14 @@
 {
-  "enchanted_flint_and_steel_place_fire": {
+  "item.enchanted_flint_and_steel.place_fire": {
     "sounds": [
       "story_mode_reborn:enchanted_flint_and_steel_place_fire"
     ],
-    "subtitle": "subtitle.story_mode_reborn.enchanted_flint_and_steel_place_fire"
+    "subtitle": "subtitle.story_mode_reborn.item.enchanted_flint_and_steel.place_fire"
   },
-  "enchanted_flint_and_steel_use": {
+  "item.enchanted_flint_and_steel.use": {
     "sounds": [
       "story_mode_reborn:enchanted_flint_and_steel_use"
     ],
-    "subtitle": "subtitle.story_mode_reborn.enchanted_flint_and_steel_use"
+    "subtitle": "subtitle.story_mode_reborn.item.enchanted_flint_and_steel.use"
   }
 }

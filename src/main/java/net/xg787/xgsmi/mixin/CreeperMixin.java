@@ -1,6 +1,8 @@
 package net.xg787.xgsmi.mixin;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.tags.ItemTags;
@@ -42,8 +44,12 @@ public abstract class CreeperMixin extends Monster implements PowerableMob {
         if (itemstack.is(ItemTags.CREEPER_IGNITERS)) {
             SoundEvent soundevent = SoundEvents.FLINTANDSTEEL_USE;
 
-            if (itemstack.is(Items.FIRE_CHARGE)) {
+            if (itemstack.is(StoryModeRebornTags.Items.FIRE_CHARGES)) {
                 soundevent = SoundEvents.FIRECHARGE_USE;
+            }
+
+            if (BuiltInRegistries.ITEM.getKey(itemstack.getItem()).toString().equals("dungeonsdelight:rot_and_steel")) {
+                soundevent = BuiltInRegistries.SOUND_EVENT.get(ResourceLocation.fromNamespaceAndPath("dungeonsdelight","item.rot_and_steel.use"));
             }
 
             if (itemstack.is(StoryModeRebornTags.Items.ENCHANTED_IGNITER)) {
