@@ -3,6 +3,10 @@
     "story_mode_reborn:enchanted_flint_and_steel_diamond",
     "story_mode_reborn:enchanted_flint_and_steel_emerald",
     "story_mode_reborn:enchanted_flint_and_steel_gold",
-    "story_mode_reborn:enchanted_flint_and_steel_redstone"
+    "story_mode_reborn:enchanted_flint_and_steel_redstone",
+    {
+      "id": "dungeonsdelight:rot_and_steel",
+      "required": false
+    }
   ]
 }

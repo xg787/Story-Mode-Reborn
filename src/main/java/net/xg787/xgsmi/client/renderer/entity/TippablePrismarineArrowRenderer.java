@@ -12,7 +12,6 @@ public class TippablePrismarineArrowRenderer extends ArrowRenderer<PrismarineArr
     public static final ResourceLocation NORMAL_ARROW_LOCATION = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/entity/projectiles/prismarine_arrow.png");
     public static final ResourceLocation TIPPED_ARROW_LOCATION = ResourceLocation.fromNamespaceAndPath(MOD_ID, "textures/entity/projectiles/tipped_prismarine_arrow.png");
 
-
     public TippablePrismarineArrowRenderer(EntityRendererProvider.Context context) {
         super(context);
     }

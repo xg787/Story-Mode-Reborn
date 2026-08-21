@@ -12,7 +12,8 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    maven { url "https://cursemaven.com" }
+    maven { url = "https://cursemaven.com" }
+    maven { url = "https://api.modrinth.com/maven" }
     flatDir { dirs 'libs' }
 }
 
@@ -64,7 +65,7 @@ configurations {
 dependencies {
     implementation "net.neoforged:neoforge:${neo_version}"
 
-    implementation jarJar("net.xg787.sectioned_creative_tab_lib:sectioned_creative_tab_lib:1.0.0")
+    jarJar(implementation("maven.modrinth:fancytabsections:6.1-NEOFORGE-1.21.1"))
 
     runtimeOnly "curse.maven:advanced-loot-info-1205426:8168901"
     runtimeOnly "curse.maven:jade-324717:7545219"

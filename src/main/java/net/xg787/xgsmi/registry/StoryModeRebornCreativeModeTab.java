@@ -1,15 +1,26 @@
 package net.xg787.xgsmi.registry;
 
+import net.mcexpanded.fancytabsections.FancyTabSections;
+import net.mcexpanded.fancytabsections.Section.SectionTextured;
 import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistryAccess;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.xg787.xgsmi.StoryModeReborn;
+import net.xg787.xgsmi.util.StoryModeRebornSection;
+
+import java.util.List;
+import java.util.function.Function;
 
 import static net.minecraft.world.item.CreativeModeTab.TabVisibility.PARENT_AND_SEARCH_TABS;
 import static net.minecraft.world.item.Items.*;
@@ -25,6 +36,144 @@ public class StoryModeRebornCreativeModeTab {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ICON.get().getDefaultInstance())
             .build());
+
+    public static void register(IEventBus modEventBus) {
+        CREATIVE_MODE_TABS.register(modEventBus);
+        modEventBus.addListener(StoryModeRebornCreativeModeTab::addCreativeSections);
+    }
+    
+    public static void addCreativeSections(FMLClientSetupEvent event) {
+        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
+                new StoryModeRebornSection(StoryModeReborn.path("items"))
+                        .setTextColor(0xffffeb8c)
+                        .add(WHITE_PUMPKIN_SEEDS)
+                        .add(WHITE_PUMPKIN_PIE)
+                        .add(PRISMARINE_ROD)
+                        .add(PRISMARINE_FISHING_ROD)
+                        .add(PRISMARINE_SWORD)
+                        .add(PRISMARINE_PICKAXE)
+                        .add(PRISMARINE_AXE)
+                        .add(PRISMARINE_SHOVEL)
+                        .add(PRISMARINE_HOE)
+                        .add(PRISMARINE_BOW)
+                        .add(PRISMARINE_CROSSBOW)
+                        .add(PRISMARINE_ARROW)
+                        .add(ROYAL_SWORD)
+                        .add(ROYAL_PICKAXE)
+                        .add(ROYAL_AXE)
+                        .add(ROYAL_SHOVEL)
+                        .add(ROYAL_HOE)
+                        .add(ENCHANTED_FLINT_AND_STEEL_DIAMOND)
+                        .add(ENCHANTED_FLINT_AND_STEEL_EMERALD)
+                        .add(ENCHANTED_FLINT_AND_STEEL_GOLD)
+                        .add(ENCHANTED_FLINT_AND_STEEL_REDSTONE)
+                        .add(RAW_TITANIUM)
+                        .add(TITANIUM_INGOT)
+                        .add(TITANIUM_SWORD)
+                        .add(TITANIUM_PICKAXE)
+                        .add(TITANIUM_AXE)
+                        .add(TITANIUM_SHOVEL)
+                        .add(TITANIUM_HOE)
+                        .add(ENCHANTED_TITANIUM_SWORD)
+                        .add(ENCHANTED_TITANIUM_PICKAXE)
+                        .add(ENCHANTED_TITANIUM_AXE)
+                        .add(ENCHANTED_TITANIUM_SHOVEL)
+                        .add(ENCHANTED_TITANIUM_HOE)
+                        .add(RAW_ROMEUM)
+                        .add(ROMEUM_INGOT)
+                        .add(ROMEUM_SWORD)
+                        .add(ROMEUM_PICKAXE)
+                        .add(ROMEUM_AXE)
+                        .add(ROMEUM_SHOVEL)
+                        .add(ROMEUM_HOE)
+                        .add(ENCHANTED_ROMEUM_SWORD)
+                        .add(ENCHANTED_ROMEUM_PICKAXE)
+                        .add(ENCHANTED_ROMEUM_AXE)
+                        .add(ENCHANTED_ROMEUM_SHOVEL)
+                        .add(ENCHANTED_ROMEUM_HOE)
+        );
+        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
+                new StoryModeRebornSection(StoryModeReborn.path("blocks"))
+                        .setTextColor(0xffffeb8c)
+                        .add(WHITE_PUMPKIN)
+                        .add(CARVED_WHITE_PUMPKIN)
+                        .add(WHITE_JACK_O_LANTERN)
+                        .add(DEEPSLATE_TITANIUM_ORE)
+                        .add(TITANIUM_BLOCK)
+                        .add(NETHER_ROMEUM_ORE)
+                        .add(ROMEUM_BLOCK)
+        );
+        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
+                new StoryModeRebornSection(StoryModeReborn.path("templates"))
+                        .setTextColor(0xffffeb8c)
+                        .add(BLANK_BASIC_ARMOR_TEMPLATE)
+                        .add(BASIC_ARMOR_TEMPLATE)
+                        .add(BASIC_ARMOR_TEMPLATE_1)
+                        .add(BASIC_ARMOR_TEMPLATE_2)
+                        .add(BASIC_ARMOR_TEMPLATE_3)
+                        .add(BASIC_ARMOR_TEMPLATE_4)
+                        .add(BASIC_ARMOR_TEMPLATE_5)
+                        .add(BASIC_ARMOR_TEMPLATE_6)
+                        .add(BASIC_ARMOR_TEMPLATE_7)
+                        .add(BASIC_ARMOR_TEMPLATE_8)
+                        .add(BLANK_UPGRADE_SMITHING_TEMPLATE)
+                        .add(TITANIUM_UPGRADE_SMITHING_TEMPLATE)
+                        .add(TITANIUM_ENCHANT_SMITHING_TEMPLATE)
+                        .add(ROMEUM_UPGRADE_SMITHING_TEMPLATE)
+                        .add(ROMEUM_ENCHANT_SMITHING_TEMPLATE)
+                        .add(BLANK_ARMOR_TEMPLATE)
+                        .add(ARMOR_TEMPLATE_1)
+                        .add(ARMOR_TEMPLATE_2)
+                        .add(ARMOR_TEMPLATE_3)
+                        .add(ARMOR_TEMPLATE_4)
+                        .add(ARMOR_TEMPLATE_5)
+                        .add(ARMOR_TEMPLATE_6)
+                        .add(ARMOR_TEMPLATE_7)
+                        .add(ARMOR_TEMPLATE_8)
+                        .add(ARMOR_TEMPLATE_9)
+                        .add(ARMOR_TEMPLATE_10)
+                        .add(ARMOR_TEMPLATE_11)
+                        .add(ARMOR_TEMPLATE_12)
+                        .add(ARMOR_TEMPLATE_13)
+                        .add(ARMOR_TEMPLATE_14)
+                        .add(ARMOR_TEMPLATE_15)
+                        .add(ARMOR_TEMPLATE_16)
+                        .add(ARMOR_TEMPLATE_17)
+                        .add(ARMOR_TEMPLATE_18)
+                        .add(ARMOR_TEMPLATE_19)
+                        .add(ARMOR_TEMPLATE_20)
+                        .add(ARMOR_TEMPLATE_21)
+                        .add(ARMOR_TEMPLATE_22)
+                        .add(ARMOR_TEMPLATE_23)
+                        .add(ARMOR_TEMPLATE_24)
+                        .add(ARMOR_TEMPLATE_25)
+                        .add(ARMOR_TEMPLATE_26)
+        );
+        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
+                new StoryModeRebornSection(StoryModeReborn.path("armors"))
+                        .setTextColor(0xffffeb8c)
+                        .add(TITANIUM_HELMET)
+                        .add(TITANIUM_CHESTPLATE)
+                        .add(TITANIUM_LEGGINGS)
+                        .add(TITANIUM_BOOTS)
+                        .add(ENCHANTED_TITANIUM_HELMET)
+                        .add(ENCHANTED_TITANIUM_CHESTPLATE)
+                        .add(ENCHANTED_TITANIUM_LEGGINGS)
+                        .add(ENCHANTED_TITANIUM_BOOTS)
+                        .add(ROMEUM_HELMET)
+                        .add(ROMEUM_CHESTPLATE)
+                        .add(ROMEUM_LEGGINGS)
+                        .add(ROMEUM_BOOTS)
+                        .add(ENCHANTED_ROMEUM_HELMET)
+                        .add(ENCHANTED_ROMEUM_CHESTPLATE)
+                        .add(ENCHANTED_ROMEUM_LEGGINGS)
+                        .add(ENCHANTED_ROMEUM_BOOTS)
+                        .add(GABRIEL_HELMET)
+                        .add(GABRIEL_CHESTPLATE)
+                        .add(GABRIEL_LEGGINGS)
+                        .add(GABRIEL_BOOTS)
+        );
+    }
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -100,9 +249,9 @@ public class StoryModeRebornCreativeModeTab {
             event.getParameters().holders()
                     .lookup(Registries.POTION)
                     .ifPresent(
-                            p_337917_ -> generatePotionEffectTypes(
+                            potions -> generatePotionEffectTypes(
                                     event,
-                                    p_337917_,
+                                    potions,
                                     TIPPED_PRISMARINE_ARROW.get(),
                                     PARENT_AND_SEARCH_TABS,
                                     event.getParameters().enabledFeatures()

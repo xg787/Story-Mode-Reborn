@@ -95,7 +95,8 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ENCHANTED_FLINT_AND_STEEL_DIAMOND.get())
                 .add(ENCHANTED_FLINT_AND_STEEL_EMERALD.get())
                 .add(ENCHANTED_FLINT_AND_STEEL_GOLD.get())
-                .add(ENCHANTED_FLINT_AND_STEEL_REDSTONE.get());
+                .add(ENCHANTED_FLINT_AND_STEEL_REDSTONE.get())
+                .addOptional(ResourceLocation.fromNamespaceAndPath("dungeonsdelight","rot_and_steel"));
 
         tag(Tags.Items.TOOLS_IGNITER)
                 .add(ENCHANTED_FLINT_AND_STEEL_DIAMOND.get())

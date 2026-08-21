@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-16T03:56:31.7009752	Tags for minecraft:item mod id story_mode_reborn
+// 1.21.1	2026-07-29T07:05:04.6407211	Tags for minecraft:item mod id story_mode_reborn
 d55194e880634bd2fe53849b15b7a2c879ffba8c data/c/tags/item/animal_foods.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops/white_pumpkin.json
@@ -34,7 +34,7 @@ e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/white_pumpkins/normal.
 172b1ba36b7fd76738b778ae9cdf8d832950ba02 data/minecraft/tags/item/beacon_payment_items.json
 aae146095536916a75643ee082b1a1926b494ec6 data/minecraft/tags/item/chest_armor.json
 d55194e880634bd2fe53849b15b7a2c879ffba8c data/minecraft/tags/item/chicken_food.json
-e8e469b7006f06065bf9af2ef498d990263f4782 data/minecraft/tags/item/creeper_igniters.json
+29c0a0b0c96d5f906dceed9000e3c7ab6b0d92db data/minecraft/tags/item/creeper_igniters.json
 411ab3c3c3f4edb743d906cfa0c6c4ac9b65d6b0 data/minecraft/tags/item/enchantable/bow.json
 e47c3dce7948f3c1373b91a34a43e7af090ff3b7 data/minecraft/tags/item/enchantable/crossbow.json
 33792b74817291e1b44096c1b49f898f5bea1e6e data/minecraft/tags/item/enchantable/durability.json

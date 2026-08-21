@@ -1,5 +1,7 @@
 package net.xg787.xgsmi;
 
+import net.mcexpanded.fancytabsections.FancyTabSections;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.neoforge.event.entity.living.EnderManAngerEvent;
@@ -11,6 +13,7 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 
 import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
+import static net.xg787.xgsmi.registry.StoryModeRebornItems.ICON;
 
 @Mod(StoryModeReborn.MOD_ID)
 public class StoryModeReborn {
@@ -21,10 +24,10 @@ public class StoryModeReborn {
         StoryModeRebornItems.ITEMS.register(modEventBus);
         StoryModeRebornSounds.SOUND_EVENTS.register(modEventBus);
         StoryModeRebornEntities.ENTITY_TYPES.register(modEventBus);
-        StoryModeRebornCreativeModeTab.CREATIVE_MODE_TABS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
 
+        StoryModeRebornCreativeModeTab.register(modEventBus);
         modEventBus.addListener(StoryModeRebornCreativeModeTab::addCreative);
     }
 
@@ -35,5 +38,9 @@ public class StoryModeReborn {
                 event.setCanceled(true);
             }
         }
+    }
+
+    public static ResourceLocation path(String path) {
+        return ResourceLocation.tryBuild(MOD_ID, path);
     }
 }

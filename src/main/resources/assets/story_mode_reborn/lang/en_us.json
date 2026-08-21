@@ -293,10 +293,10 @@
   "upgrade.story_mode_reborn.romeum_upgrade": "Romeum Upgrade",
   "upgrade.story_mode_reborn.romeum_enchant": "Romeum Enchant",
 
-  "tooltip.story_mode_reborn.creative_tab_section.items": "Items",
-  "tooltip.story_mode_reborn.creative_tab_section.blocks": "Blocks",
-  "tooltip.story_mode_reborn.creative_tab_section.templates": "Templates",
-  "tooltip.story_mode_reborn.creative_tab_section.armors": "Armors",
+  "section.story_mode_reborn.items": "Items",
+  "section.story_mode_reborn.blocks": "Blocks",
+  "section.story_mode_reborn.templates": "Templates",
+  "section.story_mode_reborn.armors": "Armors",
 
   "item.story_mode_reborn.gabriel_helmet": "Gabriel Helmet",
   "item.story_mode_reborn.gabriel_chestplate": "Gabriel Chestplate",

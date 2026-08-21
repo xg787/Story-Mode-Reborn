@@ -33,8 +33,9 @@ description='''A Mod that adds Story Mode Items, Armor and More'''
     side="BOTH"
 
 [[dependencies.${mod_id}]]
-    modId="sectioned_creative_tab_lib"
+    modId="fancytabsections"
     type="required"
-    versionRange="[1.0.0,)"
+    versionRange="[6.0-NEOFORGE-1.21.1,)"
+    reason="A mod is bundling an outdated version of Fancy Tab Sections that is incompatible"
     ordering="NONE"
     side="BOTH"
