@@ -36,11 +36,6 @@ public class StoryModeRebornCreativeModeTab {
             .withTabsBefore(CreativeModeTabs.COMBAT)
             .icon(() -> ICON.get().getDefaultInstance())
             .build());
-
-    public static void register(IEventBus modEventBus) {
-        CREATIVE_MODE_TABS.register(modEventBus);
-        modEventBus.addListener(StoryModeRebornCreativeModeTab::addCreativeSections);
-    }
     
     public static void addCreativeSections(FMLClientSetupEvent event) {
         FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
@@ -269,6 +264,22 @@ public class StoryModeRebornCreativeModeTab {
             event.insertAfter(NETHERITE_INGOT.getDefaultInstance(), TITANIUM_INGOT.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(TITANIUM_INGOT.get().getDefaultInstance(), ROMEUM_INGOT.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(STICK.getDefaultInstance(), PRISMARINE_ROD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+        }
+    }
+
+    public static void addTippedArrows(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.getParameters().holders()
+                    .lookup(Registries.POTION)
+                    .ifPresent(
+                            potions -> generatePotionEffectTypes(
+                                    event,
+                                    potions,
+                                    TIPPED_PRISMARINE_ARROW.get(),
+                                    PARENT_AND_SEARCH_TABS,
+                                    event.getParameters().enabledFeatures()
+                            )
+                    );
         }
     }
 

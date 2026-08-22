@@ -303,5 +303,7 @@
   "item.story_mode_reborn.gabriel_leggings": "Gabriel Leggings",
   "item.story_mode_reborn.gabriel_boots": "Gabriel Boots",
 
-  "itemGroup.story_mode_reborn": "Storymode"
+  "itemGroup.story_mode_reborn": "Storymode",
+
+  "story_mode_reborn.configuration.add_items_to_vanilla_tabs": "Add items to vanilla tabs"
 }
