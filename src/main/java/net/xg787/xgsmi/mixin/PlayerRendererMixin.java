@@ -76,13 +76,13 @@ public abstract class PlayerRendererMixin extends LivingEntityRenderer<AbstractC
     @Unique
     private void renderArmorHand(PoseStack poseStack, MultiBufferSource buffer, int combinedLight, AbstractClientPlayer player, ModelPart rendererArmarmor, boolean isLeft) {
         if (isLeft) {
-            rendererArmarmor.x = 5.65F;
-            rendererArmarmor.zRot = -0.11F;
+            rendererArmarmor.x = 5.7F;
+            rendererArmarmor.zRot = -0.1F;
         } else {
-            rendererArmarmor.x = -5.65F;
-            rendererArmarmor.zRot = 0.11F;
+            rendererArmarmor.x = -5.7F;
+            rendererArmarmor.zRot = 0.1F;
         }
-        rendererArmarmor.y = 4.01F;
+        rendererArmarmor.y = 4.15F;
         rendererArmarmor.z = -0.1F;
         rendererArmarmor.xScale = 0.7F;
         rendererArmarmor.yScale = 0.7F;

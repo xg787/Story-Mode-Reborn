@@ -1,8 +1,6 @@
 package net.xg787.xgsmi;
 
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
 import net.neoforged.fml.ModContainer;
@@ -29,7 +27,7 @@ public class StoryModeReborn {
         modContainer.registerConfig(ModConfig.Type.STARTUP, StoryModeRebornConfig.STARTUP_SPEC);
         StoryModeRebornBlocks.BLOCKS.register(modEventBus);
         StoryModeRebornItems.ITEMS.register(modEventBus);
-        if (ModList.get().isLoaded("vanillabackport")){
+        if (ModList.get().isLoaded("vanillabackport")) {
             StoryModeRebornVBItems.ITEMS.register(modEventBus);
         }
         StoryModeRebornSounds.SOUND_EVENTS.register(modEventBus);
@@ -40,7 +38,7 @@ public class StoryModeReborn {
     }
 
     @SubscribeEvent
-    public void enderManAngerEvents(EnderManAngerEvent event) {
+    public void preventEnderManAnger(EnderManAngerEvent event) {
         if (event.getPlayer() instanceof Player player) {
             if (player.getItemBySlot(EquipmentSlot.HEAD).is(CARVED_WHITE_PUMPKIN.asItem())) {
                 event.setCanceled(true);
