@@ -1,0 +1,18 @@
+{
+  "values": [
+    "story_mode_reborn:prismarine_rod",
+    "story_mode_reborn:prismarine_fishing_rod",
+    "story_mode_reborn:prismarine_sword",
+    "story_mode_reborn:prismarine_pickaxe",
+    "story_mode_reborn:prismarine_axe",
+    "story_mode_reborn:prismarine_shovel",
+    "story_mode_reborn:prismarine_hoe",
+    {
+      "id": "story_mode_reborn:prismarine_spear",
+      "required": false
+    },
+    "story_mode_reborn:prismarine_bow",
+    "story_mode_reborn:prismarine_crossbow",
+    "story_mode_reborn:prismarine_arrow"
+  ]
+}

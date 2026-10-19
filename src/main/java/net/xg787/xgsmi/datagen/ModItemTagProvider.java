@@ -1,7 +1,7 @@
 package net.xg787.xgsmi.datagen;
 
+import com.blackgear.vanillabackport.core.data.tags.ModItemTags;
 import net.minecraft.core.HolderLookup;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
@@ -17,6 +17,7 @@ import java.util.concurrent.CompletableFuture;
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
+import static net.xg787.xgsmi.registry.compat.StoryModeRebornVBItems.*;
 
 public class ModItemTagProvider extends ItemTagsProvider {
     public ModItemTagProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, CompletableFuture<TagLookup<Block>> blockTags, ExistingFileHelper existingFileHelper) {
@@ -64,6 +65,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ENCHANTED_TITANIUM_HOE.get())
                 .add(ROMEUM_HOE.get())
                 .add(ENCHANTED_ROMEUM_HOE.get());
+
+        tag(ModItemTags.SPEARS)
+                .addOptional(PRISMARINE_SPEAR.getId())
+                .addOptional(ROYAL_SPEAR.getId());
+                //.addOptional(TITANIUM_SPEAR.getId())
+                //.addOptional(ENCHANTED_TITANIUM_SPEAR.getId())
+                //.addOptional(ROMEUM_SPEAR.getId())
+                //.addOptional(ENCHANTED_ROMEUM_SPEAR.getId());
 
         tag(ItemTags.ARROWS)
                 .add(PRISMARINE_ARROW.get())
@@ -163,6 +172,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(GABRIEL_LEGGINGS.get())
                 .add(GABRIEL_BOOTS.get());
 
+        tag(StoryModeRebornTags.Items.HIDE_SKIN_LAYER)
+                .add(GABRIEL_HELMET.get())
+                .add(GABRIEL_CHESTPLATE.get())
+                .add(GABRIEL_LEGGINGS.get())
+                .add(GABRIEL_BOOTS.get());
+
+        tag(StoryModeRebornTags.Items.DONT_HIDE_SlEEVE_SKIN_LAYER);
+
         tag(Tags.Items.HIDDEN_FROM_RECIPE_VIEWERS)
                 .add(ICON.get());
 
@@ -257,6 +274,28 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .addTag(StoryModeRebornTags.Items.INGOTS_TITANIUM)
                 .addTag(StoryModeRebornTags.Items.INGOTS_ROMEUM);
 
+        tag(StoryModeRebornTags.Items.CREATIVE_TAB_PRISMARINE_ITEMS)
+                .add(PRISMARINE_ROD.get())
+                .add(PRISMARINE_FISHING_ROD.get())
+                .add(PRISMARINE_SWORD.get())
+                .add(PRISMARINE_PICKAXE.get())
+                .add(PRISMARINE_AXE.get())
+                .add(PRISMARINE_SHOVEL.get())
+                .add(PRISMARINE_HOE.get())
+                .addOptional(PRISMARINE_SPEAR.getId());
+        tag(StoryModeRebornTags.Items.CREATIVE_TAB_PRISMARINE_ITEMS)
+                .add(PRISMARINE_BOW.get())
+                .add(PRISMARINE_CROSSBOW.get())
+                .add(PRISMARINE_ARROW.get());
+
+        tag(StoryModeRebornTags.Items.CREATIVE_TAB_ROYAL_ITEMS)
+                .add(ROYAL_SWORD.get())
+                .add(ROYAL_PICKAXE.get())
+                .add(ROYAL_AXE.get())
+                .add(ROYAL_SHOVEL.get())
+                .add(ROYAL_HOE.get())
+                .addOptional(ROYAL_SPEAR.getId());
+
         tag(StoryModeRebornTags.Items.TNT_IGNITER)
                 .addTag(StoryModeRebornTags.Items.ENCHANTED_IGNITER)
                 .addTag(StoryModeRebornTags.Items.FIRE_CHARGES)
@@ -269,8 +308,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .addOptional(ResourceLocation.fromNamespaceAndPath("netherdescent","soul_fire_charge"))
                 .addOptional(ResourceLocation.fromNamespaceAndPath("netherdescent","pendorite_fire_charge"));
 
-        tag(StoryModeRebornTags.Items.CHARGED_IGNITER).addTag(StoryModeRebornTags.Items.ENCHANTED_IGNITER);
+        tag(StoryModeRebornTags.Items.CREEPER_CHARGER).addTag(StoryModeRebornTags.Items.ENCHANTED_IGNITER);
 
         tag(ItemTags.TRIMMABLE_ARMOR).remove(StoryModeRebornTags.Items.STORY_MODE_ARMOR);
+
+        tag(StoryModeRebornTags.Items.HIDE_SlEEVE_SKIN_LAYER).addTag(StoryModeRebornTags.Items.HIDE_SKIN_LAYER).remove(StoryModeRebornTags.Items.DONT_HIDE_SlEEVE_SKIN_LAYER);
     }
 }

@@ -5,7 +5,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -16,8 +15,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
 import net.xg787.xgsmi.block.AbstractEnchantedFireBlock;
 import net.xg787.xgsmi.registry.StoryModeRebornSounds;
-
-import static net.minecraft.world.level.block.Blocks.FIRE;
 
 public abstract class AbstractEnchantedFlintAndSteelItem extends Item {
 
@@ -45,7 +42,6 @@ public abstract class AbstractEnchantedFlintAndSteelItem extends Item {
 
                 level.setBlock(blockpos1, getFireBlock().defaultBlockState(), 11);
                 level.gameEvent(player, GameEvent.BLOCK_PLACE, blockpos);
-
 
                 if (player instanceof ServerPlayer) {
                     CriteriaTriggers.PLACED_BLOCK.trigger((ServerPlayer)player, blockpos1, itemstack);

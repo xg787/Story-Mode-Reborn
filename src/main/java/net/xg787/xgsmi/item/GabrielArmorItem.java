@@ -10,13 +10,18 @@ import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
 public class GabrielArmorItem extends AbstractArmorItem {
     private static final ResourceLocation TEXTURE_LOCATION = makeCustomTextureLocation(MOD_ID, "gabriel_armor");
-
+    private static final ResourceLocation ARM_TEXTURE_LOCATION = makeCustomTextureLocation(MOD_ID, "gabriel_armor_arm");
     public GabrielArmorItem(ArmorItem.Type pType, Item.Properties properties) {
         super(StoryModeRebornArmorMaterials.MCSM_TITANIUM, pType, properties);
     }
 
     @Override
-    public @Nullable ResourceLocation getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, ArmorMaterial.Layer layer, boolean inner) {
+    public ResourceLocation getTexture() {
         return TEXTURE_LOCATION;
+    }
+
+    @Override
+    public ResourceLocation getArmTexture() {
+        return ARM_TEXTURE_LOCATION;
     }
 }

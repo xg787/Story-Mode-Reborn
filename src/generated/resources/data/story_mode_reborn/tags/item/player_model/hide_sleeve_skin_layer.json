@@ -1,0 +1,8 @@
+{
+  "remove": [
+    "#story_mode_reborn:player_model/dont_hide_sleeve_skin_layer"
+  ],
+  "values": [
+    "#story_mode_reborn:player_model/hide_skin_layer"
+  ]
+}

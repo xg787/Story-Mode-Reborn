@@ -13,7 +13,6 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
-import net.minecraft.world.level.portal.PortalShape;
 
 import static net.xg787.xgsmi.util.StoryModeRebornTags.Blocks.ENCHANTED_FIRE;
 
@@ -158,7 +157,7 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
     public abstract void placeExtension(Level level, BlockPos pos);
 
     private static int getFireTickDelay(RandomSource random) {
-        return 30 + random.nextInt(10);
+        return 15 + random.nextInt(5);
     }
 
     @Override

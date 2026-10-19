@@ -1,4 +1,4 @@
-// 1.21.1	2026-07-01T15:11:38.1421813	Item Models: story_mode_reborn
+// 1.21.1	2026-08-25T08:01:55.4656384	Item Models: story_mode_reborn
 a7d1866f4090926385b4780869364093cd0b2845 assets/story_mode_reborn/models/item/basic_armor_template.json
 53ff6502e7a979e7527b0ff6c1ed34e6efaf7c3d assets/story_mode_reborn/models/item/blank_armor_template.json
 770184e054dbaa5a636457a28e24ae187032ebde assets/story_mode_reborn/models/item/blank_basic_armor_template.json
@@ -116,6 +116,7 @@ c7e969fb7961c825c4a28810b004e783057379fe assets/story_mode_reborn/models/item/pr
 86b2a5135bee0c21e046797dc68bbb176a9101f8 assets/story_mode_reborn/models/item/prismarine_pickaxe.json
 aa7a8ec1760a3394b8513b2e0e115f55c669218d assets/story_mode_reborn/models/item/prismarine_rod.json
 df9facfd0236cfad819d6698bb8f73e2b5ac3e13 assets/story_mode_reborn/models/item/prismarine_shovel.json
+dcc296c93d5b4040f2a063fa155771bfc01c42c3 assets/story_mode_reborn/models/item/prismarine_spear.json
 5225e17a554ea3b82a16b42854883affca2ee8e3 assets/story_mode_reborn/models/item/prismarine_sword.json
 f1ca79108b3d66340a6ad0f7e42c0a4615596155 assets/story_mode_reborn/models/item/raw_romeum.json
 5eb6816da9c673b03af87489755f8f6b79094208 assets/story_mode_reborn/models/item/raw_titanium.json
@@ -175,6 +176,7 @@ b3157ce7577b5095d0a68fea9bb90ef62c59a6d7 assets/story_mode_reborn/models/item/ro
 2b6842a2a47a65ab21afe7c9a7f036728983ac04 assets/story_mode_reborn/models/item/royal_hoe.json
 c690ebaf057b9f462b5479f828487da5bb2b6957 assets/story_mode_reborn/models/item/royal_pickaxe.json
 61f626154cbaf342e2e28474bbcf5d562ae460a9 assets/story_mode_reborn/models/item/royal_shovel.json
+fb0b19f1014dd4e7e9eb213ebf9157b89100bfe2 assets/story_mode_reborn/models/item/royal_spear.json
 ad625a33d50297a19b09cd86d3884a3806709dae assets/story_mode_reborn/models/item/royal_sword.json
 82974224dad16df75c5e40eed4644da82f39b409 assets/story_mode_reborn/models/item/titanium_axe.json
 99784c92713926729227dff50fc298b6a9d2e71e assets/story_mode_reborn/models/item/titanium_boots.json

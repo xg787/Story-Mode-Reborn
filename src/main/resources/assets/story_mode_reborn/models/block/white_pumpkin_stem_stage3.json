@@ -1,4 +1,5 @@
 {
+  "render_type": "minecraft:cutout",
   "ambientocclusion": false,
   "textures": {
     "stem": "minecraft:block/pumpkin_stem",
@@ -22,5 +23,4 @@
       }
     }
   ]
-  }
 }

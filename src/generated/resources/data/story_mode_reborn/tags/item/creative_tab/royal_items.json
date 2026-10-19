@@ -1,0 +1,13 @@
+{
+  "values": [
+    "story_mode_reborn:royal_sword",
+    "story_mode_reborn:royal_pickaxe",
+    "story_mode_reborn:royal_axe",
+    "story_mode_reborn:royal_shovel",
+    "story_mode_reborn:royal_hoe",
+    {
+      "id": "story_mode_reborn:royal_spear",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "story_mode_reborn:item/spear_in_hand",
+  "textures": {
+    "layer0": "story_mode_reborn:item/prismarine_spear_in_hand"
+  }
+}

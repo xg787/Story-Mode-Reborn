@@ -1,27 +1,24 @@
 modLoader="javafml"
 loaderVersion="${loader_version_range}"
 license="${mod_license}"
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+issueTrackerURL="https://github.com/xg787/Story-Mode-Reborn/issues"
 
 [[mods]]
-modId="${mod_id}"
-version="${mod_version}"
-displayName="${mod_name}"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/xgs-storymode-items-and-more"
-logoFile="icon.png"
-authors="Xg787"
-description='''A Mod that adds Story Mode Items, Armor and More'''
+    modId="${mod_id}"
+    version="${mod_version}"
+    displayName="${mod_name}"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/xgs-storymode-items-and-more"
+    logoFile="icon.png"
+    authors="Xg787"
+    description='''A Mod that adds Story Mode Items, Armor and More'''
 
 [[mixins]]
     config="${mod_id}.mixins.json"
 
-[[accessTransformers]]
-    file="accesstransformer.cfg"
-
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
-    versionRange="[${neo_version},)"
+    versionRange="[21.1.233,)"
     ordering="NONE"
     side="BOTH"
 
@@ -37,5 +34,19 @@ description='''A Mod that adds Story Mode Items, Armor and More'''
     type="required"
     versionRange="[6.0-NEOFORGE-1.21.1,)"
     reason="A mod is bundling an outdated version of Fancy Tab Sections that is incompatible"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="vanillabackport"
+    type="optional"
+    versionRange="[1.2,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="witherstormmod"
+    type="optional"
+    versionRange="[4.0,)"
     ordering="NONE"
     side="BOTH"

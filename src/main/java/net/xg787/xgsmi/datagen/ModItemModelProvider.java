@@ -16,6 +16,7 @@ import java.util.LinkedHashMap;
 
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
+import static net.xg787.xgsmi.registry.compat.StoryModeRebornVBItems.*;
 
 public class ModItemModelProvider extends ItemModelProvider {
     public ModItemModelProvider(PackOutput output, ExistingFileHelper existingFileHelper) {
@@ -36,6 +37,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(PRISMARINE_AXE.get());
         handheldItem(PRISMARINE_SHOVEL.get());
         handheldItem(PRISMARINE_HOE.get());
+        handheldItem(PRISMARINE_SPEAR.get());
         basicItem(PRISMARINE_ARROW.get());
 
         handheldItem(ROYAL_SWORD.get());
@@ -43,6 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ROYAL_AXE.get());
         handheldItem(ROYAL_SHOVEL.get());
         handheldItem(ROYAL_HOE.get());
+        handheldItem(ROYAL_SPEAR.get());
 
         basicItem(ENCHANTED_FLINT_AND_STEEL_DIAMOND.get());
         basicItem(ENCHANTED_FLINT_AND_STEEL_EMERALD.get());

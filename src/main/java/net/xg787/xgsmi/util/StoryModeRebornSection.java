@@ -13,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
  */
 public class StoryModeRebornSection extends SectionTextured {
     int secondaryTextColor = 0xffcea05a;
-
+    int textColor = 0xffffeb8c;
     int horizontalSize = 162;
     int verticalSize = 18;
 
@@ -31,6 +31,12 @@ public class StoryModeRebornSection extends SectionTextured {
     public SectionTextured setVerticalSize(int verticalSize) {
         this.verticalSize = verticalSize;
         return super.setVerticalSize(verticalSize);
+    }
+
+    @Override
+    public SectionTextured setTextColor(int textColor) {
+        this.textColor = textColor;
+        return super.setTextColor(textColor);
     }
 
     @Override

@@ -13,14 +13,12 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.Tags;
-import net.xg787.xgsmi.registry.StoryModeRebornItems;
 import net.xg787.xgsmi.util.StoryModeRebornTags;
 
 import java.util.EnumMap;
 import java.util.List;
 import java.util.function.Supplier;
 
-import static net.minecraft.world.item.Items.IRON_INGOT;
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
 public class StoryModeRebornArmorMaterials {

@@ -55,12 +55,8 @@ public class StoryModeRebornBlocks {
 
     public static <T extends Block> DeferredBlock<T> register(String name, Supplier<T> block){
         DeferredBlock<T> blockItem = BLOCKS.register(name, block);
-        registerBlockItem(name, blockItem);
+        StoryModeRebornItems.ITEMS.register(name, () -> new BlockItem(blockItem.get(), new Item.Properties()));
         return blockItem;
-    }
-
-    public static <T extends Block> void registerBlockItem(String name, DeferredBlock<T> block){
-        StoryModeRebornItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
 
     public static <T extends Block> DeferredBlock<T> registerProperties(String name, Supplier<T> block, Item.Properties properties){

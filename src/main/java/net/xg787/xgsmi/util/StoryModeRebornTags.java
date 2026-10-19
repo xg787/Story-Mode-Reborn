@@ -27,8 +27,6 @@ public class StoryModeRebornTags {
         public static final TagKey<Block> STORAGE_BLOCKS_RAW_ROMEUM = createCommonTag("storage_blocks/raw_romeum");
         public static final TagKey<Block> STORAGE_BLOCKS_ROMEUM = createCommonTag("storage_blocks/romeum");
 
-
-
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
         }
@@ -41,12 +39,17 @@ public class StoryModeRebornTags {
     public static class Items {
         public static final TagKey<Item> TNT_IGNITER = createTag("tnt_igniter");
         public static final TagKey<Item> FIRE_CHARGES = createTag("fire_charges");
-        public static final TagKey<Item> CHARGED_IGNITER = createTag("charged_igniter");
+        public static final TagKey<Item> CREEPER_CHARGER = createTag("creeper_charger");
         public static final TagKey<Item> ENCHANTED_IGNITER = createTag("enchanted_igniter");
         public static final TagKey<Item> PRISMARINE_TOOL_MATERIAL = createTag("prismarine_tool_material");
         public static final TagKey<Item> STORY_MODE_ARMOR = createTag("story_mode_armor");
+        public static final TagKey<Item> HIDE_SKIN_LAYER = createTag("player_model/hide_skin_layer");
+        public static final TagKey<Item> HIDE_SlEEVE_SKIN_LAYER = createTag("player_model/hide_sleeve_skin_layer");
+        public static final TagKey<Item> DONT_HIDE_SlEEVE_SKIN_LAYER = createTag("player_model/dont_hide_sleeve_skin_layer");
         public static final TagKey<Item> BASIC_ARMOR_TEMPLATES = createTag("basic_armor_templates");
         public static final TagKey<Item> ARMOR_TEMPLATES = createTag("armor_templates");
+        public static final TagKey<Item> CREATIVE_TAB_PRISMARINE_ITEMS = createTag("creative_tab/prismarine_items");
+        public static final TagKey<Item> CREATIVE_TAB_ROYAL_ITEMS = createTag("creative_tab/royal_items");
 
         public static final TagKey<Item> SEEDS_WHITE_PUMPKIN = createCommonTag("seeds/white_pumpkin");
         public static final TagKey<Item> CROPS_WHITE_PUMPKIN = createCommonTag("crops/white_pumpkin");

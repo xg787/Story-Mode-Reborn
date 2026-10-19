@@ -13,9 +13,10 @@ public class GabrielArmorModel extends BaseArmorModel {
 		MeshDefinition meshdefinition = new MeshDefinition();
 		PartDefinition partdefinition = meshdefinition.getRoot();
 
+
 		PartDefinition head = partdefinition.addOrReplaceChild("head", CubeListBuilder.create().texOffs(16, 45).addBox(-5.0F, -8.5F, -5.5F, 10.0F, 9.0F, 10.0F, new CubeDeformation(0.0F))
 				.texOffs(30, 57).addBox(-1.0F, -6.5F, -4.5F, 2.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
-				.texOffs(19, 55).addBox(-4.0F, -8.5F, -4.5F, 8.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
+				.texOffs(0, 55).addBox(-4.0F, -8.5F, -4.5F, 8.0F, 2.0F, 0.0F, new CubeDeformation(0.0F))
 				.texOffs(29, 32).addBox(1.0F, -7.5F, -5.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
 				.texOffs(29, 32).addBox(-2.0F, -7.5F, -5.5F, 1.0F, 1.0F, 1.0F, new CubeDeformation(0.0F))
 				.texOffs(46, 54).addBox(-4.0F, -8.5F, 3.5F, 8.0F, 8.0F, 1.0F, new CubeDeformation(0.0F))

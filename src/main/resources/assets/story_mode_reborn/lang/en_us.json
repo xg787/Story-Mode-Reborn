@@ -111,6 +111,7 @@
   "item.story_mode_reborn.prismarine_axe": "Prismarine Axe",
   "item.story_mode_reborn.prismarine_shovel": "Prismarine Shovel",
   "item.story_mode_reborn.prismarine_hoe": "Prismarine Hoe",
+  "item.story_mode_reborn.prismarine_spear": "Prismarine Spear",
   "item.story_mode_reborn.prismarine_bow": "Prismarine Bow",
   "item.story_mode_reborn.prismarine_crossbow": "Prismarine Crossbow",
   "item.story_mode_reborn.prismarine_arrow": "Prismarine Arrow",
@@ -155,6 +156,7 @@
   "item.story_mode_reborn.royal_axe": "Royal Axe",
   "item.story_mode_reborn.royal_shovel": "Royal Shovel",
   "item.story_mode_reborn.royal_hoe": "Royal Hoe",
+  "item.story_mode_reborn.royal_spear": "Royal Spear",
 
   "item.story_mode_reborn.enchanted_flint_and_steel_diamond": "Enchanted Flint and Steel",
   "item.story_mode_reborn.enchanted_flint_and_steel_emerald": "Enchanted Flint and Steel",
@@ -305,5 +307,23 @@
 
   "itemGroup.story_mode_reborn": "Storymode",
 
+  "subtitles.item.bow.pulling": "Pulling Bow",
+
+  "subtitles.story_mode_reborn.item.enchanted_flint_and_steel.place_fire": "Lit Enchanted Fire",
+  "subtitles.story_mode_reborn.item.enchanted_flint_and_steel.use": "Enchanted Flint and Steel click",
+  "subtitles.entity.creeper.ambient": "Creeper hisses",
+  "subtitles.entity.creeper.hiss": "Creeper aggressively hisses",
+  "subtitles.entity.creeper.chargedhiss": "Charged Creeper aggressively hisses",
+
+  "subtitles.entity.enderman.appear": "Enderman appears",
+  "subtitles.entity.enderman.disappear": "Enderman disappears",
+
+  "subtitles.entity.player.appear": "Player appears",
+  "subtitles.entity.player.disappear": "Player disappears",
+
+  "story_mode_reborn.configuration.bow_pulling_sound": "Bow pulling sound",
+  "story_mode_reborn.configuration.creeper_sounds": "New Creeper sounds",
+  "story_mode_reborn.configuration.enderman_sounds": "New Enderman sounds",
+  "story_mode_reborn.configuration.ender_pearl_sound": "New Ender Pearl sounds",
   "story_mode_reborn.configuration.add_items_to_vanilla_tabs": "Add items to vanilla tabs"
 }

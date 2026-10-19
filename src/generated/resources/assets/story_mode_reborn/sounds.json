@@ -1,14 +1,114 @@
 {
+  "entity.creeper.ambient": {
+    "sounds": [
+      {
+        "name": "story_mode_reborn:mob/creeper/say1",
+        "volume": 0.65
+      },
+      {
+        "name": "story_mode_reborn:mob/creeper/say2",
+        "volume": 0.65
+      },
+      {
+        "name": "story_mode_reborn:mob/creeper/say3",
+        "volume": 0.65
+      },
+      {
+        "name": "story_mode_reborn:mob/creeper/say4",
+        "volume": 0.65
+      },
+      {
+        "name": "story_mode_reborn:mob/creeper/say5",
+        "volume": 0.65
+      },
+      {
+        "name": "story_mode_reborn:mob/creeper/say6",
+        "volume": 0.65
+      }
+    ],
+    "subtitle": "subtitles.entity.creeper.ambient"
+  },
+  "entity.creeper.chargedhiss": {
+    "sounds": [
+      "story_mode_reborn:mob/creeper/chargedhiss1",
+      "story_mode_reborn:mob/creeper/chargedhiss2",
+      "story_mode_reborn:mob/creeper/chargedhiss3",
+      "story_mode_reborn:mob/creeper/chargedhiss4",
+      "story_mode_reborn:mob/creeper/chargedhiss5",
+      "story_mode_reborn:mob/creeper/chargedhiss6",
+      "story_mode_reborn:mob/creeper/chargedhiss7"
+    ],
+    "subtitle": "subtitles.entity.creeper.chargedhiss"
+  },
+  "entity.creeper.hiss": {
+    "sounds": [
+      "story_mode_reborn:mob/creeper/hiss1",
+      "story_mode_reborn:mob/creeper/hiss2",
+      "story_mode_reborn:mob/creeper/hiss3",
+      "story_mode_reborn:mob/creeper/hiss4",
+      "story_mode_reborn:mob/creeper/hiss5",
+      "story_mode_reborn:mob/creeper/hiss6",
+      "story_mode_reborn:mob/creeper/hiss7"
+    ],
+    "subtitle": "subtitles.entity.creeper.hiss"
+  },
+  "entity.creeper.step": {
+    "sounds": [
+      "story_mode_reborn:mob/creeper/step1",
+      "story_mode_reborn:mob/creeper/step2",
+      "story_mode_reborn:mob/creeper/step3",
+      "story_mode_reborn:mob/creeper/step4",
+      "story_mode_reborn:mob/creeper/step5",
+      "story_mode_reborn:mob/creeper/step6"
+    ],
+    "subtitle": "subtitles.block.generic.footsteps"
+  },
+  "entity.enderman.appear": {
+    "sounds": [
+      "story_mode_reborn:mob/endermen/appear"
+    ],
+    "subtitle": "subtitles.entity.enderman.appear"
+  },
+  "entity.enderman.bigscream": {
+    "sounds": [
+      "story_mode_reborn:mob/endermen/bigscream"
+    ],
+    "subtitle": "subtitles.entity.enderman.scream"
+  },
+  "entity.enderman.disappear": {
+    "sounds": [
+      "story_mode_reborn:mob/endermen/disappear"
+    ],
+    "subtitle": "subtitles.entity.enderman.disappear"
+  },
+  "entity.player.appear": {
+    "sounds": [
+      "story_mode_reborn:mob/endermen/appear"
+    ],
+    "subtitle": "subtitles.entity.player.appear"
+  },
+  "entity.player.disappear": {
+    "sounds": [
+      "story_mode_reborn:mob/endermen/disappear"
+    ],
+    "subtitle": "subtitles.entity.player.disappear"
+  },
+  "item.bow.pulling": {
+    "sounds": [
+      "story_mode_reborn:item/bow/pulling"
+    ],
+    "subtitle": "subtitles.item.bow.pulling"
+  },
   "item.enchanted_flint_and_steel.place_fire": {
     "sounds": [
-      "story_mode_reborn:enchanted_flint_and_steel_place_fire"
+      "story_mode_reborn:item/enchanted_flint_and_steel/place_fire"
     ],
-    "subtitle": "subtitle.story_mode_reborn.item.enchanted_flint_and_steel.place_fire"
+    "subtitle": "subtitles.story_mode_reborn.item.enchanted_flint_and_steel.place_fire"
   },
   "item.enchanted_flint_and_steel.use": {
     "sounds": [
-      "story_mode_reborn:enchanted_flint_and_steel_use"
+      "story_mode_reborn:item/enchanted_flint_and_steel/use"
     ],
-    "subtitle": "subtitle.story_mode_reborn.item.enchanted_flint_and_steel.use"
+    "subtitle": "subtitles.story_mode_reborn.item.enchanted_flint_and_steel.use"
   }
 }

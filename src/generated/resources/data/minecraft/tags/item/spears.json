@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "story_mode_reborn:prismarine_spear",
+      "required": false
+    },
+    {
+      "id": "story_mode_reborn:royal_spear",
+      "required": false
+    }
+  ]
+}

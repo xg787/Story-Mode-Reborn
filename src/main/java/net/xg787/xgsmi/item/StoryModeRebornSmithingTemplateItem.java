@@ -8,6 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlag;
 import net.minecraft.world.item.*;
+import net.neoforged.fml.ModList;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
@@ -44,6 +45,9 @@ public class StoryModeRebornSmithingTemplateItem extends SmithingTemplateItem {
     private static final ResourceLocation EMPTY_SLOT_LAPIS_LAZULI = ResourceLocation.withDefaultNamespace("item/empty_slot_lapis_lazuli");
     private static final ResourceLocation EMPTY_SLOT_QUARTZ = ResourceLocation.withDefaultNamespace("item/empty_slot_quartz");
     private static final ResourceLocation EMPTY_SLOT_REDSTONE_DUST = ResourceLocation.withDefaultNamespace("item/empty_slot_redstone_dust");
+    private static final ResourceLocation EMPTY_SLOT_SPEAR = ResourceLocation.withDefaultNamespace("item/empty_slot_spear");
+    private static final ResourceLocation EMPTY_SLOT_HORSE_ARMOR = ResourceLocation.withDefaultNamespace("item/empty_slot_horse_armor");
+    private static final ResourceLocation EMPTY_SLOT_NAUTILUS_ARMOR = ResourceLocation.withDefaultNamespace("item/empty_slot_nautilus_armor");
     private static final ResourceLocation EMPTY_SLOT_LEATHER = ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/empty_slot_leather");
     private static final ResourceLocation EMPTY_SLOT_BALL = ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/empty_slot_ball");
     private static final ResourceLocation EMPTY_SLOT_BLOCK = ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/empty_slot_block");
@@ -247,19 +251,35 @@ public class StoryModeRebornSmithingTemplateItem extends SmithingTemplateItem {
         );
     }
 
-
-    private static List<ResourceLocation> createXgsmiUpgradeIconList() {
-        return List.of(
-                EMPTY_SLOT_HELMET,
-                EMPTY_SLOT_CHESTPLATE,
-                EMPTY_SLOT_LEGGINGS,
-                EMPTY_SLOT_BOOTS,
-                EMPTY_SLOT_SWORD,
-                EMPTY_SLOT_PICKAXE,
-                EMPTY_SLOT_AXE,
-                EMPTY_SLOT_SHOVEL,
-                EMPTY_SLOT_HOE
-        );
+    public static List<ResourceLocation> createXgsmiUpgradeIconList() {
+        if (ModList.get().isLoaded("vanillabackport")) {
+            return List.of(
+                    EMPTY_SLOT_HELMET,
+                    EMPTY_SLOT_CHESTPLATE,
+                    EMPTY_SLOT_LEGGINGS,
+                    EMPTY_SLOT_BOOTS,
+                    EMPTY_SLOT_HORSE_ARMOR,
+                    EMPTY_SLOT_NAUTILUS_ARMOR,
+                    EMPTY_SLOT_SPEAR,
+                    EMPTY_SLOT_SWORD,
+                    EMPTY_SLOT_PICKAXE,
+                    EMPTY_SLOT_AXE,
+                    EMPTY_SLOT_SHOVEL,
+                    EMPTY_SLOT_HOE
+            );
+        } else {
+            return List.of(
+                    EMPTY_SLOT_HELMET,
+                    EMPTY_SLOT_CHESTPLATE,
+                    EMPTY_SLOT_LEGGINGS,
+                    EMPTY_SLOT_BOOTS,
+                    EMPTY_SLOT_SWORD,
+                    EMPTY_SLOT_PICKAXE,
+                    EMPTY_SLOT_AXE,
+                    EMPTY_SLOT_SHOVEL,
+                    EMPTY_SLOT_HOE
+            );
+        }
     }
 
     private static List<ResourceLocation> createXgsmiArmorFullIconList() {

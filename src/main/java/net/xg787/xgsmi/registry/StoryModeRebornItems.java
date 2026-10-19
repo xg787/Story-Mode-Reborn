@@ -24,8 +24,8 @@ public class StoryModeRebornItems {
     public static final DeferredItem<Item> PRISMARINE_AXE = ITEMS.register("prismarine_axe", () ->  new AxeItem(StoryModeRebornToolTiers.PRISMARINE, new Item.Properties().attributes(AxeItem.createAttributes(StoryModeRebornToolTiers.PRISMARINE, 6.0F, -3.1F))));
     public static final DeferredItem<Item> PRISMARINE_SHOVEL = ITEMS.register("prismarine_shovel", () -> new ShovelItem(StoryModeRebornToolTiers.PRISMARINE, new Item.Properties().attributes(ShovelItem.createAttributes(StoryModeRebornToolTiers.PRISMARINE, 1.5F, -3.0F))));
     public static final DeferredItem<Item> PRISMARINE_HOE = ITEMS.register("prismarine_hoe", () ->  new HoeItem(StoryModeRebornToolTiers.PRISMARINE, new Item.Properties().attributes(HoeItem.createAttributes(StoryModeRebornToolTiers.PRISMARINE, -2.0F, -1.0F))));
-    public static final DeferredItem<Item> PRISMARINE_BOW = ITEMS.register("prismarine_bow", () -> new BowItem(new Item.Properties().durability(768)));
-    public static final DeferredItem<Item> PRISMARINE_CROSSBOW = ITEMS.register("prismarine_crossbow", () -> new CrossbowItem(new Item.Properties().durability(930)));
+    public static final DeferredItem<Item> PRISMARINE_BOW = ITEMS.register("prismarine_bow", () -> new PrismarineBowItem(new Item.Properties().durability(768)));
+    public static final DeferredItem<Item> PRISMARINE_CROSSBOW = ITEMS.register("prismarine_crossbow", () -> new PrismarineCrossbowItem(new Item.Properties().durability(930)));
     public static final DeferredItem<Item> PRISMARINE_ARROW = ITEMS.register("prismarine_arrow", () -> new PrismarineArrowItem(new Item.Properties()));
     public static final DeferredItem<Item> TIPPED_PRISMARINE_ARROW = ITEMS.register("tipped_prismarine_arrow", () -> new TippedPrismarineArrowItem(new Item.Properties()));
 

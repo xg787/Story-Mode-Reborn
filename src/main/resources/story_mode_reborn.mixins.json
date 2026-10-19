@@ -3,11 +3,15 @@
   "package": "net.xg787.xgsmi.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "BowItemMixin",
     "CreeperMixin",
+    "EnderManMixin",
+    "ThrownEnderpearlMixin",
     "TntBlockMixin"
   ],
   "client": [
-    "GuiMixin"
+    "GuiMixin",
+    "PlayerRendererMixin"
   ],
   "injectors": {
     "defaultRequire": 1

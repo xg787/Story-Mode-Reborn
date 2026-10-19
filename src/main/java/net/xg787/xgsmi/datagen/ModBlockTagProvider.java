@@ -10,6 +10,7 @@ import net.xg787.xgsmi.util.StoryModeRebornTags;
 
 import java.util.concurrent.CompletableFuture;
 
+import static net.minecraft.world.level.block.Blocks.*;
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 
@@ -55,6 +56,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(WHITE_PUMPKIN_STEM.get());
 
         tag(BlockTags.MAINTAINS_FARMLAND)
+                .add(MELON)
+                .add(PUMPKIN)
+                .add(WHITE_PUMPKIN.get())
                 .add(WHITE_PUMPKIN_STEM.get())
                 .add(ATTACHED_WHITE_PUMPKIN_STEM.get());
 
