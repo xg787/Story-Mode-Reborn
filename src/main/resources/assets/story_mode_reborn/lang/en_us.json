@@ -307,6 +307,12 @@
 
   "itemGroup.story_mode_reborn": "Storymode",
 
+  "itemGroup.story_mode_reborn_items": "Storymode Items",
+  "itemGroup.story_mode_reborn_blocks": "Storymode Blocks",
+  "itemGroup.story_mode_reborn_templates": "Storymode Templates",
+  "itemGroup.story_mode_reborn_armor": "Storymode Armor",
+
+
   "subtitles.item.bow.pulling": "Pulling Bow",
 
   "subtitles.story_mode_reborn.item.enchanted_flint_and_steel.place_fire": "Lit Enchanted Fire",

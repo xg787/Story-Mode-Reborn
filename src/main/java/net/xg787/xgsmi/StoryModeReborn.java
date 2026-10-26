@@ -13,6 +13,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
+import net.xg787.xgsmi.registry.compat.StoryModeRebornFancyTab;
 import net.xg787.xgsmi.registry.compat.StoryModeRebornVBItems;
 
 import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
@@ -22,6 +23,7 @@ public class StoryModeReborn {
     public static final String MOD_ID = "story_mode_reborn";
 
     public StoryModeReborn(IEventBus modEventBus, ModContainer modContainer) {
+        //modContainer.registerConfig(ModConfig.Type.CLIENT, StoryModeRebornConfig.CLIENT_SPEC);
         //modContainer.registerConfig(ModConfig.Type.COMMON, StoryModeRebornConfig.COMMON_SPEC);
         modContainer.registerConfig(ModConfig.Type.SERVER, StoryModeRebornConfig.SERVER_SPEC);
         modContainer.registerConfig(ModConfig.Type.STARTUP, StoryModeRebornConfig.STARTUP_SPEC);
@@ -29,6 +31,9 @@ public class StoryModeReborn {
         StoryModeRebornItems.ITEMS.register(modEventBus);
         if (ModList.get().isLoaded("vanillabackport")) {
             StoryModeRebornVBItems.ITEMS.register(modEventBus);
+        }
+        if (ModList.get().isLoaded("fancytabsections")) {
+            StoryModeRebornFancyTab.CREATIVE_MODE_TABS.register(modEventBus);
         }
         StoryModeRebornSounds.SOUND_EVENTS.register(modEventBus);
         StoryModeRebornEntities.ENTITY_TYPES.register(modEventBus);

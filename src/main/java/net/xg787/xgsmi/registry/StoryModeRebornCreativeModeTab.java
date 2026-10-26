@@ -8,6 +8,7 @@ import net.minecraft.world.flag.FeatureFlagSet;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -27,124 +28,130 @@ import static net.xg787.xgsmi.registry.StoryModeRebornItems.*;
 public class StoryModeRebornCreativeModeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MOD_ID);
 
-    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB = CREATIVE_MODE_TABS.register("storymode_tab", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.story_mode_reborn"))
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> ICON.get().getDefaultInstance())
-            .build());
-    
-    public static void addCreativeSections(FMLClientSetupEvent event) {
-        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
-                new StoryModeRebornSection(StoryModeReborn.path("items"))
-                        .add(WHITE_PUMPKIN_SEEDS)
-                        .add(WHITE_PUMPKIN_PIE)
-                        .add((registry) -> registry.lookup(Registries.ITEM).map(lookup -> lookup.get(StoryModeRebornTags.Items.CREATIVE_TAB_PRISMARINE_ITEMS).map(named -> named.stream().map(holder -> holder.value().getDefaultInstance()).toList()).orElse(List.of())).orElseGet(List::of))
-                        .add((registry) -> registry.lookup(Registries.ITEM).map(lookup -> lookup.get(StoryModeRebornTags.Items.CREATIVE_TAB_ROYAL_ITEMS).map(named -> named.stream().map(holder -> holder.value().getDefaultInstance()).toList()).orElse(List.of())).orElseGet(List::of))
-                        .add(ENCHANTED_FLINT_AND_STEEL_DIAMOND)
-                        .add(ENCHANTED_FLINT_AND_STEEL_EMERALD)
-                        .add(ENCHANTED_FLINT_AND_STEEL_GOLD)
-                        .add(ENCHANTED_FLINT_AND_STEEL_REDSTONE)
-                        .add(RAW_TITANIUM)
-                        .add(TITANIUM_INGOT)
-                        .add(TITANIUM_SWORD)
-                        .add(TITANIUM_PICKAXE)
-                        .add(TITANIUM_AXE)
-                        .add(TITANIUM_SHOVEL)
-                        .add(TITANIUM_HOE)
-                        .add(ENCHANTED_TITANIUM_SWORD)
-                        .add(ENCHANTED_TITANIUM_PICKAXE)
-                        .add(ENCHANTED_TITANIUM_AXE)
-                        .add(ENCHANTED_TITANIUM_SHOVEL)
-                        .add(ENCHANTED_TITANIUM_HOE)
-                        .add(RAW_ROMEUM)
-                        .add(ROMEUM_INGOT)
-                        .add(ROMEUM_SWORD)
-                        .add(ROMEUM_PICKAXE)
-                        .add(ROMEUM_AXE)
-                        .add(ROMEUM_SHOVEL)
-                        .add(ROMEUM_HOE)
-                        .add(ENCHANTED_ROMEUM_SWORD)
-                        .add(ENCHANTED_ROMEUM_PICKAXE)
-                        .add(ENCHANTED_ROMEUM_AXE)
-                        .add(ENCHANTED_ROMEUM_SHOVEL)
-                        .add(ENCHANTED_ROMEUM_HOE)
-        );
-        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
-                new StoryModeRebornSection(StoryModeReborn.path("blocks"))
-                        .add(WHITE_PUMPKIN)
-                        .add(CARVED_WHITE_PUMPKIN)
-                        .add(WHITE_JACK_O_LANTERN)
-                        .add(DEEPSLATE_TITANIUM_ORE)
-                        .add(TITANIUM_BLOCK)
-                        .add(NETHER_ROMEUM_ORE)
-                        .add(ROMEUM_BLOCK)
-        );
-        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
-                new StoryModeRebornSection(StoryModeReborn.path("templates"))
-                        .add(BLANK_BASIC_ARMOR_TEMPLATE)
-                        .add(BASIC_ARMOR_TEMPLATE)
-                        .add(BASIC_ARMOR_TEMPLATE_1)
-                        .add(BASIC_ARMOR_TEMPLATE_2)
-                        .add(BASIC_ARMOR_TEMPLATE_3)
-                        .add(BASIC_ARMOR_TEMPLATE_4)
-                        .add(BASIC_ARMOR_TEMPLATE_5)
-                        .add(BASIC_ARMOR_TEMPLATE_6)
-                        .add(BASIC_ARMOR_TEMPLATE_7)
-                        .add(BASIC_ARMOR_TEMPLATE_8)
-                        .add(BLANK_UPGRADE_SMITHING_TEMPLATE)
-                        .add(TITANIUM_UPGRADE_SMITHING_TEMPLATE)
-                        .add(TITANIUM_ENCHANT_SMITHING_TEMPLATE)
-                        .add(ROMEUM_UPGRADE_SMITHING_TEMPLATE)
-                        .add(ROMEUM_ENCHANT_SMITHING_TEMPLATE)
-                        .add(BLANK_ARMOR_TEMPLATE)
-                        .add(ARMOR_TEMPLATE_1)
-                        .add(ARMOR_TEMPLATE_2)
-                        .add(ARMOR_TEMPLATE_3)
-                        .add(ARMOR_TEMPLATE_4)
-                        .add(ARMOR_TEMPLATE_5)
-                        .add(ARMOR_TEMPLATE_6)
-                        .add(ARMOR_TEMPLATE_7)
-                        .add(ARMOR_TEMPLATE_8)
-                        .add(ARMOR_TEMPLATE_9)
-                        .add(ARMOR_TEMPLATE_10)
-                        .add(ARMOR_TEMPLATE_11)
-                        .add(ARMOR_TEMPLATE_12)
-                        .add(ARMOR_TEMPLATE_13)
-                        .add(ARMOR_TEMPLATE_14)
-                        .add(ARMOR_TEMPLATE_15)
-                        .add(ARMOR_TEMPLATE_16)
-                        .add(ARMOR_TEMPLATE_17)
-                        .add(ARMOR_TEMPLATE_18)
-                        .add(ARMOR_TEMPLATE_19)
-                        .add(ARMOR_TEMPLATE_20)
-                        .add(ARMOR_TEMPLATE_21)
-                        .add(ARMOR_TEMPLATE_22)
-                        .add(ARMOR_TEMPLATE_23)
-                        .add(ARMOR_TEMPLATE_24)
-                        .add(ARMOR_TEMPLATE_25)
-                        .add(ARMOR_TEMPLATE_26)
-        );
-        FancyTabSections.addSection(StoryModeReborn.path("storymode_tab"),
-                new StoryModeRebornSection(StoryModeReborn.path("armors"))
-                        .add(TITANIUM_HELMET)
-                        .add(TITANIUM_CHESTPLATE)
-                        .add(TITANIUM_LEGGINGS)
-                        .add(TITANIUM_BOOTS)
-                        .add(ENCHANTED_TITANIUM_HELMET)
-                        .add(ENCHANTED_TITANIUM_CHESTPLATE)
-                        .add(ENCHANTED_TITANIUM_LEGGINGS)
-                        .add(ENCHANTED_TITANIUM_BOOTS)
-                        .add(ROMEUM_HELMET)
-                        .add(ROMEUM_CHESTPLATE)
-                        .add(ROMEUM_LEGGINGS)
-                        .add(ROMEUM_BOOTS)
-                        .add(ENCHANTED_ROMEUM_HELMET)
-                        .add(ENCHANTED_ROMEUM_CHESTPLATE)
-                        .add(ENCHANTED_ROMEUM_LEGGINGS)
-                        .add(ENCHANTED_ROMEUM_BOOTS)
-                        .add((registry) -> registry.lookup(Registries.ITEM).map(lookup -> lookup.get(StoryModeRebornTags.Items.STORY_MODE_ARMOR).map(named -> named.stream().map(holder -> holder.value().getDefaultInstance()).toList()).orElse(List.of())).orElseGet(List::of))
-        );
-    }
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_ITEMS = CREATIVE_MODE_TABS.register("storymode_tab_items", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.story_mode_reborn_items"))
+            .icon(() -> ROYAL_SWORD.get().getDefaultInstance())
+            .displayItems((displayParameters, output) -> {
+                output.accept(WHITE_PUMPKIN_SEEDS);
+                output.accept(WHITE_PUMPKIN_PIE);
+                output.acceptAll(displayParameters.holders().lookup(Registries.ITEM).map(lookup -> lookup.get(StoryModeRebornTags.Items.CREATIVE_TAB_PRISMARINE_ITEMS).map(named -> named.stream().map(holder -> holder.value().getDefaultInstance()).toList()).orElse(List.of())).orElseGet(List::of));
+                output.acceptAll(displayParameters.holders().lookup(Registries.ITEM).map(lookup -> lookup.get(StoryModeRebornTags.Items.CREATIVE_TAB_ROYAL_ITEMS).map(named -> named.stream().map(holder -> holder.value().getDefaultInstance()).toList()).orElse(List.of())).orElseGet(List::of));
+                output.accept(ENCHANTED_FLINT_AND_STEEL_DIAMOND);
+                output.accept(ENCHANTED_FLINT_AND_STEEL_EMERALD);
+                output.accept(ENCHANTED_FLINT_AND_STEEL_GOLD);
+                output.accept(ENCHANTED_FLINT_AND_STEEL_REDSTONE);
+                output.accept(RAW_TITANIUM);
+                output.accept(TITANIUM_INGOT);
+                output.accept(TITANIUM_SWORD);
+                output.accept(TITANIUM_PICKAXE);
+                output.accept(TITANIUM_AXE);
+                output.accept(TITANIUM_SHOVEL);
+                output.accept(TITANIUM_HOE);
+                output.accept(ENCHANTED_TITANIUM_SWORD);
+                output.accept(ENCHANTED_TITANIUM_PICKAXE);
+                output.accept(ENCHANTED_TITANIUM_AXE);
+                output.accept(ENCHANTED_TITANIUM_SHOVEL);
+                output.accept(ENCHANTED_TITANIUM_HOE);
+                output.accept(RAW_ROMEUM);
+                output.accept(ROMEUM_INGOT);
+                output.accept(ROMEUM_SWORD);
+                output.accept(ROMEUM_PICKAXE);
+                output.accept(ROMEUM_AXE);
+                output.accept(ROMEUM_SHOVEL);
+                output.accept(ROMEUM_HOE);
+                output.accept(ENCHANTED_ROMEUM_SWORD);
+                output.accept(ENCHANTED_ROMEUM_PICKAXE);
+                output.accept(ENCHANTED_ROMEUM_AXE);
+                output.accept(ENCHANTED_ROMEUM_SHOVEL);
+                output.accept(ENCHANTED_ROMEUM_HOE);
+            }).withSearchBar().hideTitle().build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_BLOCKS = CREATIVE_MODE_TABS.register("storymode_tab_blocks", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.story_mode_reborn_blocks"))
+            .icon(() -> CARVED_WHITE_PUMPKIN.asItem().getDefaultInstance())
+            .withTabsBefore(STORYMODE_TAB_ITEMS.getId())
+            .displayItems((displayParameters, output) -> {
+                output.accept(WHITE_PUMPKIN);
+                output.accept(CARVED_WHITE_PUMPKIN);
+                output.accept(WHITE_JACK_O_LANTERN);
+                output.accept(DEEPSLATE_TITANIUM_ORE);
+                output.accept(TITANIUM_BLOCK);
+                output.accept(NETHER_ROMEUM_ORE);
+                output.accept(ROMEUM_BLOCK);
+            }).withSearchBar().hideTitle().build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_TEMPLATES = CREATIVE_MODE_TABS.register("storymode_tab_templates", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.story_mode_reborn_templates"))
+            .icon(() -> ARMOR_TEMPLATE_23.get().getDefaultInstance())
+            .withTabsBefore(STORYMODE_TAB_BLOCKS.getId())
+            .displayItems((displayParameters, output) -> {
+                output.accept(BLANK_BASIC_ARMOR_TEMPLATE);
+                output.accept(BASIC_ARMOR_TEMPLATE);
+                output.accept(BASIC_ARMOR_TEMPLATE_1);
+                output.accept(BASIC_ARMOR_TEMPLATE_2);
+                output.accept(BASIC_ARMOR_TEMPLATE_3);
+                output.accept(BASIC_ARMOR_TEMPLATE_4);
+                output.accept(BASIC_ARMOR_TEMPLATE_5);
+                output.accept(BASIC_ARMOR_TEMPLATE_6);
+                output.accept(BASIC_ARMOR_TEMPLATE_7);
+                output.accept(BASIC_ARMOR_TEMPLATE_8);
+                output.accept(BLANK_UPGRADE_SMITHING_TEMPLATE);
+                output.accept(TITANIUM_UPGRADE_SMITHING_TEMPLATE);
+                output.accept(TITANIUM_ENCHANT_SMITHING_TEMPLATE);
+                output.accept(ROMEUM_UPGRADE_SMITHING_TEMPLATE);
+                output.accept(ROMEUM_ENCHANT_SMITHING_TEMPLATE);
+                output.accept(BLANK_ARMOR_TEMPLATE);
+                output.accept(ARMOR_TEMPLATE_1);
+                output.accept(ARMOR_TEMPLATE_2);
+                output.accept(ARMOR_TEMPLATE_3);
+                output.accept(ARMOR_TEMPLATE_4);
+                output.accept(ARMOR_TEMPLATE_5);
+                output.accept(ARMOR_TEMPLATE_6);
+                output.accept(ARMOR_TEMPLATE_7);
+                output.accept(ARMOR_TEMPLATE_8);
+                output.accept(ARMOR_TEMPLATE_9);
+                output.accept(ARMOR_TEMPLATE_10);
+                output.accept(ARMOR_TEMPLATE_11);
+                output.accept(ARMOR_TEMPLATE_12);
+                output.accept(ARMOR_TEMPLATE_13);
+                output.accept(ARMOR_TEMPLATE_14);
+                output.accept(ARMOR_TEMPLATE_15);
+                output.accept(ARMOR_TEMPLATE_16);
+                output.accept(ARMOR_TEMPLATE_17);
+                output.accept(ARMOR_TEMPLATE_18);
+                output.accept(ARMOR_TEMPLATE_19);
+                output.accept(ARMOR_TEMPLATE_20);
+                output.accept(ARMOR_TEMPLATE_21);
+                output.accept(ARMOR_TEMPLATE_22);
+                output.accept(ARMOR_TEMPLATE_23);
+                output.accept(ARMOR_TEMPLATE_24);
+                output.accept(ARMOR_TEMPLATE_25);
+                output.accept(ARMOR_TEMPLATE_26);
+            }).withSearchBar().hideTitle().build());
+
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_ARMOR = CREATIVE_MODE_TABS.register("storymode_tab_armor", () -> CreativeModeTab.builder()
+            .title(Component.translatable("itemGroup.story_mode_reborn_armor"))
+            .icon(() -> GABRIEL_HELMET.get().getDefaultInstance())
+            .withTabsBefore(STORYMODE_TAB_TEMPLATES.getId())
+            .displayItems((displayParameters, output) -> {
+                output.accept(TITANIUM_HELMET);
+                output.accept(TITANIUM_CHESTPLATE);
+                output.accept(TITANIUM_LEGGINGS);
+                output.accept(TITANIUM_BOOTS);
+                output.accept(ENCHANTED_TITANIUM_HELMET);
+                output.accept(ENCHANTED_TITANIUM_CHESTPLATE);
+                output.accept(ENCHANTED_TITANIUM_LEGGINGS);
+                output.accept(ENCHANTED_TITANIUM_BOOTS);
+                output.accept(ROMEUM_HELMET);
+                output.accept(ROMEUM_CHESTPLATE);
+                output.accept(ROMEUM_LEGGINGS);
+                output.accept(ROMEUM_BOOTS);
+                output.accept(ENCHANTED_ROMEUM_HELMET);
+                output.accept(ENCHANTED_ROMEUM_CHESTPLATE);
+                output.accept(ENCHANTED_ROMEUM_LEGGINGS);
+                output.accept(ENCHANTED_ROMEUM_BOOTS);
+                output.acceptAll(displayParameters.holders().lookup(Registries.ITEM).map(lookup -> lookup.get(StoryModeRebornTags.Items.STORY_MODE_ARMOR).map(named -> named.stream().map(holder -> holder.value().getDefaultInstance()).toList()).orElse(List.of())).orElseGet(List::of));
+            }).withSearchBar().hideTitle().build());
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

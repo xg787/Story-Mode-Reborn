@@ -31,7 +31,7 @@ issueTrackerURL="https://github.com/xg787/Story-Mode-Reborn/issues"
 
 [[dependencies.${mod_id}]]
     modId="fancytabsections"
-    type="required"
+    type="optional"
     versionRange="[6.0-NEOFORGE-1.21.1,)"
     reason="A mod is bundling an outdated version of Fancy Tab Sections that is incompatible"
     ordering="NONE"

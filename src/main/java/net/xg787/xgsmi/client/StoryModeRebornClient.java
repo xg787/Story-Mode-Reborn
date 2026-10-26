@@ -23,13 +23,13 @@ import net.xg787.xgsmi.client.renderer.entity.TippablePrismarineArrowRenderer;
 import net.xg787.xgsmi.registry.StoryModeRebornCreativeModeTab;
 import net.xg787.xgsmi.registry.StoryModeRebornEntities;
 import net.xg787.xgsmi.registry.StoryModeRebornItems;
+import net.xg787.xgsmi.registry.compat.StoryModeRebornFancyTab;
 
 import static net.xg787.xgsmi.registry.StoryModeRebornItems.TIPPED_PRISMARINE_ARROW;
 
 @Mod(value = StoryModeReborn.MOD_ID, dist = Dist.CLIENT)
 public class StoryModeRebornClient {
     public StoryModeRebornClient(IEventBus modEventBus, ModContainer modContainer) {
-        //modContainer.registerConfig(ModConfig.Type.CLIENT, StoryModeRebornConfig.CLIENT_SPEC);
         if (StoryModeRebornConfig.ADD_ITEMS_TO_VANILLA_TABS.get()){
             modEventBus.addListener(StoryModeRebornCreativeModeTab::addCreative);
         } else {
@@ -38,8 +38,10 @@ public class StoryModeRebornClient {
         if (ModList.get().isLoaded("vanillabackport")){
             StoryModeRebornVB.VanillaBackport();
         }
+        if (ModList.get().isLoaded("fancytabsections")) {
+            modEventBus.addListener(StoryModeRebornFancyTab::addCreativeSections);
+        }
         modContainer.registerExtensionPoint(IConfigScreenFactory.class, ConfigurationScreen::new);
-        modEventBus.addListener(StoryModeRebornCreativeModeTab::addCreativeSections);
         modEventBus.addListener(ModelProperties::onClientSetup);
         modEventBus.addListener(this::registerClientExtensions);
         modEventBus.addListener(this::registerEntityRenderers);

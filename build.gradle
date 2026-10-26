@@ -83,7 +83,7 @@ dependencies {
     implementation "curse.maven:platform-997634:9236357"
     implementation "curse.maven:vanillabackport-417430:9243543"
 
-    jarJar(implementation("curse.maven:fancy-tab-sections-1537163:8800690"))
+    compileOnly "curse.maven:fancy-tab-sections-1537163:8800690"
 
     //Runtime QOL
     clientAndServer "curse.maven:advanced-worldgen-info-1661937:8707774"
