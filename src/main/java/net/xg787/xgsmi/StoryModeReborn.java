@@ -35,9 +35,11 @@ public class StoryModeReborn {
         if (ModList.get().isLoaded("fancytabsections")) {
             StoryModeRebornFancyTab.CREATIVE_MODE_TABS.register(modEventBus);
         }
+        if (!ModList.get().isLoaded("fancytabsections")) {
+            StoryModeRebornCreativeModeTab.CREATIVE_MODE_TABS.register(modEventBus);
+        }
         StoryModeRebornSounds.SOUND_EVENTS.register(modEventBus);
         StoryModeRebornEntities.ENTITY_TYPES.register(modEventBus);
-        StoryModeRebornCreativeModeTab.CREATIVE_MODE_TABS.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
     }

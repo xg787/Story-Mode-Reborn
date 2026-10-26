@@ -131,7 +131,7 @@ public class StoryModeRebornCreativeModeTab {
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_ARMOR = CREATIVE_MODE_TABS.register("storymode_tab_armor", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.story_mode_reborn_armor"))
-            .icon(() -> GABRIEL_HELMET.get().getDefaultInstance())
+            .icon(() -> GABRIEL_CHESTPLATE.get().getDefaultInstance())
             .withTabsBefore(STORYMODE_TAB_TEMPLATES.getId())
             .displayItems((displayParameters, output) -> {
                 output.accept(TITANIUM_HELMET);
