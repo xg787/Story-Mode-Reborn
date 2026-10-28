@@ -13,6 +13,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.portal.PortalShape;
+
+import java.util.Optional;
 
 import static net.xg787.xgsmi.util.StoryModeRebornTags.Blocks.ENCHANTED_FIRE;
 
@@ -147,13 +150,6 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
         }
     }
 
-    @Override
-    protected void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
-        super.onPlace(state, level, pos, oldState, isMoving);
-        this.placeExtension(level, pos);
-        level.scheduleTick(pos, this, getFireTickDelay(level.random));
-    }
-
     public abstract void placeExtension(Level level, BlockPos pos);
 
     private static int getFireTickDelay(RandomSource random) {
@@ -170,6 +166,30 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
         return false;
     }
 
+    @Override
+    protected void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
+        super.onPlace(state, level, pos, oldState, isMoving);
+        if (!oldState.is(state.getBlock())) {
+            if (inPortalDimension(level)) {
+                Optional<PortalShape> optional = PortalShape.findEmptyPortalShape(level, pos, Direction.Axis.X);
+                optional = net.neoforged.neoforge.event.EventHooks.onTrySpawnPortal(level, pos, optional);
+                if (optional.isPresent()) {
+                    optional.get().createPortalBlocks();
+                    return;
+                }
+            }
+
+            if (!state.canSurvive(level, pos)) {
+                level.removeBlock(pos, false);
+            }
+        }
+        this.placeExtension(level, pos);
+    }
+
+    private static boolean inPortalDimension(Level level) {
+        return level.dimension() == Level.OVERWORLD || level.dimension() == Level.NETHER;
+    }
+
     public boolean canCatchFire(BlockGetter world, BlockPos pos, Direction face) {
         return world.getBlockState(pos).isFlammable(world, pos, face);
     }
@@ -181,7 +201,6 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
     private static boolean inEnchantedPortalDimension(Level level) {
         return level.dimension() == Level.OVERWORLD || level.dimension() == Level.NETHER;
     }
-
 
     public static boolean isEnchantedPortal(Level level, BlockPos pos, Direction p_direction, ItemStack itemStack) {
 //        if (inEnchantedPortalDimension(level))  {
