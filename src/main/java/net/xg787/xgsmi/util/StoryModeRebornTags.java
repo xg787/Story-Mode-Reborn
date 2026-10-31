@@ -13,6 +13,21 @@ public class StoryModeRebornTags {
     public static class Blocks {
         public static final TagKey<Block> ENCHANTED_FIRE = createTag("enchanted_fire");
 
+        public static final TagKey<Block> INCORRECT_FOR_PRISMARINE_TOOL = createTag("incorrect_for_prismarine_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ROYAL_TOOL = createTag("incorrect_for_royal_tool");
+        public static final TagKey<Block> INCORRECT_FOR_TITANIUM_TOOL = createTag("incorrect_for_titanium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENCHANTED_TITANIUM_TOOL = createTag("incorrect_for_enchanted_titanium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ROMEUM_TOOL = createTag("incorrect_for_romeum_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENCHANTED_ROMEUM_TOOL = createTag("incorrect_for_enchanted_romeum_tool");
+
+        public static final TagKey<Block> NEEDS_PRISMARINE_TOOL = createTag("needs_prismarine_tool");
+        public static final TagKey<Block> NEEDS_ROYAL_TOOL = createTag("needs_royal_tool");
+        public static final TagKey<Block> NEEDS_NETHERITE_TOOL = createMinecraftTag("needs_netherite_tool");
+        public static final TagKey<Block> NEEDS_TITANIUM_TOOL = createTag("needs_titanium_tool");
+        public static final TagKey<Block> NEEDS_ENCHANTED_TITANIUM_TOOL = createTag("needs_enchanted_titanium_tool");
+        public static final TagKey<Block> NEEDS_ROMEUM_TOOL = createTag("needs_romeum_tool");
+        public static final TagKey<Block> NEEDS_ENCHANTED_ROMEUM_TOOL = createTag("needs_enchanted_romeum_tool");
+
         public static final TagKey<Block> CROPS_WHITE_PUMPKIN = createCommonTag("crops/white_pumpkin");
         public static final TagKey<Block> WHITE_PUMPKINS = createCommonTag("white_pumpkins");
         public static final TagKey<Block> WHITE_PUMPKINS_NORMAL = createCommonTag("white_pumpkins/normal");
@@ -33,6 +48,10 @@ public class StoryModeRebornTags {
 
         private static TagKey<Block> createCommonTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+        }
+
+        private static TagKey<Block> createMinecraftTag(String name) {
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", name));
         }
     }
 

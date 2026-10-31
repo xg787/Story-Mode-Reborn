@@ -1,0 +1,11 @@
+{
+  "values": [
+    "#story_mode_reborn:needs_prismarine_tool",
+    "#story_mode_reborn:needs_royal_tool",
+    "#minecraft:needs_netherite_tool",
+    "#story_mode_reborn:needs_titanium_tool",
+    "#story_mode_reborn:needs_enchanted_titanium_tool",
+    "#story_mode_reborn:needs_romeum_tool",
+    "#story_mode_reborn:needs_enchanted_romeum_tool"
+  ]
+}

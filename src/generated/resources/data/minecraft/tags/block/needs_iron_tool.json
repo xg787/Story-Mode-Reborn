@@ -1,6 +1,11 @@
 {
+  "remove": [
+    "#minecraft:needs_netherite_tool"
+  ],
   "values": [
-    "story_mode_reborn:titanium_block",
-    "story_mode_reborn:romeum_block"
+    "#c:storage_blocks/raw_titanium",
+    "#c:storage_blocks/titanium",
+    "#c:storage_blocks/raw_romeum",
+    "#c:storage_blocks/romeum"
   ]
 }

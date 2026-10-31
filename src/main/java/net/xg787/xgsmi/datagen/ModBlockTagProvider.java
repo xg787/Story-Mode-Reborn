@@ -1,5 +1,6 @@
 package net.xg787.xgsmi.datagen;
 
+import com.blackgear.vanillabackport.core.data.tags.ModBlockTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
@@ -43,14 +44,6 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(TITANIUM_BLOCK.get())
                 .add(NETHER_ROMEUM_ORE.get())
                 .add(ROMEUM_BLOCK.get());
-
-        tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(TITANIUM_BLOCK.get())
-                .add(ROMEUM_BLOCK.get());
-
-        tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(DEEPSLATE_TITANIUM_ORE.get())
-                .add(NETHER_ROMEUM_ORE.get());
 
         tag(BlockTags.CROPS)
                 .add(WHITE_PUMPKIN_STEM.get());
@@ -110,12 +103,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(StoryModeRebornTags.Blocks.ORES_TITANIUM)
                 .add(DEEPSLATE_TITANIUM_ORE.get());
 
+        tag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_TITANIUM);
+
         tag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_TITANIUM).add(TITANIUM_BLOCK.get());
 
         tag(StoryModeRebornTags.Blocks.ORES_ROMEUM)
                 .add(NETHER_ROMEUM_ORE.get());
 
-        tag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_ROMEUM).add(ROMEUM_BLOCK.get());
+        tag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_ROMEUM);
+
+        tag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_ROMEUM)
+                .add(ROMEUM_BLOCK.get());
 
         tag(BlockTags.REPLACEABLE)
                 .add(ENCHANTED_FIRE_DIAMOND.get())
@@ -124,5 +122,126 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ENCHANTED_FIRE_REDSTONE.get());
 
         tag(BlockTags.FIRE).addTag(StoryModeRebornTags.Blocks.ENCHANTED_FIRE);
+
+        tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(ModBlockTags.INCORRECT_FOR_COPPER_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_PRISMARINE_TOOL)
+                .addTag(BlockTags.DIAMOND_ORES)
+                .addTag(Tags.Blocks.ORES_DIAMOND)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ROYAL_TOOL)
+                .add(ANCIENT_DEBRIS)
+                .addTag(Tags.Blocks.ORES_NETHERITE_SCRAP)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(BlockTags.INCORRECT_FOR_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ROMEUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ENCHANTED_ROMEUM_TOOL);
+
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL);
+
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .remove(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .remove(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_TITANIUM)
+                .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_TITANIUM)
+                .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_ROMEUM)
+                .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_ROMEUM);
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL);
+
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .remove(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.ORES_TITANIUM);
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.ORES_ROMEUM);
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
     }
 }

@@ -8,7 +8,7 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
 
 /*
-    Credit to BoxxedDev for the original section class
+    Credit to BoxxedDev for the original tab section class
     https://github.com/BoxxedDev/control-panels
  */
 public class StoryModeRebornSection extends SectionTextured {

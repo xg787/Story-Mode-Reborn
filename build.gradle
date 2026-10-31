@@ -82,6 +82,7 @@ dependencies {
 
     implementation "curse.maven:platform-997634:9236357"
     implementation "curse.maven:vanillabackport-417430:9243543"
+    implementation "curse.maven:jade-324717:7545219"
 
     compileOnly "curse.maven:fancy-tab-sections-1537163:8800690"
 
@@ -93,7 +94,6 @@ dependencies {
     clientAndServer "curse.maven:xaeros-world-map-317780:9067277"
     clientAndServer "curse.maven:xaeros-minimap-263420:9067173"
     clientAndServer "curse.maven:armor-poser-450663:8542862"
-    clientAndServer "curse.maven:jade-324717:7545219"
     clientAndServer "curse.maven:emi-580555:8081408"
     clientAndServer "curse.maven:jei-238222:7420587"
 

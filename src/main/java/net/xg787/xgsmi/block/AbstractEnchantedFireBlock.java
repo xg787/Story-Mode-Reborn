@@ -127,11 +127,10 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
 
     private boolean isValidFireLocation(BlockGetter level, BlockPos pos) {
         for (Direction direction : Direction.values()) {
-            if (this.canCatchFire(level, pos.relative(direction), direction.getOpposite())) {
+            if (this.canCatchFire(level, pos.below(), direction.getOpposite())) {
                 return true;
             }
         }
-
         return false;
     }
 
@@ -178,12 +177,10 @@ public abstract class AbstractEnchantedFireBlock extends BaseFireBlock {
                     return;
                 }
             }
-
-            if (!state.canSurvive(level, pos)) {
-                level.removeBlock(pos, false);
-            }
         }
-        this.placeExtension(level, pos);
+        if (state.canSurvive(level, pos)) {
+            this.placeExtension(level, pos);
+        }
     }
 
     private static boolean inPortalDimension(Level level) {
