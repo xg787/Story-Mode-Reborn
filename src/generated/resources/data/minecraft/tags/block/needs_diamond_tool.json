@@ -1,6 +1,3 @@
 {
-  "remove": [
-    "#minecraft:needs_netherite_tool"
-  ],
   "values": []
 }

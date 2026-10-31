@@ -1,3 +1,58 @@
 {
-  "values": []
+  "values": [
+    "minecraft:prismarine",
+    "minecraft:prismarine_stairs",
+    "minecraft:prismarine_slab",
+    "minecraft:prismarine_wall",
+    "minecraft:prismarine_bricks",
+    "minecraft:prismarine_brick_stairs",
+    "minecraft:prismarine_brick_slab",
+    "minecraft:dark_prismarine",
+    "minecraft:dark_prismarine_stairs",
+    "minecraft:dark_prismarine_slab",
+    {
+      "id": "quark:prismarine_chest",
+      "required": false
+    },
+    {
+      "id": "quark:trapped_prismarine_chest",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:luminous_prismarine",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:luminous_prismarine_stairs",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:luminous_prismarine_slab",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:prismarine_rod_bundle",
+      "required": false
+    },
+    {
+      "id": "alloy_forgery:prismarine_bricks_forge_controller",
+      "required": false
+    },
+    {
+      "id": "cataclysm:prismarine_brick_fence",
+      "required": false
+    },
+    {
+      "id": "cataclysm:prismarine_brick_wall",
+      "required": false
+    },
+    {
+      "id": "desire:prismarine_brick_wall",
+      "required": false
+    },
+    {
+      "id": "desire:dark_prismarine_wall",
+      "required": false
+    }
+  ]
 }

@@ -42,10 +42,10 @@ public class StoryModeRebornPlugin implements IWailaPlugin {
             i++;
         }
 
-        pickaxeList.add(3, StoryModeRebornItems.PRISMARINE_PICKAXE.get());
-        axeList.add(3, StoryModeRebornItems.PRISMARINE_AXE.get());
-        shovelList.add(3, StoryModeRebornItems.PRISMARINE_SHOVEL.get());
-        hoeList.add(3, StoryModeRebornItems.PRISMARINE_HOE.get());
+        pickaxeList.add(4, StoryModeRebornItems.PRISMARINE_PICKAXE.get());
+        axeList.add(4, StoryModeRebornItems.PRISMARINE_AXE.get());
+        shovelList.add(4, StoryModeRebornItems.PRISMARINE_SHOVEL.get());
+        hoeList.add(4, StoryModeRebornItems.PRISMARINE_HOE.get());
 
         pickaxeList.add(5, StoryModeRebornItems.ROYAL_PICKAXE.get());
         axeList.add(5, StoryModeRebornItems.ROYAL_AXE.get());

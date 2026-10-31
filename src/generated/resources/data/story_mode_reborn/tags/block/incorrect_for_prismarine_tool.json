@@ -1,7 +1,5 @@
 {
   "values": [
-    "#minecraft:diamond_ores",
-    "#c:ores/diamond",
     "#story_mode_reborn:needs_royal_tool",
     "#minecraft:needs_diamond_tool",
     "#minecraft:needs_netherite_tool",

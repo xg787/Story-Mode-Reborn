@@ -3,6 +3,7 @@ package net.xg787.xgsmi.datagen;
 import com.blackgear.vanillabackport.core.data.tags.ModBlockTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
@@ -159,19 +160,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
 
-        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_PRISMARINE_TOOL)
-                .addTag(BlockTags.DIAMOND_ORES)
-                .addTag(Tags.Blocks.ORES_DIAMOND)
+        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
-                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
 
-        tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_PRISMARINE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
@@ -214,23 +214,42 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ENCHANTED_ROMEUM_TOOL);
 
-
-        tag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL);
-
-        tag(BlockTags.NEEDS_STONE_TOOL)
-                .remove(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL);
+        tag(BlockTags.NEEDS_STONE_TOOL);
 
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .remove(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_TITANIUM)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_TITANIUM)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_ROMEUM)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_ROMEUM);
 
+        tag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
+                .add(PRISMARINE)
+                .add(PRISMARINE_STAIRS)
+                .add(PRISMARINE_SLAB)
+                .add(PRISMARINE_WALL)
+                .add(PRISMARINE_BRICKS)
+                .add(PRISMARINE_BRICK_STAIRS)
+                .add(PRISMARINE_BRICK_SLAB)
+                //.add(PRISMARINE_BRICK_WALL)
+                .add(DARK_PRISMARINE)
+                .add(DARK_PRISMARINE_STAIRS)
+                .add(DARK_PRISMARINE_SLAB)
+                //.add(DARK_PRISMARINE_WALL)
+                .addOptional(ResourceLocation.fromNamespaceAndPath("quark","prismarine_chest"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("quark","trapped_prismarine_chest"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("upgrade_aquatic","luminous_prismarine"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("upgrade_aquatic","luminous_prismarine_stairs"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("upgrade_aquatic","luminous_prismarine_slab"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("upgrade_aquatic","prismarine_rod_bundle"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("alloy_forgery","prismarine_bricks_forge_controller"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("cataclysm","prismarine_brick_fence"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("cataclysm","prismarine_brick_wall"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("desire","prismarine_brick_wall"))
+                .addOptional(ResourceLocation.fromNamespaceAndPath("desire","dark_prismarine_wall"));
+
         tag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL);
 
-        tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .remove(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL);
+        tag(BlockTags.NEEDS_DIAMOND_TOOL);
 
         tag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.ORES_TITANIUM);
