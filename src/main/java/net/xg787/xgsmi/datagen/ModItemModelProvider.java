@@ -1,5 +1,6 @@
 package net.xg787.xgsmi.datagen;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -27,6 +28,17 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+        handheldItem(COPPER_SWORD.get());
+        handheldItem(COPPER_PICKAXE.get());
+        handheldItem(COPPER_AXE.get());
+        handheldItem(COPPER_SHOVEL.get());
+        handheldItem(COPPER_HOE.get());
+        trimmedArmorItem(COPPER_HELMET);
+        trimmedArmorItem(COPPER_CHESTPLATE);
+        trimmedArmorItem(COPPER_LEGGINGS);
+        trimmedArmorItem(COPPER_BOOTS);
+
         basicItem(ICON.get());
 
         basicItem(WHITE_PUMPKIN_SEEDS.get());
@@ -130,7 +142,7 @@ public class ModItemModelProvider extends ItemModelProvider {
                 String trimPath = "trims/items/" + armorType + "_trim_" + trimMaterial.location().getPath();
                 String currentTrimName = armorItemPath + "_" + trimMaterial.location().getPath() + "_trim";
                 ResourceLocation armorItemResLoc = ResourceLocation.parse(armorItemPath);
-                ResourceLocation trimResLoc = ResourceLocation.parse(trimPath); // minecraft namespace
+                ResourceLocation trimResLoc = ResourceLocation.parse(trimPath);
                 ResourceLocation trimNameResLoc = ResourceLocation.parse(currentTrimName);
 
                 existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
@@ -140,12 +152,12 @@ public class ModItemModelProvider extends ItemModelProvider {
                         .texture("layer0", armorItemResLoc.getNamespace() + ":item/" + armorItemResLoc.getPath())
                         .texture("layer1", trimResLoc);
 
-                this.withExistingParent(itemDeferredItem.getId().getPath(), mcLoc("item/generated"))
+                this.withExistingParent(String.valueOf(armorItemResLoc), mcLoc("item/generated"))
                         .override()
-                        .model(new ModelFile.UncheckedModelFile(trimNameResLoc.getNamespace()  + ":item/" + trimNameResLoc.getPath()))
+                        .model(new ModelFile.UncheckedModelFile(trimNameResLoc.getNamespace() + ":item/" + trimNameResLoc.getPath()))
                         .predicate(mcLoc("trim_type"), trimValue).end()
                         .texture("layer0",
-                                ResourceLocation.fromNamespaceAndPath(MOD_ID, "item/" + itemDeferredItem.getId().getPath()));
+                                ResourceLocation.fromNamespaceAndPath(armorItemResLoc.getNamespace(), "item/" + itemDeferredItem.getId().getPath()));
             });
         }
     }

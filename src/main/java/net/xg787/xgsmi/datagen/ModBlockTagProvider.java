@@ -1,6 +1,5 @@
 package net.xg787.xgsmi.datagen;
 
-import com.blackgear.vanillabackport.core.data.tags.ModBlockTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -125,6 +124,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.FIRE).addTag(StoryModeRebornTags.Blocks.ENCHANTED_FIRE);
 
         tag(BlockTags.INCORRECT_FOR_WOODEN_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_COPPER_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
@@ -134,6 +134,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
 
         tag(BlockTags.INCORRECT_FOR_GOLD_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_COPPER_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
@@ -143,6 +144,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
 
         tag(BlockTags.INCORRECT_FOR_STONE_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_COPPER_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
@@ -151,14 +153,17 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
 
-        tag(ModBlockTags.INCORRECT_FOR_COPPER_TOOL)
+        tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_COPPER_TOOL)
+                .addTag(BlockTags.NEEDS_IRON_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
-                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL)
+                .addOptionalTag(ResourceLocation.fromNamespaceAndPath("confluence","needs_2_level"));
 
         tag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_PRISMARINE_TOOL)
@@ -176,7 +181,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
-                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL)
+                .addOptionalTag(ResourceLocation.fromNamespaceAndPath("confluence","needs_3_level"));
 
         tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ROYAL_TOOL)
                 .add(ANCIENT_DEBRIS)
@@ -185,7 +191,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
-                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL)
+                .addOptionalTag(ResourceLocation.fromNamespaceAndPath("confluence","needs_4_level"));
 
         tag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_NETHERITE_TOOL)
@@ -203,18 +210,23 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
-                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL)
+                .addOptionalTag(ResourceLocation.fromNamespaceAndPath("confluence","needs_7_level"));
 
         tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ENCHANTED_TITANIUM_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.NEEDS_ROMEUM_TOOL)
-                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL)
+                .addOptionalTag(ResourceLocation.fromNamespaceAndPath("confluence","needs_8_level"));
 
         tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ROMEUM_TOOL)
-                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL);
+                .addTag(StoryModeRebornTags.Blocks.NEEDS_ENCHANTED_ROMEUM_TOOL)
+                .addOptionalTag(ResourceLocation.fromNamespaceAndPath("confluence","needs_9_level"));
 
         tag(StoryModeRebornTags.Blocks.INCORRECT_FOR_ENCHANTED_ROMEUM_TOOL);
 
         tag(BlockTags.NEEDS_STONE_TOOL);
+
+        tag(StoryModeRebornTags.Blocks.NEEDS_COPPER_TOOL);
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_TITANIUM)

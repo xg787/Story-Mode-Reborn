@@ -41,16 +41,20 @@ public class StoryModeRebornPlugin implements IWailaPlugin {
             hoeList.add(HarvestToolProvider.TOOL_HANDLERS.get(JadeIds.JADE("hoe")).getTools().get(i).getItem());
             i++;
         }
+        pickaxeList.add(3, StoryModeRebornItems.COPPER_PICKAXE.get());
+        axeList.add(3, StoryModeRebornItems.COPPER_PICKAXE.get());
+        shovelList.add(3, StoryModeRebornItems.COPPER_SHOVEL.get());
+        hoeList.add(3, StoryModeRebornItems.COPPER_HOE.get());
 
-        pickaxeList.add(4, StoryModeRebornItems.PRISMARINE_PICKAXE.get());
-        axeList.add(4, StoryModeRebornItems.PRISMARINE_AXE.get());
-        shovelList.add(4, StoryModeRebornItems.PRISMARINE_SHOVEL.get());
-        hoeList.add(4, StoryModeRebornItems.PRISMARINE_HOE.get());
+        pickaxeList.add(5, StoryModeRebornItems.PRISMARINE_PICKAXE.get());
+        axeList.add(5, StoryModeRebornItems.PRISMARINE_AXE.get());
+        shovelList.add(5, StoryModeRebornItems.PRISMARINE_SHOVEL.get());
+        hoeList.add(5, StoryModeRebornItems.PRISMARINE_HOE.get());
 
-        pickaxeList.add(5, StoryModeRebornItems.ROYAL_PICKAXE.get());
-        axeList.add(5, StoryModeRebornItems.ROYAL_AXE.get());
-        shovelList.add(5, StoryModeRebornItems.ROYAL_SHOVEL.get());
-        hoeList.add(5, StoryModeRebornItems.ROYAL_HOE.get());
+        pickaxeList.add(6, StoryModeRebornItems.ROYAL_PICKAXE.get());
+        axeList.add(6, StoryModeRebornItems.ROYAL_AXE.get());
+        shovelList.add(6, StoryModeRebornItems.ROYAL_SHOVEL.get());
+        hoeList.add(6, StoryModeRebornItems.ROYAL_HOE.get());
 
         pickaxeList.add(StoryModeRebornItems.TITANIUM_PICKAXE.get());
         axeList.add(StoryModeRebornItems.TITANIUM_AXE.get());
@@ -71,13 +75,6 @@ public class StoryModeRebornPlugin implements IWailaPlugin {
         axeList.add(StoryModeRebornItems.ENCHANTED_ROMEUM_AXE.get());
         shovelList.add(StoryModeRebornItems.ENCHANTED_ROMEUM_SHOVEL.get());
         hoeList.add(StoryModeRebornItems.ENCHANTED_ROMEUM_HOE.get());
-
-        if (ModList.get().isLoaded("vanillabackport")) {
-            pickaxeList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_pickaxe")));
-            axeList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_axe")));
-            shovelList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_shovel")));
-            hoeList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_hoe")));
-        }
 
         HarvestToolProvider.registerHandler(SimpleToolHandler.create(JadeIds.JADE("pickaxe"), pickaxeList));
         HarvestToolProvider.registerHandler(SimpleToolHandler.create(JadeIds.JADE("axe"), axeList));

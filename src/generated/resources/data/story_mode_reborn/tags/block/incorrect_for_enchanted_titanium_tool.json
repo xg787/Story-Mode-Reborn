@@ -1,6 +1,10 @@
 {
   "values": [
     "#story_mode_reborn:needs_romeum_tool",
-    "#story_mode_reborn:needs_enchanted_romeum_tool"
+    "#story_mode_reborn:needs_enchanted_romeum_tool",
+    {
+      "id": "#confluence:needs_8_level",
+      "required": false
+    }
   ]
 }

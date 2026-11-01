@@ -1,5 +1,6 @@
 package net.xg787.xgsmi;
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.player.Player;
@@ -36,6 +37,9 @@ public class StoryModeReborn {
             StoryModeRebornFancyTab.CREATIVE_MODE_TABS.register(modEventBus);
         } else {
             StoryModeRebornCreativeModeTab.CREATIVE_MODE_TABS.register(modEventBus);
+        }
+        if (!ModList.get().isLoaded("vanillabackport") && !ModList.get().isLoaded("copperagebackport")){
+            StoryModeRebornItems.COPPER_ITEMS.register(modEventBus);
         }
         StoryModeRebornSounds.SOUND_EVENTS.register(modEventBus);
         StoryModeRebornEntities.ENTITY_TYPES.register(modEventBus);

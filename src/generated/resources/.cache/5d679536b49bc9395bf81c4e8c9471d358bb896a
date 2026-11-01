@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-18T21:03:18.7487996	Tags for minecraft:item mod id story_mode_reborn
+// 1.21.1	2026-10-31T22:44:13.3223084	Tags for minecraft:item mod id story_mode_reborn
 d55194e880634bd2fe53849b15b7a2c879ffba8c data/c/tags/item/animal_foods.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops/white_pumpkin.json
@@ -30,9 +30,9 @@ e8e469b7006f06065bf9af2ef498d990263f4782 data/c/tags/item/tools/igniter.json
 618ae5a348f7673bf8d9ba4075cfa41ad3c748ab data/c/tags/item/white_pumpkins/jack_o_lanterns.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/white_pumpkins/normal.json
 61ecf60ff4cacd5a6921ee70173d91b585b8b031 data/minecraft/tags/item/arrows.json
-1d212c8ae85cc41b364c2ed71a642beb3356d437 data/minecraft/tags/item/axes.json
+cbd2668b5a8679ef6dabafe7af239b8a5d21bad8 data/minecraft/tags/item/axes.json
 172b1ba36b7fd76738b778ae9cdf8d832950ba02 data/minecraft/tags/item/beacon_payment_items.json
-aae146095536916a75643ee082b1a1926b494ec6 data/minecraft/tags/item/chest_armor.json
+7b229ccd9fc5fc6635ce89bfd024bd4cd557d9e4 data/minecraft/tags/item/chest_armor.json
 d55194e880634bd2fe53849b15b7a2c879ffba8c data/minecraft/tags/item/chicken_food.json
 29c0a0b0c96d5f906dceed9000e3c7ab6b0d92db data/minecraft/tags/item/creeper_igniters.json
 411ab3c3c3f4edb743d906cfa0c6c4ac9b65d6b0 data/minecraft/tags/item/enchantable/bow.json
@@ -41,15 +41,15 @@ e47c3dce7948f3c1373b91a34a43e7af090ff3b7 data/minecraft/tags/item/enchantable/cr
 71691369fa47c65fb1f91e1bdf76b21c84e75c5f data/minecraft/tags/item/enchantable/equippable.json
 beb98eca797a4d369684450c6973a20fba8b5dbe data/minecraft/tags/item/enchantable/fishing.json
 332140ca948c8fee6e39c663133ccb80b8b04a8a data/minecraft/tags/item/enchantable/vanishing.json
-f6b82eed0c241bf51f73e0a040f5156232eda501 data/minecraft/tags/item/foot_armor.json
-c88bd34fc519cab69ed707449432a02bec06865c data/minecraft/tags/item/head_armor.json
-f00bbce48d52d5d2856125332b1e5efa54fb37f5 data/minecraft/tags/item/hoes.json
-fa23cb8ea9bfca5758b901361f189425abcc66d1 data/minecraft/tags/item/leg_armor.json
+1b2f449dd11a1cde192f567b992a774b0b6da021 data/minecraft/tags/item/foot_armor.json
+7e544010bd9dd3786d917ee0ddff87ffbeebcdf5 data/minecraft/tags/item/head_armor.json
+78b308850b7a44392e83e2cdf8232f573e1df4fa data/minecraft/tags/item/hoes.json
+54620d2110f12c516fe26a148db7e870ad4f643a data/minecraft/tags/item/leg_armor.json
 d55194e880634bd2fe53849b15b7a2c879ffba8c data/minecraft/tags/item/parrot_food.json
-d069d6590788e71b20e66faebc5b72b2bc29e6c0 data/minecraft/tags/item/pickaxes.json
-ce2b1f9d6dc7baaab6c965d9fb42936c44717ea1 data/minecraft/tags/item/shovels.json
+badfe370b22f6f24a2d5c0952d9e260f7b0f4784 data/minecraft/tags/item/pickaxes.json
+0f963175617582b17167c5601a970fd9c7991bcf data/minecraft/tags/item/shovels.json
 de163643bd6df9b69b9b5792f1deb1c4021d5c9d data/minecraft/tags/item/spears.json
-fd0de107470390580efee0a2560aca2e15513fed data/minecraft/tags/item/swords.json
+d89a2805d5b5ffae04b9fb07e861c955435fab6d data/minecraft/tags/item/swords.json
 3b0971fcfacb065778019e1cd8f2726868ae8dc4 data/minecraft/tags/item/trimmable_armor.json
 6bdf224534fd32f4d1d507a5dbff376ae70c596c data/story_mode_reborn/tags/item/creative_tab/prismarine_items.json
 36bd2531821ba87c93507afb625db60b05c5007c data/story_mode_reborn/tags/item/creative_tab/royal_items.json

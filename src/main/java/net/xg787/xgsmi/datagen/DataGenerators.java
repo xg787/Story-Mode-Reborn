@@ -17,7 +17,7 @@ import java.util.concurrent.CompletableFuture;
 
 import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
-@EventBusSubscriber(modid = MOD_ID, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = MOD_ID)
 public class DataGenerators {
 
     @SubscribeEvent

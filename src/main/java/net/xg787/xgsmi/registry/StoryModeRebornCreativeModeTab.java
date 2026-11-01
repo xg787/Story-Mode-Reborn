@@ -9,6 +9,7 @@ import net.minecraft.world.item.*;
 import net.minecraft.world.item.alchemy.Potion;
 import net.minecraft.world.item.alchemy.PotionContents;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.fml.ModList;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -162,6 +163,13 @@ public class StoryModeRebornCreativeModeTab {
         }
 
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            if (!ModList.get().isLoaded("vanillabackport") && !ModList.get().isLoaded("copperagebackport")){
+                event.insertBefore(IRON_SHOVEL.getDefaultInstance(), COPPER_SHOVEL.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_SHOVEL.get().getDefaultInstance(), COPPER_PICKAXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_PICKAXE.get().getDefaultInstance(), COPPER_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_AXE.get().getDefaultInstance(), COPPER_HOE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            }
+
             event.insertAfter(IRON_HOE.getDefaultInstance(), PRISMARINE_SHOVEL.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(PRISMARINE_SHOVEL.get().getDefaultInstance(), PRISMARINE_PICKAXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(PRISMARINE_PICKAXE.get().getDefaultInstance(), PRISMARINE_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
@@ -201,8 +209,18 @@ public class StoryModeRebornCreativeModeTab {
         }
 
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            event.insertBefore(IRON_SWORD.getDefaultInstance(), PRISMARINE_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
-            event.insertBefore(IRON_AXE.getDefaultInstance(), PRISMARINE_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            if (!ModList.get().isLoaded("vanillabackport") && !ModList.get().isLoaded("copperagebackport")){
+                event.insertBefore(IRON_SWORD.getDefaultInstance(), COPPER_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertBefore(IRON_AXE.getDefaultInstance(), COPPER_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+
+                event.insertBefore(CHAINMAIL_HELMET.getDefaultInstance(), COPPER_HELMET.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_HELMET.get().getDefaultInstance(), COPPER_CHESTPLATE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_CHESTPLATE.get().getDefaultInstance(), COPPER_LEGGINGS.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_LEGGINGS.get().getDefaultInstance(), COPPER_BOOTS.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            }
+
+            event.insertAfter(IRON_SWORD.getDefaultInstance(), PRISMARINE_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(IRON_AXE.getDefaultInstance(), PRISMARINE_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
 
             event.insertAfter(IRON_SWORD.getDefaultInstance(), ROYAL_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(IRON_AXE.getDefaultInstance(), ROYAL_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
@@ -251,7 +269,25 @@ public class StoryModeRebornCreativeModeTab {
     }
 
     public static void addTippedArrows(BuildCreativeModeTabContentsEvent event) {
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            if (!ModList.get().isLoaded("vanillabackport") && !ModList.get().isLoaded("copperagebackport")) {
+                event.insertBefore(IRON_SHOVEL.getDefaultInstance(), COPPER_SHOVEL.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_SHOVEL.get().getDefaultInstance(), COPPER_PICKAXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_PICKAXE.get().getDefaultInstance(), COPPER_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_AXE.get().getDefaultInstance(), COPPER_HOE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            }
+        }
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
+            if (!ModList.get().isLoaded("vanillabackport") && !ModList.get().isLoaded("copperagebackport")){
+                event.insertBefore(IRON_SWORD.getDefaultInstance(), COPPER_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertBefore(IRON_AXE.getDefaultInstance(), COPPER_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+
+                event.insertBefore(CHAINMAIL_HELMET.getDefaultInstance(), COPPER_HELMET.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_HELMET.get().getDefaultInstance(), COPPER_CHESTPLATE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_CHESTPLATE.get().getDefaultInstance(), COPPER_LEGGINGS.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+                event.insertAfter(COPPER_LEGGINGS.get().getDefaultInstance(), COPPER_BOOTS.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            }
+
             event.getParameters().holders()
                     .lookup(Registries.POTION)
                     .ifPresent(

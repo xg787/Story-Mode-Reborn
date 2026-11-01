@@ -27,6 +27,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         tag(ItemTags.SWORDS)
+                .add(COPPER_SWORD.get())
                 .add(PRISMARINE_SWORD.get())
                 .add(ROYAL_SWORD.get())
                 .add(TITANIUM_SWORD.get())
@@ -35,6 +36,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ENCHANTED_ROMEUM_SWORD.get());
 
         tag(ItemTags.PICKAXES)
+                .add(COPPER_PICKAXE.get())
                 .add(PRISMARINE_PICKAXE.get())
                 .add(ROYAL_PICKAXE.get())
                 .add(TITANIUM_PICKAXE.get())
@@ -43,6 +45,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ENCHANTED_ROMEUM_PICKAXE.get());
 
         tag(ItemTags.AXES)
+                .add(COPPER_AXE.get())
                 .add(PRISMARINE_AXE.get())
                 .add(ROYAL_AXE.get())
                 .add(TITANIUM_AXE.get())
@@ -51,6 +54,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ENCHANTED_ROMEUM_AXE.get());
 
         tag(ItemTags.SHOVELS)
+                .add(COPPER_SHOVEL.get())
                 .add(PRISMARINE_SHOVEL.get())
                 .add(ROYAL_SHOVEL.get())
                 .add(TITANIUM_SHOVEL.get())
@@ -59,6 +63,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(ENCHANTED_ROMEUM_SHOVEL.get());
 
         tag(ItemTags.HOES)
+                .add(COPPER_HOE.get())
                 .add(PRISMARINE_HOE.get())
                 .add(ROYAL_HOE.get())
                 .add(TITANIUM_HOE.get())
@@ -139,6 +144,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(PRISMARINE_FISHING_ROD.get());
 
         tag(ItemTags.HEAD_ARMOR)
+                .add(COPPER_HELMET.get())
                 .add(TITANIUM_HELMET.get())
                 .add(ENCHANTED_TITANIUM_HELMET.get())
                 .add(ROMEUM_HELMET.get())
@@ -146,6 +152,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(GABRIEL_HELMET.get());
 
         tag(ItemTags.CHEST_ARMOR)
+                .add(COPPER_CHESTPLATE.get())
                 .add(TITANIUM_CHESTPLATE.get())
                 .add(ENCHANTED_TITANIUM_CHESTPLATE.get())
                 .add(ROMEUM_CHESTPLATE.get())
@@ -153,6 +160,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(GABRIEL_CHESTPLATE.get());
 
         tag(ItemTags.LEG_ARMOR)
+                .add(COPPER_LEGGINGS.get())
                 .add(TITANIUM_LEGGINGS.get())
                 .add(ENCHANTED_TITANIUM_LEGGINGS.get())
                 .add(ROMEUM_LEGGINGS.get())
@@ -160,6 +168,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(GABRIEL_LEGGINGS.get());
 
         tag(ItemTags.FOOT_ARMOR)
+                .add(COPPER_BOOTS.get())
                 .add(TITANIUM_BOOTS.get())
                 .add(ENCHANTED_TITANIUM_BOOTS.get())
                 .add(ROMEUM_BOOTS.get())

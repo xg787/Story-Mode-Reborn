@@ -12,6 +12,18 @@ import static net.xg787.xgsmi.registry.StoryModeRebornBlocks.*;
 public class StoryModeRebornItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MOD_ID);
 
+    public static final DeferredRegister.Items COPPER_ITEMS = DeferredRegister.createItems("minecraft");
+
+    public static final DeferredItem<Item> COPPER_SWORD = COPPER_ITEMS.register("copper_sword", () ->  new SwordItem(StoryModeRebornToolTiers.COPPER, new Item.Properties().attributes(SwordItem.createAttributes(StoryModeRebornToolTiers.ROYAL, 3, -2.4F))));
+    public static final DeferredItem<Item> COPPER_PICKAXE = COPPER_ITEMS.register("copper_pickaxe", () ->  new PickaxeItem(StoryModeRebornToolTiers.COPPER, new Item.Properties().attributes(PickaxeItem.createAttributes(StoryModeRebornToolTiers.ROYAL, 1.0F, -2.8F))));
+    public static final DeferredItem<Item> COPPER_AXE = COPPER_ITEMS.register("copper_axe", () ->  new AxeItem(StoryModeRebornToolTiers.COPPER, new Item.Properties().attributes(AxeItem.createAttributes(StoryModeRebornToolTiers.ROYAL, 7.0F, -3.2F))));
+    public static final DeferredItem<Item> COPPER_SHOVEL = COPPER_ITEMS.register("copper_shovel", () -> new ShovelItem(StoryModeRebornToolTiers.COPPER, new Item.Properties().attributes(ShovelItem.createAttributes(StoryModeRebornToolTiers.ROYAL, 1.5F, -3.0F))));
+    public static final DeferredItem<Item> COPPER_HOE = COPPER_ITEMS.register("copper_hoe", () ->  new HoeItem(StoryModeRebornToolTiers.COPPER, new Item.Properties().attributes(HoeItem.createAttributes(StoryModeRebornToolTiers.ROYAL, -1.0F, -2.0F))));
+    public static final DeferredItem<ArmorItem> COPPER_HELMET = COPPER_ITEMS.register("copper_helmet", () -> new ArmorItem(StoryModeRebornArmorMaterials.COPPER, ArmorItem.Type.HELMET, new Item.Properties().fireResistant().durability(ArmorItem.Type.HELMET.getDurability(11))));
+    public static final DeferredItem<ArmorItem> COPPER_CHESTPLATE = COPPER_ITEMS.register("copper_chestplate", () -> new ArmorItem(StoryModeRebornArmorMaterials.COPPER, ArmorItem.Type.CHESTPLATE, new Item.Properties().fireResistant().durability(ArmorItem.Type.CHESTPLATE.getDurability(11))));
+    public static final DeferredItem<ArmorItem> COPPER_LEGGINGS = COPPER_ITEMS.register("copper_leggings", () -> new ArmorItem(StoryModeRebornArmorMaterials.COPPER, ArmorItem.Type.LEGGINGS, new Item.Properties().fireResistant().durability(ArmorItem.Type.LEGGINGS.getDurability(11))));
+    public static final DeferredItem<ArmorItem> COPPER_BOOTS = COPPER_ITEMS.register("copper_boots", () -> new ArmorItem(StoryModeRebornArmorMaterials.COPPER, ArmorItem.Type.BOOTS, new Item.Properties().fireResistant().durability(ArmorItem.Type.BOOTS.getDurability(11))));
+
     public static final DeferredItem<Item> ICON = ITEMS.registerSimpleItem("icon");
 
     public static final DeferredItem<Item> WHITE_PUMPKIN_SEEDS = ITEMS.register("white_pumpkin_seeds", () -> new ItemNameBlockItem(WHITE_PUMPKIN_STEM.get(), new Item.Properties()));

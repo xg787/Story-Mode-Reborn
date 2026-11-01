@@ -1,5 +1,9 @@
 {
   "values": [
-    "#story_mode_reborn:needs_enchanted_romeum_tool"
+    "#story_mode_reborn:needs_enchanted_romeum_tool",
+    {
+      "id": "#confluence:needs_9_level",
+      "required": false
+    }
   ]
 }

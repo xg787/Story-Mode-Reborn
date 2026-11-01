@@ -23,6 +23,25 @@ import static net.xg787.xgsmi.StoryModeReborn.MOD_ID;
 
 public class StoryModeRebornArmorMaterials {
 
+    public static final Holder<ArmorMaterial> COPPER = register("copper",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.HELMET, 1);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 3);
+                attribute.put(ArmorItem.Type.LEGGINGS, 4);
+                attribute.put(ArmorItem.Type.BOOTS, 2);
+                attribute.put(ArmorItem.Type.BODY, 4);
+            }),SoundEvents.ARMOR_EQUIP_IRON, 8, 0.0F, 0.0F, Tags.Items.INGOTS_COPPER);
+
+    //WIP
+    public static final Holder<ArmorMaterial> ROYAL = register("royal",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.HELMET, 3);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                attribute.put(ArmorItem.Type.LEGGINGS, 7);
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+                attribute.put(ArmorItem.Type.BODY, 12);
+            }),SoundEvents.ARMOR_EQUIP_NETHERITE, 20, 3.5f, 0.2f, StoryModeRebornTags.Items.INGOTS_TITANIUM);
+
     public static final Holder<ArmorMaterial> MCSM_LEATHER = register("mcsm_leather",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.HELMET, 2);
@@ -87,12 +106,19 @@ public class StoryModeRebornArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 17);
             }),SoundEvents.ARMOR_EQUIP_NETHERITE, 45, 5.5f, 0.45f, StoryModeRebornTags.Items.INGOTS_ROMEUM);
 
-
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection, Holder<SoundEvent> equipSound, int enchantability, float toughness, float knockbackResistance, TagKey<Item> ingredientTag) {
         ResourceLocation location = ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
-        Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientTag);
-        List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location));
+        ResourceLocation location1;
 
+        if (name.equals("copper")) {
+            location1 = ResourceLocation.fromNamespaceAndPath("minecraft", name);
+        } else {
+            location1 = location;
+        }
+
+        Supplier<Ingredient> ingredient = () -> Ingredient.of(ingredientTag);
+
+        List<ArmorMaterial.Layer> layers = List.of(new ArmorMaterial.Layer(location1));
         return Registry.registerForHolder(BuiltInRegistries.ARMOR_MATERIAL, location, new ArmorMaterial(typeProtection, enchantability, equipSound, ingredient, layers, toughness, knockbackResistance));
     }
 }
