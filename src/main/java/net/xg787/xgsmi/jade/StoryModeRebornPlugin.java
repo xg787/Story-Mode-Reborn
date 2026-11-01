@@ -41,10 +41,11 @@ public class StoryModeRebornPlugin implements IWailaPlugin {
             hoeList.add(HarvestToolProvider.TOOL_HANDLERS.get(JadeIds.JADE("hoe")).getTools().get(i).getItem());
             i++;
         }
-        pickaxeList.add(3, StoryModeRebornItems.COPPER_PICKAXE.get());
-        axeList.add(3, StoryModeRebornItems.COPPER_PICKAXE.get());
-        shovelList.add(3, StoryModeRebornItems.COPPER_SHOVEL.get());
-        hoeList.add(3, StoryModeRebornItems.COPPER_HOE.get());
+
+        pickaxeList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_pickaxe")));
+        axeList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_axe")));
+        shovelList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_shovel")));
+        hoeList.add(3, BuiltInRegistries.ITEM.get(ResourceLocation.fromNamespaceAndPath("minecraft","copper_hoe")));
 
         pickaxeList.add(5, StoryModeRebornItems.PRISMARINE_PICKAXE.get());
         axeList.add(5, StoryModeRebornItems.PRISMARINE_AXE.get());
