@@ -1,0 +1,105 @@
+package net.xg787.story_mode_reborn.util;
+
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
+
+import static net.xg787.story_mode_reborn.StoryModeReborn.MOD_ID;
+
+public class StoryModeRebornTags {
+    public static class Blocks {
+        public static final TagKey<Block> ENCHANTED_FIRE = createTag("enchanted_fire");
+
+        public static final TagKey<Block> INCORRECT_FOR_COPPER_TOOL = createMinecraftTag("incorrect_for_copper_tool");
+        public static final TagKey<Block> INCORRECT_FOR_PRISMARINE_TOOL = createTag("incorrect_for_prismarine_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ROYAL_TOOL = createTag("incorrect_for_royal_tool");
+        public static final TagKey<Block> INCORRECT_FOR_TITANIUM_TOOL = createTag("incorrect_for_titanium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENCHANTED_TITANIUM_TOOL = createTag("incorrect_for_enchanted_titanium_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ROMEUM_TOOL = createTag("incorrect_for_romeum_tool");
+        public static final TagKey<Block> INCORRECT_FOR_ENCHANTED_ROMEUM_TOOL = createTag("incorrect_for_enchanted_romeum_tool");
+
+        public static final TagKey<Block> NEEDS_COPPER_TOOL = createMinecraftTag("needs_copper_tool");
+        public static final TagKey<Block> NEEDS_PRISMARINE_TOOL = createTag("needs_prismarine_tool");
+        public static final TagKey<Block> NEEDS_ROYAL_TOOL = createTag("needs_royal_tool");
+        public static final TagKey<Block> NEEDS_NETHERITE_TOOL = createMinecraftTag("needs_netherite_tool");
+        public static final TagKey<Block> NEEDS_TITANIUM_TOOL = createTag("needs_titanium_tool");
+        public static final TagKey<Block> NEEDS_ENCHANTED_TITANIUM_TOOL = createTag("needs_enchanted_titanium_tool");
+        public static final TagKey<Block> NEEDS_ROMEUM_TOOL = createTag("needs_romeum_tool");
+        public static final TagKey<Block> NEEDS_ENCHANTED_ROMEUM_TOOL = createTag("needs_enchanted_romeum_tool");
+
+        public static final TagKey<Block> CROPS_WHITE_PUMPKIN = createCommonTag("crops/white_pumpkin");
+        public static final TagKey<Block> WHITE_PUMPKINS = createCommonTag("white_pumpkins");
+        public static final TagKey<Block> WHITE_PUMPKINS_NORMAL = createCommonTag("white_pumpkins/normal");
+        public static final TagKey<Block> WHITE_PUMPKINS_CARVED = createCommonTag("white_pumpkins/carved");
+        public static final TagKey<Block> WHITE_PUMPKINS_JACK_O_LANTERNS = createCommonTag("white_pumpkins/jack_o_lanterns");
+
+        public static final TagKey<Block> ORES_TITANIUM = createCommonTag("ores/titanium");
+        public static final TagKey<Block> STORAGE_BLOCKS_RAW_TITANIUM = createCommonTag("storage_blocks/raw_titanium");
+        public static final TagKey<Block> STORAGE_BLOCKS_TITANIUM = createCommonTag("storage_blocks/titanium");
+
+        public static final TagKey<Block> ORES_ROMEUM = createCommonTag("ores/romeum");
+        public static final TagKey<Block> STORAGE_BLOCKS_RAW_ROMEUM = createCommonTag("storage_blocks/raw_romeum");
+        public static final TagKey<Block> STORAGE_BLOCKS_ROMEUM = createCommonTag("storage_blocks/romeum");
+
+        private static TagKey<Block> createTag(String name) {
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
+        }
+
+        private static TagKey<Block> createCommonTag(String name) {
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+        }
+
+        private static TagKey<Block> createMinecraftTag(String name) {
+            return BlockTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", name));
+        }
+    }
+
+    public static class Items {
+        public static final TagKey<Item> TNT_IGNITER = createTag("tnt_igniter");
+        public static final TagKey<Item> FIRE_CHARGES = createTag("fire_charges");
+        public static final TagKey<Item> CREEPER_CHARGER = createTag("creeper_charger");
+        public static final TagKey<Item> ENCHANTED_IGNITER = createTag("enchanted_igniter");
+        public static final TagKey<Item> PRISMARINE_TOOL_MATERIAL = createTag("prismarine_tool_material");
+        public static final TagKey<Item> STORY_MODE_ARMOR = createTag("story_mode_armor");
+        public static final TagKey<Item> HIDE_SKIN_LAYER = createTag("player_model/hide_skin_layer");
+        public static final TagKey<Item> HIDE_SlEEVE_SKIN_LAYER = createTag("player_model/hide_sleeve_skin_layer");
+        public static final TagKey<Item> DONT_HIDE_SlEEVE_SKIN_LAYER = createTag("player_model/dont_hide_sleeve_skin_layer");
+        public static final TagKey<Item> BASIC_ARMOR_TEMPLATES = createTag("basic_armor_templates");
+        public static final TagKey<Item> ARMOR_TEMPLATES = createTag("armor_templates");
+        public static final TagKey<Item> CREATIVE_TAB_PRISMARINE_ITEMS = createTag("creative_tab/prismarine_items");
+        public static final TagKey<Item> CREATIVE_TAB_ROYAL_ITEMS = createTag("creative_tab/royal_items");
+
+        public static final TagKey<Item> SEEDS_WHITE_PUMPKIN = createCommonTag("seeds/white_pumpkin");
+        public static final TagKey<Item> CROPS_WHITE_PUMPKIN = createCommonTag("crops/white_pumpkin");
+        public static final TagKey<Item> WHITE_PUMPKINS = createCommonTag("white_pumpkins");
+        public static final TagKey<Item> WHITE_PUMPKINS_NORMAL = createCommonTag("white_pumpkins/normal");
+        public static final TagKey<Item> WHITE_PUMPKINS_CARVED = createCommonTag("white_pumpkins/carved");
+        public static final TagKey<Item> WHITE_PUMPKINS_JACK_O_LANTERNS = createCommonTag("white_pumpkins/jack_o_lanterns");
+
+        public static final TagKey<Item> ORES_TITANIUM = createCommonTag("ores/titanium");
+        public static final TagKey<Item> RAW_MATERIALS_TITANIUM = createCommonTag("raw_materials/titanium");
+        public static final TagKey<Item> STORAGE_BLOCKS_RAW_TITANIUM = createCommonTag("storage_blocks/raw_titanium");
+        public static final TagKey<Item> NUGGETS_TITANIUM = createCommonTag("nuggets/titanium");
+        public static final TagKey<Item> INGOTS_TITANIUM = createCommonTag("ingots/titanium");
+        public static final TagKey<Item> STORAGE_BLOCKS_TITANIUM = createCommonTag("storage_blocks/titanium");
+
+        public static final TagKey<Item> ORES_ROMEUM = createCommonTag("ores/romeum");
+        public static final TagKey<Item> RAW_MATERIALS_ROMEUM = createCommonTag("raw_materials/romeum");
+        public static final TagKey<Item> STORAGE_BLOCKS_RAW_ROMEUM = createCommonTag("storage_blocks/raw_romeum");
+        public static final TagKey<Item> NUGGETS_ROMEUM = createCommonTag("nuggets/romeum");
+        public static final TagKey<Item> INGOTS_ROMEUM = createCommonTag("ingots/romeum");
+        public static final TagKey<Item> STORAGE_BLOCKS_ROMEUM = createCommonTag("storage_blocks/romeum");
+
+
+        private static TagKey<Item> createTag(String name) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
+        }
+
+        private static TagKey<Item> createCommonTag(String name) {
+            return ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", name));
+        }
+    }
+}

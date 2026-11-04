@@ -1,0 +1,35 @@
+package net.xg787.story_mode_reborn.mixin;
+
+import net.minecraft.client.DeltaTracker;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.gui.Gui;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import org.spongepowered.asm.mixin.Final;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+import static net.xg787.story_mode_reborn.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
+
+@Mixin(Gui.class)
+public abstract class GuiMixin {
+    @Shadow @Final private Minecraft minecraft;
+
+    @Shadow protected abstract void renderTextureOverlay(GuiGraphics guiGraphics, ResourceLocation shaderLocation, float alpha);
+
+    @Shadow @Final private static ResourceLocation PUMPKIN_BLUR_LOCATION;
+
+    @Inject(method = "renderCameraOverlays", at = @At("TAIL"))
+    private void renderCameraOverlays(GuiGraphics guiGraphics, DeltaTracker deltaTracker, CallbackInfo ci) {
+        ItemStack itemstack = this.minecraft.player.getInventory().getArmor(3);
+        if (this.minecraft.options.getCameraType().isFirstPerson()) {
+            if (itemstack.is(CARVED_WHITE_PUMPKIN.asItem())) {
+                this.renderTextureOverlay(guiGraphics, PUMPKIN_BLUR_LOCATION, 1.0F);
+            }
+        }
+    }
+}

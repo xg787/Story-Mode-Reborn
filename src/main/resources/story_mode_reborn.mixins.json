@@ -1,6 +1,6 @@
 {
   "required": true,
-  "package": "net.xg787.xgsmi.mixin",
+  "package": "net.xg787.story_mode_reborn.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "BowItemMixin",
