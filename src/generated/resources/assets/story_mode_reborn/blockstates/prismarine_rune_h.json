@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "story_mode_reborn:block/prismarine_rune_h",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "story_mode_reborn:block/prismarine_rune_h",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "story_mode_reborn:block/prismarine_rune_h",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "story_mode_reborn:block/prismarine_rune_h",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "story_mode_reborn:block/prismarine_rune_h"
+    },
+    "facing=west": {
+      "model": "story_mode_reborn:block/prismarine_rune_h",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

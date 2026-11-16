@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "story_mode_reborn:block/carved_prismarine_wave",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "story_mode_reborn:block/carved_prismarine_wave",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "story_mode_reborn:block/carved_prismarine_wave",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "story_mode_reborn:block/carved_prismarine_wave",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "story_mode_reborn:block/carved_prismarine_wave"
+    },
+    "facing=west": {
+      "model": "story_mode_reborn:block/carved_prismarine_wave",
+      "x": 90,
+      "y": 270
+    }
+  }
+}

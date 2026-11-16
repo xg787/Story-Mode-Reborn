@@ -32,6 +32,9 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new LootTableProvider(packOutput, Collections.emptySet(), List.of(new LootTableProvider.SubProviderEntry(ModBlockLootTableProvider::new, LootContextParamSets.BLOCK)), lookupProvider));
         generator.addProvider(event.includeClient(), new ModBlockStateProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeClient(), new ModSpriteSourceProvider(packOutput, lookupProvider, MOD_ID, existingFileHelper));
+
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
 
         generator.addProvider(event.includeClient(), new ModSoundDefinitionsProvider(packOutput, MOD_ID, existingFileHelper));

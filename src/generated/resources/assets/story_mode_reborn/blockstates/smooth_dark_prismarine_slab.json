@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "story_mode_reborn:block/smooth_dark_prismarine_slab"
+    },
+    "type=double": {
+      "model": "story_mode_reborn:block/smooth_dark_prismarine"
+    },
+    "type=top": {
+      "model": "story_mode_reborn:block/smooth_dark_prismarine_slab_top"
+    }
+  }
+}

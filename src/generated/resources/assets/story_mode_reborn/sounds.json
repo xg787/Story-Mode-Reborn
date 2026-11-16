@@ -1,4 +1,10 @@
 {
+  "block.redstone_heart.heartbeat": {
+    "sounds": [
+      "story_mode_reborn:block/redstone_heart/heartbeat"
+    ],
+    "subtitle": "subtitles.block.redstone_heart.heartbeat"
+  },
   "entity.creeper.ambient": {
     "sounds": [
       {

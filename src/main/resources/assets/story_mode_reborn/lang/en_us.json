@@ -1,8 +1,55 @@
 {
+  "item.story_mode_reborn.white_pumpkin_seeds": "White Pumpkin Seeds",
+  "item.story_mode_reborn.white_pumpkin_pie": "White Pumpkin Pie",
+  "block.story_mode_reborn.white_pumpkin": "White Pumpkin",
+  "block.story_mode_reborn.carved_white_pumpkin": "Carved White Pumpkin",
+  "block.story_mode_reborn.white_jack_o_lantern": "White Jack o'Lantern",
+  "block.story_mode_reborn.attached_white_pumpkin_stem": "Attached White Pumpkin Stem",
+  "block.story_mode_reborn.white_pumpkin_stem": "White Pumpkin Stem",
+
   "block.story_mode_reborn.nether_romeum_ore": "Romeum Ore",
   "block.story_mode_reborn.romeum_block": "Block of Romeum",
   "block.story_mode_reborn.deepslate_titanium_ore": "Titanium Ore",
   "block.story_mode_reborn.titanium_block": "Block of Titanium",
+
+  "block.story_mode_reborn.sand_prismarine_ore": "Sand Prismarine Ore",
+  "block.story_mode_reborn.prismarine_ore": "Prismarine Ore",
+  "block.story_mode_reborn.deepslate_prismarine_ore": "Deepslate Prismarine Ore",
+
+  "block.story_mode_reborn.prismarine_brick_wall": "Prismarine Brick Wall",
+  "block.story_mode_reborn.smooth_prismarine": "Smooth Prismarine",
+  "block.story_mode_reborn.smooth_prismarine_stairs": "Smooth Prismarine Stairs",
+  "block.story_mode_reborn.smooth_prismarine_slab": "Smooth Prismarine Slab",
+  "block.story_mode_reborn.smooth_prismarine_wall": "Smooth Prismarine Wall",
+  "block.story_mode_reborn.chiseled_smooth_prismarine": "Chiseled Smooth Prismarine",
+  "block.story_mode_reborn.carved_prismarine": "Carved Prismarine",
+  "block.story_mode_reborn.carved_prismarine_arrow": "Carved Prismarine (Arrow)",
+  "block.story_mode_reborn.carved_prismarine_wave": "Carved Prismarine (Wave)",
+  "block.story_mode_reborn.prismarine_key": "Prismarine Key",
+  "block.story_mode_reborn.prismarine_rune_blank": "Prismarine Rune Blank",
+  "block.story_mode_reborn.prismarine_rune_a": "Prismarine Rune A",
+  "block.story_mode_reborn.prismarine_rune_b": "Prismarine Rune B",
+  "block.story_mode_reborn.prismarine_rune_c": "Prismarine Rune C",
+  "block.story_mode_reborn.prismarine_rune_d": "Prismarine Rune D",
+  "block.story_mode_reborn.prismarine_rune_e": "Prismarine Rune E",
+  "block.story_mode_reborn.prismarine_rune_f": "Prismarine Rune F",
+  "block.story_mode_reborn.prismarine_rune_g": "Prismarine Rune G",
+  "block.story_mode_reborn.prismarine_rune_h": "Prismarine Rune H",
+
+  "block.story_mode_reborn.dark_prismarine_wall": "Dark Prismarine Wall",
+  "block.story_mode_reborn.smooth_dark_prismarine": "Smooth Dark Prismarine",
+  "block.story_mode_reborn.smooth_dark_prismarine_stairs": "Smooth Dark Prismarine Stairs",
+  "block.story_mode_reborn.smooth_dark_prismarine_slab": "Smooth Dark Prismarine Slab",
+  "block.story_mode_reborn.smooth_dark_prismarine_wall": "Smooth Dark Prismarine Wall",
+  "block.story_mode_reborn.chiseled_smooth_dark_prismarine": "Chiseled Smooth Dark Prismarine",
+  "block.story_mode_reborn.carved_dark_prismarine": "Dark Carved Prismarine",
+  "block.story_mode_reborn.carved_dark_prismarine_arrow": "Dark Carved Prismarine (Arrow)",
+  "block.story_mode_reborn.carved_dark_prismarine_corner": "Dark Carved Prismarine (Corner)",
+  "block.story_mode_reborn.carved_dark_prismarine_corner_line": "Dark Carved Prismarine (Corner Line)",
+  "block.story_mode_reborn.carved_dark_prismarine_spiral": "Dark Carved Prismarine (Spiral)",
+
+
+  "block.story_mode_reborn.redstone_heart": "Redstone Heart",
 
   "item.story_mode_reborn.ivor_armor_leggings": "Ivor Leggings",
   "item.story_mode_reborn.armor_number_7_boots": "Armor number 7 Boots",
@@ -142,14 +189,6 @@
   "item.story_mode_reborn.tipped_prismarine_arrow.effect.weakness": "Prismarine Arrow of Weakness",
   "item.story_mode_reborn.tipped_prismarine_arrow.effect.weaving": "Prismarine Arrow of Weaving",
   "item.story_mode_reborn.tipped_prismarine_arrow.effect.wind_charged": "Prismarine Arrow of Wind Charging",
-
-  "item.story_mode_reborn.white_pumpkin_seeds": "White Pumpkin Seeds",
-  "item.story_mode_reborn.white_pumpkin_pie": "White Pumpkin Pie",
-  "block.story_mode_reborn.white_pumpkin": "White Pumpkin",
-  "block.story_mode_reborn.carved_white_pumpkin": "Carved White Pumpkin",
-  "block.story_mode_reborn.white_jack_o_lantern": "White Jack o'Lantern",
-  "block.story_mode_reborn.attached_white_pumpkin_stem": "Attached White Pumpkin Stem",
-  "block.story_mode_reborn.white_pumpkin_stem": "White Pumpkin Stem",
 
   "item.story_mode_reborn.royal_sword": "Royal Sword",
   "item.story_mode_reborn.royal_pickaxe": "Royal Pickaxe",
@@ -326,9 +365,13 @@
   "subtitles.entity.player.appear": "Player appears",
   "subtitles.entity.player.disappear": "Player disappears",
 
+  "subtitles.block.redstone_heart.heartbeat": "Redstone Heart beats",
+
   "story_mode_reborn.configuration.bow_pulling_sound": "Bow pulling sound",
   "story_mode_reborn.configuration.creeper_sounds": "New Creeper sounds",
   "story_mode_reborn.configuration.enderman_sounds": "New Enderman sounds",
   "story_mode_reborn.configuration.ender_pearl_sound": "New Ender Pearl sounds",
-  "story_mode_reborn.configuration.add_items_to_vanilla_tabs": "Add items to vanilla tabs"
+  "story_mode_reborn.configuration.add_items_to_vanilla_tabs": "Add items to vanilla tabs",
+
+  "story_mode_reborn.resourcepacks.story_mode_reborn_resources": "Story Mode Reborn CWSM Resources"
 }

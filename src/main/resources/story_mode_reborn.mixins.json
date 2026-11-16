@@ -6,12 +6,16 @@
     "BowItemMixin",
     "CreeperMixin",
     "EnderManMixin",
+    "ItemEntityMixin",
+    "ItemFrameMixin",
+    "LivingEntityMixin",
     "ThrownEnderpearlMixin",
     "TntBlockMixin"
   ],
   "client": [
     "GuiMixin",
-    "PlayerRendererMixin"
+    "PlayerRendererMixin",
+    "TextureManagerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

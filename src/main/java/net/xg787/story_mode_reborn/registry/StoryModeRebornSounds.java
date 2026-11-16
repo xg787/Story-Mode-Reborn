@@ -28,6 +28,8 @@ public class StoryModeRebornSounds {
     public static final Supplier<SoundEvent> PLAYER_APPEAR = registerSoundEvent("entity.player.appear");
     public static final Supplier<SoundEvent> PLAYER_DISAPPEAR = registerSoundEvent("entity.player.disappear");
 
+    public static final Supplier<SoundEvent> REDSTONE_HEART_HEARTBEAT =  registerSoundEvent("block.redstone_heart.heartbeat");
+
     private static Supplier<SoundEvent> registerSoundEvent(String name) {
         ResourceLocation id = ResourceLocation.fromNamespaceAndPath(MOD_ID, name);
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(id));

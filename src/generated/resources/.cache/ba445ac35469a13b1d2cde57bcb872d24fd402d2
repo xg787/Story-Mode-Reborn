@@ -1,10 +1,13 @@
-// 1.21.1	2026-10-31T22:40:00.9839123	Tags for minecraft:block mod id story_mode_reborn
+// 1.21.1	2026-11-09T15:44:54.0718746	Tags for minecraft:block mod id story_mode_reborn
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/block/crops/white_pumpkin.json
-33f1c9ad8f128def9910d17fd0cba90fb77a2bd2 data/c/tags/block/ores.json
+b9c720c09efe636815ea4b9b99336f9140f087f6 data/c/tags/block/ores.json
+724443017066090f3954bfdcdd1b7f3b5f8b34a2 data/c/tags/block/ores/prismarine.json
 5107377a18e158aa13514f9a558eacc98b3ae3b9 data/c/tags/block/ores/romeum.json
 67a1a286ed0dfc044291924db08fa45e6e9efbb7 data/c/tags/block/ores/titanium.json
-67a1a286ed0dfc044291924db08fa45e6e9efbb7 data/c/tags/block/ores_in_ground/deepslate.json
+c9e8514a09acfc05d88e2821bc31ee1302918ca0 data/c/tags/block/ores_in_ground/deepslate.json
 5107377a18e158aa13514f9a558eacc98b3ae3b9 data/c/tags/block/ores_in_ground/netherrack.json
+1e3e04c4b48ccb3ca8e9def25658c88b0dddaf8d data/c/tags/block/ores_in_ground/sand.json
+12ef3f55f7ef4267863029149154b6bfcaf14328 data/c/tags/block/ores_in_ground/stone.json
 dda37a033a8aaa13c56a350373e0e84df1c3108a data/c/tags/block/storage_blocks.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/storage_blocks/raw_romeum.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/c/tags/block/storage_blocks/raw_titanium.json
@@ -27,14 +30,16 @@ c9ab53a35423ad51f5b91be53ba6f8bd27a13d28 data/minecraft/tags/block/fire.json
 851cc459b1780f993782c13912ba8785fc1e8af6 data/minecraft/tags/block/incorrect_for_wooden_tool.json
 2c124df49ed2acae21f9446965f1af380383b7bb data/minecraft/tags/block/maintains_farmland.json
 39ca11ea4316b8cdde9b61e0ee5c02fecaf55384 data/minecraft/tags/block/mineable/axe.json
-9dd0a14752c53cdec4f2e63298d0d6bdf14bc72c data/minecraft/tags/block/mineable/pickaxe.json
+7446329d9a750a35b8f72e1be69f8a6b0bd6ea4f data/minecraft/tags/block/mineable/pickaxe.json
+1e3e04c4b48ccb3ca8e9def25658c88b0dddaf8d data/minecraft/tags/block/mineable/shovel.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_copper_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_diamond_tool.json
-5e918f7a185879f15c1ac4d78adf92ba1836c905 data/minecraft/tags/block/needs_iron_tool.json
+a7f6031a05eb9e5ffe96dff3a67a10c224fea653 data/minecraft/tags/block/needs_iron_tool.json
 0e04a9046e861a9c708c8b639103ddc4c3d37171 data/minecraft/tags/block/needs_netherite_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/needs_stone_tool.json
 306891a35b414fb5aa4454441af37513a02f106c data/minecraft/tags/block/replaceable.json
 39ca11ea4316b8cdde9b61e0ee5c02fecaf55384 data/minecraft/tags/block/sword_efficient.json
+424f20fe9552ed5eea627700b8ce3d616862f94a data/minecraft/tags/block/walls.json
 0fa482f9ef0270321b3e0a1e835e4c87153875a0 data/story_mode_reborn/tags/block/enchanted_fire.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/story_mode_reborn/tags/block/incorrect_for_enchanted_romeum_tool.json
 d1bb810af50def5693c50cd5634addf942d99424 data/story_mode_reborn/tags/block/incorrect_for_enchanted_titanium_tool.json
@@ -44,7 +49,7 @@ ec378f57920818f954556eefc7cdd0e81118705b data/story_mode_reborn/tags/block/incor
 471a705799040954586945afa577cbfbdb5aafeb data/story_mode_reborn/tags/block/incorrect_for_titanium_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/story_mode_reborn/tags/block/needs_enchanted_romeum_tool.json
 c320567c8bb316b3e77a538bc9fab15f08d05d48 data/story_mode_reborn/tags/block/needs_enchanted_titanium_tool.json
-24629fd6c09e938368b39144029c27d2187805d8 data/story_mode_reborn/tags/block/needs_prismarine_tool.json
+4e0e53d6a21d18af672e0585ddb3ddfe465bc5b1 data/story_mode_reborn/tags/block/needs_prismarine_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/story_mode_reborn/tags/block/needs_romeum_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/story_mode_reborn/tags/block/needs_royal_tool.json
 35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/story_mode_reborn/tags/block/needs_titanium_tool.json

@@ -4,6 +4,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.xg787.story_mode_reborn.entity.RedstoneHeart;
 import net.xg787.story_mode_reborn.entity.projectile.PrismarineArrow;
 
 import java.util.function.Supplier;
@@ -15,5 +16,9 @@ public class StoryModeRebornEntities {
 
     public static final Supplier<EntityType<PrismarineArrow>> PRISMARINE_ARROW = ENTITY_TYPES.register(
             "prismarine_arrow", () -> EntityType.Builder.<PrismarineArrow>of(PrismarineArrow::new, MobCategory.MISC).sized(0.5F, 0.5F).eyeHeight(0.13F).clientTrackingRange(4).updateInterval(20).build("prismarine_arrow")
+    );
+
+    public static final Supplier<EntityType<RedstoneHeart>> REDSTONE_HEART_ENTITY = ENTITY_TYPES.register(
+            "redstone_heart", () -> EntityType.Builder.<RedstoneHeart>of(RedstoneHeart::new, MobCategory.MISC).sized(1.0F, 1.0F).eyeHeight(0.5F).clientTrackingRange(10).noSummon().fireImmune().build("redstone_heart")
     );
 }

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "story_mode_reborn:block/prismarine_rune_top",
+    "side": "story_mode_reborn:block/prismarine_rune_e"
+  }
+}

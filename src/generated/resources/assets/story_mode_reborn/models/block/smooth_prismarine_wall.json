@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "story_mode_reborn:block/smooth_prismarine"
+  }
+}

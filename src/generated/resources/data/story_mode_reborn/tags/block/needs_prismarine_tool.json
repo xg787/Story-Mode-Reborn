@@ -7,9 +7,39 @@
     "minecraft:prismarine_bricks",
     "minecraft:prismarine_brick_stairs",
     "minecraft:prismarine_brick_slab",
+    "story_mode_reborn:prismarine_brick_wall",
+    "story_mode_reborn:smooth_prismarine",
+    "story_mode_reborn:smooth_prismarine_stairs",
+    "story_mode_reborn:smooth_prismarine_slab",
+    "story_mode_reborn:smooth_prismarine_wall",
+    "story_mode_reborn:chiseled_smooth_prismarine",
+    "story_mode_reborn:carved_prismarine",
+    "story_mode_reborn:carved_prismarine_arrow",
+    "story_mode_reborn:carved_prismarine_wave",
+    "story_mode_reborn:prismarine_key",
+    "story_mode_reborn:prismarine_rune_blank",
+    "story_mode_reborn:prismarine_rune_a",
+    "story_mode_reborn:prismarine_rune_b",
+    "story_mode_reborn:prismarine_rune_c",
+    "story_mode_reborn:prismarine_rune_d",
+    "story_mode_reborn:prismarine_rune_e",
+    "story_mode_reborn:prismarine_rune_f",
+    "story_mode_reborn:prismarine_rune_g",
+    "story_mode_reborn:prismarine_rune_h",
     "minecraft:dark_prismarine",
     "minecraft:dark_prismarine_stairs",
     "minecraft:dark_prismarine_slab",
+    "story_mode_reborn:dark_prismarine_wall",
+    "story_mode_reborn:smooth_dark_prismarine",
+    "story_mode_reborn:smooth_dark_prismarine_stairs",
+    "story_mode_reborn:smooth_dark_prismarine_slab",
+    "story_mode_reborn:smooth_dark_prismarine_wall",
+    "story_mode_reborn:chiseled_smooth_dark_prismarine",
+    "story_mode_reborn:carved_dark_prismarine",
+    "story_mode_reborn:carved_dark_prismarine_arrow",
+    "story_mode_reborn:carved_dark_prismarine_corner",
+    "story_mode_reborn:carved_dark_prismarine_corner_line",
+    "story_mode_reborn:carved_dark_prismarine_spiral",
     {
       "id": "quark:prismarine_chest",
       "required": false
@@ -53,6 +83,7 @@
     {
       "id": "desire:dark_prismarine_wall",
       "required": false
-    }
+    },
+    "#c:ores/diamond"
   ]
 }

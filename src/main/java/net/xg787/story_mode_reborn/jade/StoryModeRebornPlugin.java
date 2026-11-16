@@ -3,11 +3,17 @@ package net.xg787.story_mode_reborn.jade;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.xg787.story_mode_reborn.registry.StoryModeRebornEntities;
 import net.xg787.story_mode_reborn.registry.StoryModeRebornItems;
 import snownee.jade.addon.harvest.HarvestToolProvider;
 import snownee.jade.addon.harvest.SimpleToolHandler;
-import snownee.jade.api.*;
+import snownee.jade.api.IWailaClientRegistration;
+import snownee.jade.api.IWailaCommonRegistration;
+import snownee.jade.api.IWailaPlugin;
+import snownee.jade.api.WailaPlugin;
+import snownee.jade.api.JadeIds;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @WailaPlugin
@@ -19,10 +25,11 @@ public class StoryModeRebornPlugin implements IWailaPlugin {
 
     @Override
     public void registerClient(IWailaClientRegistration registration) {
-        List<Item> pickaxeList = new java.util.ArrayList<>(List.of());
-        List<Item> axeList = new java.util.ArrayList<>(List.of());
-        List<Item> shovelList = new java.util.ArrayList<>(List.of());
-        List<Item> hoeList = new java.util.ArrayList<>(List.of());
+        registration.hideTarget(StoryModeRebornEntities.REDSTONE_HEART_ENTITY.get());
+        List<Item> pickaxeList = new ArrayList<>(List.of());
+        List<Item> axeList = new ArrayList<>(List.of());
+        List<Item> shovelList = new ArrayList<>(List.of());
+        List<Item> hoeList = new ArrayList<>(List.of());
 
         for (int i = 0; i < HarvestToolProvider.TOOL_HANDLERS.get(JadeIds.JADE("pickaxe")).getTools().size();) {
             pickaxeList.add(HarvestToolProvider.TOOL_HANDLERS.get(JadeIds.JADE("pickaxe")).getTools().get(i).getItem());

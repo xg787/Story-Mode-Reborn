@@ -1,4 +1,4 @@
-// 1.21.1	2026-10-31T22:44:13.3223084	Tags for minecraft:item mod id story_mode_reborn
+// 1.21.1	2026-11-09T05:04:52.9265871	Tags for minecraft:item mod id story_mode_reborn
 d55194e880634bd2fe53849b15b7a2c879ffba8c data/c/tags/item/animal_foods.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops.json
 e6d03afd1ec16973a0aeeb7b5f1a777d269a9568 data/c/tags/item/crops/white_pumpkin.json
@@ -7,11 +7,14 @@ ceb033b9cc0c0036eb3efcb0f7a72232fc9af8af data/c/tags/item/hidden_from_recipe_vie
 0813492b68aed011e2b70b8893e72412730d5295 data/c/tags/item/ingots.json
 bf4d268238fd4f9ef657516296562bebd41412c6 data/c/tags/item/ingots/romeum.json
 5cfa7042316e6f8efb9f71d6f14c67e26a72108b data/c/tags/item/ingots/titanium.json
-33f1c9ad8f128def9910d17fd0cba90fb77a2bd2 data/c/tags/item/ores.json
+b9c720c09efe636815ea4b9b99336f9140f087f6 data/c/tags/item/ores.json
+724443017066090f3954bfdcdd1b7f3b5f8b34a2 data/c/tags/item/ores/prismarine.json
 5107377a18e158aa13514f9a558eacc98b3ae3b9 data/c/tags/item/ores/romeum.json
 67a1a286ed0dfc044291924db08fa45e6e9efbb7 data/c/tags/item/ores/titanium.json
-67a1a286ed0dfc044291924db08fa45e6e9efbb7 data/c/tags/item/ores_in_ground/deepslate.json
+c9e8514a09acfc05d88e2821bc31ee1302918ca0 data/c/tags/item/ores_in_ground/deepslate.json
 5107377a18e158aa13514f9a558eacc98b3ae3b9 data/c/tags/item/ores_in_ground/netherrack.json
+1e3e04c4b48ccb3ca8e9def25658c88b0dddaf8d data/c/tags/item/ores_in_ground/sand.json
+12ef3f55f7ef4267863029149154b6bfcaf14328 data/c/tags/item/ores_in_ground/stone.json
 264650de892746ce69a598f09bf1d187b428a39d data/c/tags/item/raw_materials.json
 f8d101cc0586d3d02bbbbb89d68b4e5fd7459396 data/c/tags/item/raw_materials/romeum.json
 3b317e6532ed5766650d152a2a85e5dc373bb4ec data/c/tags/item/raw_materials/titanium.json

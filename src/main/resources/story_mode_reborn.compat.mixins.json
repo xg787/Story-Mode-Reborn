@@ -1,0 +1,15 @@
+{
+  "required": false,
+  "package": "net.xg787.story_mode_reborn.mixin.compat",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 0
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

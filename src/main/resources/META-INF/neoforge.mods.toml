@@ -15,6 +15,9 @@ issueTrackerURL="https://github.com/xg787/Story-Mode-Reborn/issues"
 [[mixins]]
     config="${mod_id}.mixins.json"
 
+[[mixins]]
+    config="${mod_id}.compat.mixins.json"
+
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
@@ -47,6 +50,6 @@ issueTrackerURL="https://github.com/xg787/Story-Mode-Reborn/issues"
 [[dependencies.${mod_id}]]
     modId="witherstormmod"
     type="optional"
-    versionRange="[4.0,)"
+    versionRange="[5.0,)"
     ordering="NONE"
     side="BOTH"

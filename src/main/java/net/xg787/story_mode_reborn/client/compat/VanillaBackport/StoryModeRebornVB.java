@@ -26,7 +26,7 @@ public class StoryModeRebornVB {
 
     public static void addCreative(CreativeTabIntegrations.Event event) {
         event.register(VanillaTabs.COMBAT, (flags, output, operator) -> {
-            output.before(Items.WOODEN_AXE).add(WOODEN_SPEAR.get(), STONE_SPEAR.get(), COPPER_SPEAR.get(), PRISMARINE_SPEAR.get(), IRON_SPEAR.get(), ROYAL_SPEAR.get(), GOLDEN_SPEAR.get(), DIAMOND_SPEAR.get(), NETHERITE_SPEAR.get());
+            output.before(Items.WOODEN_AXE).add(WOODEN_SPEAR.get(), STONE_SPEAR.get(), COPPER_SPEAR.get(), IRON_SPEAR.get(), PRISMARINE_SPEAR.get(), ROYAL_SPEAR.get(), GOLDEN_SPEAR.get(), DIAMOND_SPEAR.get(), NETHERITE_SPEAR.get());
         });
     }
 

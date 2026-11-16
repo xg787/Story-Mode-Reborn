@@ -26,6 +26,8 @@ public class StoryModeRebornItems {
 
     public static final DeferredItem<Item> ICON = ITEMS.registerSimpleItem("icon");
 
+    public static final DeferredItem<RedstoneHeartItem> REDSTONE_HEART_ITEM = ITEMS.register("redstone_heart", () -> new RedstoneHeartItem(REDSTONE_HEART.get(), new Item.Properties().fireResistant()));
+
     public static final DeferredItem<Item> WHITE_PUMPKIN_SEEDS = ITEMS.register("white_pumpkin_seeds", () -> new ItemNameBlockItem(WHITE_PUMPKIN_STEM.get(), new Item.Properties()));
     public static final DeferredItem<Item> WHITE_PUMPKIN_PIE = ITEMS.registerSimpleItem("white_pumpkin_pie", new Item.Properties().food(new FoodProperties.Builder().nutrition(8).saturationModifier(0.3F).build()));
 

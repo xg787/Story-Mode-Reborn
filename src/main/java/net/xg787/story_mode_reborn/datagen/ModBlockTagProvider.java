@@ -32,6 +32,45 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ENCHANTED_FIRE_REDSTONE.get())
                 .add(ENCHANTED_FIRE_REDSTONE_EXTENSION.get());
 
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(PRISMARINE_ORE.get())
+                .add(DEEPSLATE_PRISMARINE_ORE.get())
+                .add(PRISMARINE_BRICK_WALL.get())
+                .add(SMOOTH_PRISMARINE.get())
+                .add(SMOOTH_PRISMARINE_STAIRS.get())
+                .add(SMOOTH_PRISMARINE_SLAB.get())
+                .add(SMOOTH_PRISMARINE_WALL.get())
+                .add(CHISELED_SMOOTH_PRISMARINE.get())
+                .add(CARVED_PRISMARINE.get())
+                .add(CARVED_PRISMARINE_ARROW.get())
+                .add(CARVED_PRISMARINE_WAVE.get())
+                .add(PRISMARINE_KEY.get())
+                .add(PRISMARINE_RUNE_BLANK.get())
+                .add(PRISMARINE_RUNE_A.get())
+                .add(PRISMARINE_RUNE_B.get())
+                .add(PRISMARINE_RUNE_C.get())
+                .add(PRISMARINE_RUNE_D.get())
+                .add(PRISMARINE_RUNE_E.get())
+                .add(PRISMARINE_RUNE_F.get())
+                .add(PRISMARINE_RUNE_G.get())
+                .add(PRISMARINE_RUNE_H.get())
+                .add(DARK_PRISMARINE_WALL.get())
+                .add(SMOOTH_DARK_PRISMARINE.get())
+                .add(SMOOTH_DARK_PRISMARINE_STAIRS.get())
+                .add(SMOOTH_DARK_PRISMARINE_SLAB.get())
+                .add(SMOOTH_DARK_PRISMARINE_WALL.get())
+                .add(CHISELED_SMOOTH_DARK_PRISMARINE.get())
+                .add(CARVED_DARK_PRISMARINE.get())
+                .add(CARVED_DARK_PRISMARINE_ARROW.get())
+                .add(CARVED_DARK_PRISMARINE_CORNER.get())
+                .add(CARVED_DARK_PRISMARINE_CORNER_LINE.get())
+                .add(CARVED_DARK_PRISMARINE_SPIRAL.get())
+                .add(DEEPSLATE_TITANIUM_ORE.get())
+                .add(TITANIUM_BLOCK.get())
+                .add(NETHER_ROMEUM_ORE.get())
+                .add(ROMEUM_BLOCK.get())
+                .add(REDSTONE_HEART.get());
+
         tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(WHITE_PUMPKIN_STEM.get())
                 .add(ATTACHED_WHITE_PUMPKIN_STEM.get())
@@ -39,11 +78,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(CARVED_WHITE_PUMPKIN.get())
                 .add(WHITE_JACK_O_LANTERN.get());
 
-        tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(DEEPSLATE_TITANIUM_ORE.get())
-                .add(TITANIUM_BLOCK.get())
-                .add(NETHER_ROMEUM_ORE.get())
-                .add(ROMEUM_BLOCK.get());
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(SAND_PRISMARINE_ORE.get());
 
         tag(BlockTags.CROPS)
                 .add(WHITE_PUMPKIN_STEM.get());
@@ -86,19 +122,40 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(WHITE_PUMPKIN.get())
                 .add(CARVED_WHITE_PUMPKIN.get());
 
+        tag(BlockTags.WALLS)
+                .add(PRISMARINE_BRICK_WALL.get())
+                .add(SMOOTH_PRISMARINE_WALL.get())
+                .add(DARK_PRISMARINE_WALL.get())
+                .add(SMOOTH_DARK_PRISMARINE_WALL.get());
+
+        tag(StoryModeRebornTags.Blocks.ORES_IN_GROUND_SAND)
+                .add(SAND_PRISMARINE_ORE.get());
+
+        tag(Tags.Blocks.ORES_IN_GROUND_STONE)
+                .add(PRISMARINE_ORE.get());
+
         tag(Tags.Blocks.ORES_IN_GROUND_DEEPSLATE)
+                .add(DEEPSLATE_PRISMARINE_ORE.get())
                 .add(DEEPSLATE_TITANIUM_ORE.get());
 
         tag(Tags.Blocks.ORES_IN_GROUND_NETHERRACK)
                 .add(NETHER_ROMEUM_ORE.get());
 
         tag(Tags.Blocks.ORES)
+                .add(SAND_PRISMARINE_ORE.get())
+                .add(PRISMARINE_ORE.get())
+                .add(DEEPSLATE_PRISMARINE_ORE.get())
                 .add(DEEPSLATE_TITANIUM_ORE.get())
                 .add(NETHER_ROMEUM_ORE.get());
 
         tag(Tags.Blocks.STORAGE_BLOCKS)
                 .add(TITANIUM_BLOCK.get())
                 .add(ROMEUM_BLOCK.get());
+
+        tag(StoryModeRebornTags.Blocks.ORES_PRISMARINE)
+                .add(SAND_PRISMARINE_ORE.get())
+                .add(PRISMARINE_ORE.get())
+                .add(DEEPSLATE_PRISMARINE_ORE.get());
 
         tag(StoryModeRebornTags.Blocks.ORES_TITANIUM)
                 .add(DEEPSLATE_TITANIUM_ORE.get());
@@ -229,6 +286,7 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(StoryModeRebornTags.Blocks.NEEDS_COPPER_TOOL);
 
         tag(BlockTags.NEEDS_IRON_TOOL)
+                .addTag(StoryModeRebornTags.Blocks.ORES_PRISMARINE)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_TITANIUM)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_TITANIUM)
                 .addTag(StoryModeRebornTags.Blocks.STORAGE_BLOCKS_RAW_ROMEUM)
@@ -242,11 +300,40 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(PRISMARINE_BRICKS)
                 .add(PRISMARINE_BRICK_STAIRS)
                 .add(PRISMARINE_BRICK_SLAB)
-                //.add(PRISMARINE_BRICK_WALL)
+                .add(PRISMARINE_BRICK_WALL.get())
+                .add(SMOOTH_PRISMARINE.get())
+                .add(SMOOTH_PRISMARINE_STAIRS.get())
+                .add(SMOOTH_PRISMARINE_SLAB.get())
+                .add(SMOOTH_PRISMARINE_WALL.get())
+                .add(CHISELED_SMOOTH_PRISMARINE.get())
+                .add(CARVED_PRISMARINE.get())
+                .add(CARVED_PRISMARINE_ARROW.get())
+                .add(CARVED_PRISMARINE_WAVE.get())
+                .add(PRISMARINE_KEY.get())
+                .add(PRISMARINE_RUNE_BLANK.get())
+                .add(PRISMARINE_RUNE_A.get())
+                .add(PRISMARINE_RUNE_B.get())
+                .add(PRISMARINE_RUNE_C.get())
+                .add(PRISMARINE_RUNE_D.get())
+                .add(PRISMARINE_RUNE_E.get())
+                .add(PRISMARINE_RUNE_F.get())
+                .add(PRISMARINE_RUNE_G.get())
+                .add(PRISMARINE_RUNE_H.get())
                 .add(DARK_PRISMARINE)
                 .add(DARK_PRISMARINE_STAIRS)
                 .add(DARK_PRISMARINE_SLAB)
-                //.add(DARK_PRISMARINE_WALL)
+                .add(DARK_PRISMARINE_WALL.get())
+                .add(SMOOTH_DARK_PRISMARINE.get())
+                .add(SMOOTH_DARK_PRISMARINE_STAIRS.get())
+                .add(SMOOTH_DARK_PRISMARINE_SLAB.get())
+                .add(SMOOTH_DARK_PRISMARINE_WALL.get())
+                .add(CHISELED_SMOOTH_DARK_PRISMARINE.get())
+                .add(CARVED_DARK_PRISMARINE.get())
+                .add(CARVED_DARK_PRISMARINE_ARROW.get())
+                .add(CARVED_DARK_PRISMARINE_CORNER.get())
+                .add(CARVED_DARK_PRISMARINE_CORNER_LINE.get())
+                .add(CARVED_DARK_PRISMARINE_SPIRAL.get())
+
                 .addOptional(ResourceLocation.fromNamespaceAndPath("quark","prismarine_chest"))
                 .addOptional(ResourceLocation.fromNamespaceAndPath("quark","trapped_prismarine_chest"))
                 .addOptional(ResourceLocation.fromNamespaceAndPath("upgrade_aquatic","luminous_prismarine"))
@@ -257,7 +344,9 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .addOptional(ResourceLocation.fromNamespaceAndPath("cataclysm","prismarine_brick_fence"))
                 .addOptional(ResourceLocation.fromNamespaceAndPath("cataclysm","prismarine_brick_wall"))
                 .addOptional(ResourceLocation.fromNamespaceAndPath("desire","prismarine_brick_wall"))
-                .addOptional(ResourceLocation.fromNamespaceAndPath("desire","dark_prismarine_wall"));
+                .addOptional(ResourceLocation.fromNamespaceAndPath("desire","dark_prismarine_wall"))
+                //i am a very cruel person... prismarine is now required for diamonds
+                .addTag(Tags.Blocks.ORES_DIAMOND);
 
         tag(StoryModeRebornTags.Blocks.NEEDS_ROYAL_TOOL);
 

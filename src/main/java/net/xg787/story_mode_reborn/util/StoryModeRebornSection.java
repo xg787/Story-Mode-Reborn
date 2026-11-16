@@ -7,10 +7,10 @@ import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.resources.ResourceLocation;
 
-/*
-    Credit to BoxxedDev for the original tab section class
-    https://github.com/BoxxedDev/control-panels
- */
+/**
+ Credit to BoxxedDev for the original tab section class
+ <a href="https://github.com/BoxxedDev/control-panels">...</a>
+ **/
 public class StoryModeRebornSection extends SectionTextured {
     int secondaryTextColor = 0xffcea05a;
     int textColor = 0xffffeb8c;

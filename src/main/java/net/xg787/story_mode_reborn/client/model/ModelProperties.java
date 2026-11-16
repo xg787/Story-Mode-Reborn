@@ -19,7 +19,7 @@ public class ModelProperties {
         registerCrossBowModelProperties(PRISMARINE_CROSSBOW.get());
         registerFishingRodModelProperties(PRISMARINE_FISHING_ROD.get());
         if (ModList.get().isLoaded("witherstormmod")) {
-            ItemProperties.register(PRISMARINE_CROSSBOW.get(), ResourceLocation.fromNamespaceAndPath("witherstormmod", "prismarine_arrow"), (stack, level, entity, i) -> {
+            ItemProperties.register(PRISMARINE_CROSSBOW.get(), ResourceLocation.fromNamespaceAndPath("witherstormmod", "ender_pearl"), (stack, level, entity, i) -> {
                 ChargedProjectiles chargedprojectiles = stack.get(DataComponents.CHARGED_PROJECTILES);
                 return chargedprojectiles != null && chargedprojectiles.contains(Items.ENDER_PEARL) ? 1.0F : 0.0F;
             });

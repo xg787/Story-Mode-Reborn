@@ -64,5 +64,7 @@ public class ModSoundDefinitionsProvider extends SoundDefinitionsProvider {
         add(PLAYER_APPEAR.get(), SoundDefinition.definition().with(sound(ResourceLocation.fromNamespaceAndPath(MOD_ID, "mob/endermen/appear"))).subtitle("subtitles.entity.player.appear"));
 
         add(PLAYER_DISAPPEAR.get(), SoundDefinition.definition().with(sound(ResourceLocation.fromNamespaceAndPath(MOD_ID, "mob/endermen/disappear"))).subtitle("subtitles.entity.player.disappear"));
+
+        add(REDSTONE_HEART_HEARTBEAT.get(), SoundDefinition.definition().with(sound(ResourceLocation.fromNamespaceAndPath(MOD_ID, "block/redstone_heart/heartbeat"))).subtitle("subtitles.block.redstone_heart.heartbeat"));
     }
 }

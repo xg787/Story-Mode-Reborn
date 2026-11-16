@@ -233,13 +233,23 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(StoryModeRebornTags.Items.CROPS_WHITE_PUMPKIN)
                 .add(WHITE_PUMPKIN.asItem());
 
+        tag(StoryModeRebornTags.Items.ORES_IN_GROUND_SAND)
+                .add(SAND_PRISMARINE_ORE.asItem());
+
+        tag(Tags.Items.ORES_IN_GROUND_STONE)
+                .add(PRISMARINE_ORE.asItem());
+
         tag(Tags.Items.ORES_IN_GROUND_DEEPSLATE)
+                .add(DEEPSLATE_PRISMARINE_ORE.asItem())
                 .add(DEEPSLATE_TITANIUM_ORE.asItem());
 
         tag(Tags.Items.ORES_IN_GROUND_NETHERRACK)
                 .add(NETHER_ROMEUM_ORE.asItem());
 
         tag(Tags.Items.ORES)
+                .add(SAND_PRISMARINE_ORE.asItem())
+                .add(PRISMARINE_ORE.asItem())
+                .add(DEEPSLATE_PRISMARINE_ORE.asItem())
                 .add(DEEPSLATE_TITANIUM_ORE.asItem())
                 .add(NETHER_ROMEUM_ORE.asItem());
 
@@ -254,6 +264,11 @@ public class ModItemTagProvider extends ItemTagsProvider {
         tag(Tags.Items.STORAGE_BLOCKS)
                 .add(TITANIUM_BLOCK.asItem())
                 .add(ROMEUM_BLOCK.asItem());
+
+        tag(StoryModeRebornTags.Items.ORES_PRISMARINE)
+                .add(SAND_PRISMARINE_ORE.asItem())
+                .add(PRISMARINE_ORE.asItem())
+                .add(DEEPSLATE_PRISMARINE_ORE.asItem());
 
         tag(StoryModeRebornTags.Items.ORES_TITANIUM)
                 .add(DEEPSLATE_TITANIUM_ORE.asItem());

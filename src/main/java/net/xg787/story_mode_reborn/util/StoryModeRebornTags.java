@@ -36,6 +36,8 @@ public class StoryModeRebornTags {
         public static final TagKey<Block> WHITE_PUMPKINS_CARVED = createCommonTag("white_pumpkins/carved");
         public static final TagKey<Block> WHITE_PUMPKINS_JACK_O_LANTERNS = createCommonTag("white_pumpkins/jack_o_lanterns");
 
+        public static final TagKey<Block> ORES_PRISMARINE = createCommonTag("ores/prismarine");
+
         public static final TagKey<Block> ORES_TITANIUM = createCommonTag("ores/titanium");
         public static final TagKey<Block> STORAGE_BLOCKS_RAW_TITANIUM = createCommonTag("storage_blocks/raw_titanium");
         public static final TagKey<Block> STORAGE_BLOCKS_TITANIUM = createCommonTag("storage_blocks/titanium");
@@ -43,6 +45,8 @@ public class StoryModeRebornTags {
         public static final TagKey<Block> ORES_ROMEUM = createCommonTag("ores/romeum");
         public static final TagKey<Block> STORAGE_BLOCKS_RAW_ROMEUM = createCommonTag("storage_blocks/raw_romeum");
         public static final TagKey<Block> STORAGE_BLOCKS_ROMEUM = createCommonTag("storage_blocks/romeum");
+
+        public static final TagKey<Block> ORES_IN_GROUND_SAND =  createCommonTag("ores_in_ground/sand");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, name));
@@ -79,6 +83,8 @@ public class StoryModeRebornTags {
         public static final TagKey<Item> WHITE_PUMPKINS_CARVED = createCommonTag("white_pumpkins/carved");
         public static final TagKey<Item> WHITE_PUMPKINS_JACK_O_LANTERNS = createCommonTag("white_pumpkins/jack_o_lanterns");
 
+        public static final TagKey<Item> ORES_PRISMARINE = createCommonTag("ores/prismarine");
+
         public static final TagKey<Item> ORES_TITANIUM = createCommonTag("ores/titanium");
         public static final TagKey<Item> RAW_MATERIALS_TITANIUM = createCommonTag("raw_materials/titanium");
         public static final TagKey<Item> STORAGE_BLOCKS_RAW_TITANIUM = createCommonTag("storage_blocks/raw_titanium");
@@ -93,6 +99,7 @@ public class StoryModeRebornTags {
         public static final TagKey<Item> INGOTS_ROMEUM = createCommonTag("ingots/romeum");
         public static final TagKey<Item> STORAGE_BLOCKS_ROMEUM = createCommonTag("storage_blocks/romeum");
 
+        public static final TagKey<Item> ORES_IN_GROUND_SAND =  createCommonTag("ores_in_ground/sand");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(MOD_ID, name));

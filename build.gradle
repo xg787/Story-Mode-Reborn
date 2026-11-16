@@ -88,14 +88,16 @@ dependencies {
 
     //Runtime QOL
     clientAndServer "curse.maven:advanced-worldgen-info-1661937:8707774"
+    clientAndServer "curse.maven:unoffical-nei-rewrite-1763011:9506762"
     clientAndServer "curse.maven:enderpearl-backport-1367059:7217780"
     clientAndServer "curse.maven:advanced-loot-info-1205426:8709548"
     clientAndServer "curse.maven:advanced-core-info-1661923:8707768"
     clientAndServer "curse.maven:xaeros-world-map-317780:9067277"
     clientAndServer "curse.maven:xaeros-minimap-263420:9067173"
     clientAndServer "curse.maven:armor-poser-450663:8542862"
-    clientAndServer "curse.maven:emi-580555:8081408"
-    clientAndServer "curse.maven:jei-238222:7420587"
+    clientAndServer "curse.maven:mezzconfig-1689768:9374030"
+    clientAndServer "curse.maven:jade-324717:7545219"
+    clientAndServer "curse.maven:jei-238222:9393327"
 
     clientOnly "curse.maven:better-modlist-neoforge-1089803:8605756"
     clientOnly "curse.maven:coordinates-display-646464:5852301"

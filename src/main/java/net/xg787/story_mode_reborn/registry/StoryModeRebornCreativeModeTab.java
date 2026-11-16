@@ -60,21 +60,55 @@ public class StoryModeRebornCreativeModeTab {
                 output.accept(ENCHANTED_ROMEUM_AXE);
                 output.accept(ENCHANTED_ROMEUM_SHOVEL);
                 output.accept(ENCHANTED_ROMEUM_HOE);
-            }).withSearchBar().hideTitle().build());
+            }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_BLOCKS = CREATIVE_MODE_TABS.register("storymode_tab_blocks", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.story_mode_reborn_blocks"))
-            .icon(() -> CARVED_WHITE_PUMPKIN.asItem().getDefaultInstance())
+            .icon(() -> REDSTONE_HEART.asItem().getDefaultInstance())
             .withTabsBefore(STORYMODE_TAB_ITEMS.getId())
             .displayItems((displayParameters, output) -> {
                 output.accept(WHITE_PUMPKIN);
                 output.accept(CARVED_WHITE_PUMPKIN);
                 output.accept(WHITE_JACK_O_LANTERN);
+                output.accept(SAND_PRISMARINE_ORE);
+                output.accept(PRISMARINE_ORE);
+                output.accept(DEEPSLATE_PRISMARINE_ORE);
+                output.accept(PRISMARINE_BRICK_WALL);
+                output.accept(SMOOTH_PRISMARINE);
+                output.accept(SMOOTH_PRISMARINE_STAIRS);
+                output.accept(SMOOTH_PRISMARINE_SLAB);
+                output.accept(SMOOTH_PRISMARINE_WALL);
+                output.accept(CHISELED_SMOOTH_PRISMARINE);
+                output.accept(CARVED_PRISMARINE);
+                output.accept(CARVED_PRISMARINE_ARROW);
+                output.accept(CARVED_PRISMARINE_WAVE);
+                output.accept(PRISMARINE_KEY);
+                output.accept(PRISMARINE_RUNE_BLANK);
+                output.accept(PRISMARINE_RUNE_A);
+                output.accept(PRISMARINE_RUNE_B);
+                output.accept(PRISMARINE_RUNE_C);
+                output.accept(PRISMARINE_RUNE_D);
+                output.accept(PRISMARINE_RUNE_E);
+                output.accept(PRISMARINE_RUNE_F);
+                output.accept(PRISMARINE_RUNE_G);
+                output.accept(PRISMARINE_RUNE_H);
+                output.accept(DARK_PRISMARINE_WALL);
+                output.accept(SMOOTH_DARK_PRISMARINE);
+                output.accept(SMOOTH_DARK_PRISMARINE_STAIRS);
+                output.accept(SMOOTH_DARK_PRISMARINE_SLAB);
+                output.accept(SMOOTH_DARK_PRISMARINE_WALL);
+                output.accept(CHISELED_SMOOTH_DARK_PRISMARINE);
+                output.accept(CARVED_DARK_PRISMARINE);
+                output.accept(CARVED_DARK_PRISMARINE_ARROW);
+                output.accept(CARVED_DARK_PRISMARINE_CORNER);
+                output.accept(CARVED_DARK_PRISMARINE_CORNER_LINE);
+                output.accept(CARVED_DARK_PRISMARINE_SPIRAL);
                 output.accept(DEEPSLATE_TITANIUM_ORE);
                 output.accept(TITANIUM_BLOCK);
                 output.accept(NETHER_ROMEUM_ORE);
                 output.accept(ROMEUM_BLOCK);
-            }).withSearchBar().hideTitle().build());
+                output.accept(REDSTONE_HEART);
+            }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_TEMPLATES = CREATIVE_MODE_TABS.register("storymode_tab_templates", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.story_mode_reborn_templates"))
@@ -123,7 +157,7 @@ public class StoryModeRebornCreativeModeTab {
                 output.accept(ARMOR_TEMPLATE_24);
                 output.accept(ARMOR_TEMPLATE_25);
                 output.accept(ARMOR_TEMPLATE_26);
-            }).withSearchBar().hideTitle().build());
+            }).build());
 
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> STORYMODE_TAB_ARMOR = CREATIVE_MODE_TABS.register("storymode_tab_armor", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.story_mode_reborn_armor"))
@@ -147,7 +181,7 @@ public class StoryModeRebornCreativeModeTab {
                 output.accept(ENCHANTED_ROMEUM_LEGGINGS);
                 output.accept(ENCHANTED_ROMEUM_BOOTS);
                 output.acceptAll(displayParameters.holders().lookup(Registries.ITEM).map(lookup -> lookup.get(StoryModeRebornTags.Items.STORY_MODE_ARMOR).map(named -> named.stream().map(holder -> holder.value().getDefaultInstance()).toList()).orElse(List.of())).orElseGet(List::of));
-            }).withSearchBar().hideTitle().build());
+            }).build());
 
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
@@ -170,7 +204,7 @@ public class StoryModeRebornCreativeModeTab {
             event.insertAfter(PRISMARINE_PICKAXE.get().getDefaultInstance(), PRISMARINE_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(PRISMARINE_AXE.get().getDefaultInstance(), PRISMARINE_HOE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
 
-            event.insertAfter(IRON_HOE.getDefaultInstance(), ROYAL_SHOVEL.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(PRISMARINE_HOE.get().getDefaultInstance(), ROYAL_SHOVEL.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(ROYAL_SHOVEL.get().getDefaultInstance(), ROYAL_PICKAXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(ROYAL_PICKAXE.get().getDefaultInstance(), ROYAL_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(ROYAL_AXE.get().getDefaultInstance(), ROYAL_HOE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
@@ -217,8 +251,8 @@ public class StoryModeRebornCreativeModeTab {
             event.insertAfter(IRON_SWORD.getDefaultInstance(), PRISMARINE_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(IRON_AXE.getDefaultInstance(), PRISMARINE_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
 
-            event.insertAfter(IRON_SWORD.getDefaultInstance(), ROYAL_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
-            event.insertAfter(IRON_AXE.getDefaultInstance(), ROYAL_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(PRISMARINE_SWORD.get().getDefaultInstance(), ROYAL_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
+            event.insertAfter(PRISMARINE_AXE.get().getDefaultInstance(), ROYAL_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
 
             event.insertAfter(NETHERITE_SWORD.getDefaultInstance(), TITANIUM_SWORD.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);
             event.insertAfter(NETHERITE_AXE.getDefaultInstance(), TITANIUM_AXE.get().getDefaultInstance(), PARENT_AND_SEARCH_TABS);

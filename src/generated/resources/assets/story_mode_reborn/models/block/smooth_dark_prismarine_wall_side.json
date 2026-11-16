@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "story_mode_reborn:block/smooth_dark_prismarine"
+  }
+}

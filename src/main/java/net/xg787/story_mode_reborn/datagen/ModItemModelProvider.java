@@ -27,7 +27,6 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
         handheldItem(COPPER_SWORD.get());
         handheldItem(COPPER_PICKAXE.get());
         handheldItem(COPPER_AXE.get());

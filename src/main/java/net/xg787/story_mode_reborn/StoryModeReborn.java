@@ -15,12 +15,15 @@ import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
 import net.xg787.story_mode_reborn.registry.compat.StoryModeRebornFancyTab;
 import net.xg787.story_mode_reborn.registry.compat.StoryModeRebornVBItems;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import static net.xg787.story_mode_reborn.registry.StoryModeRebornBlocks.CARVED_WHITE_PUMPKIN;
 
 @Mod(StoryModeReborn.MOD_ID)
 public class StoryModeReborn {
     public static final String MOD_ID = "story_mode_reborn";
+    public static final Logger LOGGER = LogManager.getLogger("StoryModeReborn");
 
     public StoryModeReborn(IEventBus modEventBus, ModContainer modContainer) {
         //modContainer.registerConfig(ModConfig.Type.CLIENT, StoryModeRebornConfig.CLIENT_SPEC);
@@ -42,6 +45,7 @@ public class StoryModeReborn {
         }
         StoryModeRebornSounds.SOUND_EVENTS.register(modEventBus);
         StoryModeRebornEntities.ENTITY_TYPES.register(modEventBus);
+        StoryModeRebornBlockEntities.BLOCK_ENTITY_TYPES.register(modEventBus);
 
         NeoForge.EVENT_BUS.register(this);
     }
