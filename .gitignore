@@ -24,3 +24,14 @@ runs
 run-data
 
 repo
+
+libs
+models
+new_armor_models
+old_junk
+
+src/main/resources/assets/story_mode_reborn/textures/models/armor/custom/armor_old
+src/main/resources/assets/story_mode_reborn/textures/item/old
+src/main/resources/assets/story_mode_reborn/textures/item/wip
+src/main/resources/assets/story_mode_reborn/textures/block/folder
+src/main/resources/assets/story_mode_reborn/textures/block/redstone_heart

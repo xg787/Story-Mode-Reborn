@@ -35,8 +35,7 @@ import static net.xg787.story_mode_reborn.registry.StoryModeRebornItems.TIPPED_P
 @Mod(value = StoryModeReborn.MOD_ID, dist = Dist.CLIENT)
 public class StoryModeRebornClient {
 
-    public static final ResourceLocation REDSTONE_HEART = ResourceLocation.fromNamespaceAndPath(StoryModeReborn.MOD_ID, "block");
-    public static final ModelLayerLocation REDSTONE_HEART_LAYER = new ModelLayerLocation(REDSTONE_HEART, "main");
+    public static final ModelLayerLocation REDSTONE_HEART_LAYER = new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(StoryModeReborn.MOD_ID, "block"), "main");
 
     public static final ResourceLocation STORY_MODE_REBORN_SHEET = ResourceLocation.fromNamespaceAndPath(StoryModeReborn.MOD_ID, "textures/atlas/story_mode_reborn");
     private static final RenderType STORY_MODE_REBORN_SHEET_TYPE = RenderType.entityCutoutNoCull(STORY_MODE_REBORN_SHEET);
